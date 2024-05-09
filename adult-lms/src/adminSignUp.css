@@ -32,21 +32,25 @@
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.label-input {
+/* .form {
     display: flex;
     flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    text-align: left;
 
-}
+} */
 
 label {
     font-size: .6rem;
     color: rgb(76, 76, 236);
     position: absolute;
     z-index: 1;
-    top: 45.7%;
-    right: 43.5%;
+    top: 45.9%;
+    right: 45%;
     background-color: white;
     font-weight: bold;
+    width: fit-content;
 }
 
 input {
@@ -62,8 +66,13 @@ input {
 input::placeholder {
     font-size: .6rem;
     color: gray;
-
+    position: absolute;
+    right: 35%;
 }
+
+/* input::placeholder:active{   THE PLACEHOLDER TEXT BEHAVES UNUSUAL WHEN CLICKED, I WAS HOPING THIS WILL FIX IT. HELP!
+display: none;
+} */
 
 input:focus {
     font-size: .6rem;
@@ -90,11 +99,11 @@ button:hover {
 }
 
 p {
-    font-size: .8rem;
+    font-size: .7rem;
     color: gray;
     font-weight: 400;
 }
 
-p a{
+p a {
     text-decoration: none;
 }
