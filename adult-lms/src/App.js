@@ -1,14 +1,11 @@
 import './App.css';
-import SignUp from './AdminSignUp';
-import Login from './Login';
+import Login from './Components/AdminLogin';
 
-function App() {
+
+export default function GoLearn() {
   return (
-    <div className="App">
-  <SignUp />
-<Login />
+    <div>
+      <Login />
     </div>
-  );
+  )
 }
-
-export default App;

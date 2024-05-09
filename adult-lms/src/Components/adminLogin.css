@@ -71,7 +71,7 @@ input::placeholder {
     right: 17%;
 }
 
-input:focus{
+input:focus {
     font-size: .8rem;
     color: rgba(37, 50, 75, 1);
     font-weight: bolder;
@@ -79,7 +79,7 @@ input:focus{
     outline: none;
 }
 
-button{
+button {
     background-color: rgba(10, 101, 204, 1);
     color: white;
     border: none;
@@ -89,19 +89,19 @@ button{
     font-weight: bolder;
 }
 
-button:hover{
+button:hover {
     background: linear-gradient(to right, green, yellow);
     color: rgb(0, 0, 148);
     font-weight: bolder;
 }
 
-p{
+p {
     font-size: .8rem;
     color: gray;
     font-weight: 400;
 }
 
-p a{
+p a {
     color: rgba(10, 101, 204, 1);
     text-decoration: none;
 }
