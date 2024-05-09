@@ -30,41 +30,44 @@
     color: rgba(37, 50, 75, 1);
     width: 200px;
     font-weight: bolder;
+    /* text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); */
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    margin-bottom: .8rem;
+
 }
 
 label {
-position: relative;
-z-index: 1;
-top: 10%;
-right: -5%;
-width: fit-content;
-background-color: white;
-font-weight: bold;
-font-size: .6rem;
-color: rgba(10, 101, 204, 1);
-
+    font-size: .6rem;
+    color: rgba(10, 101, 204, 1);
+    position: relative;
+    z-index: 1;
+    top: 10%;
+    right: -5%;
+    background-color: white;
+    font-weight: bold;
+    width: fit-content;
 }
 
 input {
     padding: .8rem 2.5rem;
     border: 1px solid rgb(76, 76, 236);
     border-radius: 5px;
+    position: relative;
     transition: all 0.3s ease;
     max-width: 100%;
     width: 10rem;
     height: 1rem;
+
 }
 
 input::placeholder {
     font-size: .6rem;
     color: rgba(168, 173, 183, 1);
     position: relative;
+    margin-left: -5rem;
     right: 17%;
 }
 
