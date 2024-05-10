@@ -92,6 +92,11 @@ button:hover {
     font-weight: bolder;
 }
 
+button a{
+    text-decoration: none;
+color: rgba(255, 255, 255, 1);
+}
+
 p {
     font-size: .8rem;
     color: gray;
@@ -101,4 +106,12 @@ p {
 p a {
     color: rgba(10, 101, 204, 1);
     text-decoration: none;
+}
+
+/* This is for error message!!! */
+
+.error-message{
+    color: brown;
+    font-size: 1rem;
+    width: fit-content;
 }
