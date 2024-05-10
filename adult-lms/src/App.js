@@ -1,14 +1,10 @@
-import './App.css';
-import SignUp from './AdminSignUp';
-import Login from './Login';
+import React from 'react';
+import Login from './Components/AdminSignUp';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-  <SignUp />
-<Login />
+    <div>
+      <Login />
     </div>
-  );
+  )
 }
-
-export default App;
