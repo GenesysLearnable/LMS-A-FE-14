@@ -10,7 +10,6 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 function Courses() {
   return (
     <div className="course-container">
-      <div></div>
       <p>Select Course</p>
       <div className="course-cat">
         <div className="course-title">
