@@ -5,6 +5,7 @@ import Login from "./Components/AdminLogin";
 import Welcome from "./component/welcome";
 import Header from "./component/welcomeheader";
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Courses from './component/selectcourse';
 
 
 export default function GoLearn() {
@@ -12,6 +13,7 @@ export default function GoLearn() {
         <div className="App">
             <Header />
             <Welcome />
+            <Courses />
             <Signup />
             <Login />
       </div>
