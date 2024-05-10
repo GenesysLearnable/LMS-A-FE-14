@@ -30,7 +30,7 @@ export default function Signup() {
     <div>
       <div className="container">
         <div className="org-login">
-          <h1 className="header-text">Sign up with your organization</h1>
+          <h1 className="head-text">Sign up with your organization</h1>
           <div className="form">
             <label htmlFor="input">ENTER YOUR ORGANIZATION URL</label>
             <input

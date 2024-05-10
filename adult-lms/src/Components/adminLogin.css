@@ -25,7 +25,7 @@
 
 }
 
-.header-text {
+.my-header-text {
     font-size: 1.4rem;
     color: rgba(37, 50, 75, 1);
     width: 200px;
@@ -104,4 +104,10 @@ p {
 p a {
     color: rgba(10, 101, 204, 1);
     text-decoration: none;
+}
+
+.my-error-message{
+    color: brown;
+    font-size: 1rem;
+    
 }
