@@ -1,15 +1,17 @@
+import React from 'react';
+import Signup from './Components/AdminSignUp';
 import './App.css';
 import Login from './Components/AdminLogin';
-
-import SignUp from './AdminSignUp';
-
 import Welcome from './component/welcome';
 import Header from './component/welcomeheader';
 
-export default function GoLearn() {
+
+    export default function GoLearn() {
+    
+
   return (
-    <div className="App">
-  <SignUp />
+<div className="App">
+  <Signup />
 <Login />
       <Header />
       <Welcome />
