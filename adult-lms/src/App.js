@@ -19,48 +19,15 @@ const router = createBrowserRouter(
 );
 
 export default function GoLearn() {
-  return (
-    <div className="App">
-      <Header />
-      <Welcome />
-      <Signup />
-      <Login />
-    </div>
-  );
     return (
       <div className="App">
         <Header />
         <Welcome />
         <Signup />
+        <SignUpForm />
         <Login />
         <Header />
         <Courses />
-        <SignUpForm />
       </div>
-      // <Router>
-      //   <div className="App">
-      //     <Link>
-      //       <Route exact path="/">
-      //         <Home />
-      //       </Route>
-
-      //       <Route path="/signup">
-      //         <Signup />
-      //       </Route>
-
-      //       <Route path="/login">
-      //         <Login />
-      //       </Route>
-
-      //       <Route path="/header">
-      //         <Header />
-      //       </Route>
-
-      //       <Route path="/welcome">
-      //         <Welcome />
-      //       </Route>
-      //     </Link>
-      //   </div>
-      // </Router>
     );
 }
