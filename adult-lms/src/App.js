@@ -10,6 +10,7 @@ import "./App.css";
 import Login from "./Components/AdminLogin";
 import Welcome from "./component/welcome";
 import Header from "./component/welcomeheader";
+import LoginForm from "./StudentLogin/StudentLogin";
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Courses from './Courses/selectcourse';
 import SignUpForm from "./studentsignup/studentsignup";
@@ -19,6 +20,15 @@ const router = createBrowserRouter(
 );
 
 export default function GoLearn() {
+  return (
+    <div className="App">
+      <Header />
+      <Welcome />
+      <LoginForm />
+      <Signup />
+      <Login />
+    </div>
+  );
     return (
       <div className="App">
         <Header />
