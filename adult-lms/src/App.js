@@ -1,3 +1,9 @@
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
 import React from "react";
 import Signup from "./Components/AdminSignUp";
 import "./App.css";
@@ -8,8 +14,19 @@ import Header from "./component/welcomeheader";
 import Courses from './Courses/selectcourse';
 import SignUpForm from "./studentsignup/studentsignup";
 
+const router = createBrowserRouter(
+  createRoutesFromElements(<Route index element={<h1>Testing Routing</h1>} />)
+);
 
 export default function GoLearn() {
+  return (
+    <div className="App">
+      <Header />
+      <Welcome />
+      <Signup />
+      <Login />
+    </div>
+  );
     return (
       <div className="App">
         <Header />
