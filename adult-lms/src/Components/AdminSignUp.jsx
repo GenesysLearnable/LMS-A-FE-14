@@ -29,24 +29,30 @@ export default function Signup() {
   return (
     <div>
       <div className="container">
-        <div className="org-login">
+        <div className="org-signup">
           <h1 className="head-text">Sign up with your organization</h1>
           <div className="form">
-            <label htmlFor="input">ENTER YOUR ORGANIZATION URL</label>
+            <label className="admin-signup-label" htmlFor="input">
+              ENTER YOUR ORGANIZATION URL
+            </label>
             <input
               name="url"
               type="url"
               placeholder="e.g: company.com or company.org"
-              className="input-box"
+              className="admin-input-box"
               onChange={handleInput}
               value={url}
             />
           </div>
           {error && <p className="error-message">{error}</p>}
-          <button className="btn" onClick={handleOnClick} type="submit">
+          <button
+            className="admin-signup-btn"
+            onClick={handleOnClick}
+            type="submit"
+          >
             <a href="#">Continue</a>
           </button>
-          <p>
+          <p className="admin-signup-p">
             Back to <a href="#">Sign up</a>
           </p>
         </div>
@@ -54,8 +60,3 @@ export default function Signup() {
     </div>
   );
 }
-
-
-
-
-

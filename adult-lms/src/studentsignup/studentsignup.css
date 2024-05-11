@@ -1,6 +1,159 @@
-.student-form{
-    max-width: 100%;
-    width: 40rem;
-    height: 20rem;
+.student-signup-container{
+    background-color:rgba(248, 248, 253, 1);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(37, 50, 75, 1);
 }
 
+.student-signup-form{
+    background-color: rgba(255, 255, 255, 1);
+    padding: 2rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.std-signup-label-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 1rem;
+   
+}
+
+.std-signup-label1{
+    position: absolute;
+    top: -15%;
+    right: 82%;
+    z-index: 1;
+    background-color: white;
+    width: fit-content;
+    font-size: .6rem;
+}
+
+.std-signup-label2 {
+    position: absolute;
+    top: -15%;
+    right: 88%;
+    z-index: 1;
+    background-color: white;
+    width: fit-content;
+    font-size: .6rem;
+}
+
+.std-signup-input{
+    position: relative;
+    padding: .8rem 4rem;
+    /* width: 15rem; */
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.std-signup-input[type='text']:focus {
+    border-color: 2px solid rgba(10, 101, 204, 1);
+}
+
+.eye-icon{
+    position: relative;
+
+
+   
+}
+
+.std-inp-for-pawd{
+    padding: .8rem 4.85rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.std-inp-for-pawd::placeholder{
+    text-align: left;
+    font-size: .6rem;
+    position: absolute;
+    right: 72%;
+}
+
+.student-signup-forgot-pwd a{
+text-decoration: none;
+font-size: .8rem;
+}
+
+.std-signup-checked{
+    display: flex;
+}
+
+.std-signup-checked p{
+    font-size: .8rem;
+}
+
+/* .checked{
+    border: 4px solid gray;
+} */
+
+.student-signup-btn{
+    padding: .8rem 4.85rem;
+    /* width: 18rem; */
+    border: none;
+    background-color: rgba(10, 101, 204, 1);
+    cursor: pointer;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 1);
+    transition: transform 0.3s ease;
+}
+
+.student-signup-btn:hover{
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 0) rotate(0);
+    }
+
+    20% {
+        transform: translate(-10px, 0) rotate(-5deg);
+    }
+
+    40% {
+        transform: translate(10px, 0) rotate(5deg);
+    }
+
+    60% {
+        transform: translate(-10px, 0) rotate(-5deg);
+    }
+
+    80% {
+        transform: translate(10px, 0) rotate(5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+.std-signup-google{
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgb(236, 233, 233);
+    border-radius: 5px;
+    
+
+}
+
+.std-signup-p-link{
+    font-size: .8rem;
+
+}
+
+.std-signup-p-link a{
+    color: rgba(10, 101, 204, 1);
+    text-decoration: none;
+}
+
+.std-sign-org a{
+text-decoration: none;
+font-size: .8rem;
+}

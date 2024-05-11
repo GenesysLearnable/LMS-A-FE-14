@@ -1,68 +1,123 @@
-import React, { useState } from 'react';
-import './studentsignup.css';
-
-
-
+import React, { useState } from "react";
+import "./studentsignup.css";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { f1a0 } from "@fortawesome/free-solid-svg-icons";
+// import { faEye } from "@fortawesome/free-solid-svg-icons";
 
 export default function SignUpForm() {
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [checked, setChecked] = useState(false);
 
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      // Handle form submission here
+    const handleNameChange = (event) => {
+      setName(event.target.value);
     };
 
+    const handleEmailChange = (event) => {
+      setEmail(event.target.value);
+    };
+
+    const handlePasswordChange = (event) => {
+      setPassword(event.target.value);
+    };
+
+    const handleSubmit = (event) => {
+      event.preventDefault(); 
+
+      
+      if (!name.trim()) {
+        alert("Please enter your name.");
+        return;
+      }
+
+      if (!email.trim()) {
+        alert("Please enter your email.");
+        return;
+      }
+
+      if (!password.trim()) {
+        alert("Please enter a password.");
+        return;
+      }
+
+      console.log("Name:", name);
+      console.log("Email:", email);
+      console.log("Password:", password);
+
+      setName("");
+      setEmail("");
+      setPassword("");
+    };
+
+
+
   return (
-    <form className='student-form' onSubmit={handleSubmit}>
-      <label className="student-label" htmlFor="name">
-        Your Name
-      </label>
-      <input
-        className="student-input"
-        type="text"
-        id="name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
+    <div>
+      <div>
+        <div className="student-signup-container">
+          <form className="student-signup-form" onSubmit={handleSubmit}>
+            <h2>Sign up</h2>
+            <div className="std-signup-label-card">
+              <label className="std-signup-label1" htmlFor="text">
+                Your Name
+              </label>
+              <input
+                className="std-signup-input"
+                name="text"
+                typeof="text"
+                value={name}
+                onChange={handleNameChange}
+              ></input>
+            </div>
 
-      <label className="student-label1" htmlFor="email">
-        Email
-      </label>
-      <input
-        className="student-input"
-        type="email"
-        id="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
+            <div className="std-signup-label-card">
+              <label className="std-signup-label2" htmlFor="email">
+                Email
+              </label>
+              <input
+                className="std-signup-input"
+                name="text"
+                typeof="email"
+                value={email}
+                onChange={handleEmailChange}
+              ></input>
+            </div>
 
-      <label className="student-label2" htmlFor="password">
-        Create Password
-      </label>
-      <input
-        className="student-input"
-        type="password"
-        id="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-
-      <label className="student-label3" htmlFor="keepLoggedIn">
-        <input
-          className="student-input"
-          type="checkbox"
-          id="keepLoggedIn"
-          checked={checked}
-          onChange={(e) => setChecked(e.target.checked)}
-        />
-        Keep me logged in
-      </label>
-
-      <button className='student-btn' type="submit">Join for Free</button>
-    </form>
+            <div>
+              <input
+                className="std-inp-for-pawd"
+                name="text"
+                typeof="text"
+                placeholder="Create Password"
+                value={password}
+                onChange={handlePasswordChange}
+              ></input>
+              {/* <FontAwesomeIcon icon={faEye} className="eye-icon" /> */}
+            </div>
+            <p className="student-signup-forgot-pwd">
+              <a href="#">Forgot Password?</a>
+            </p>
+            <div className="std-signup-checked">
+              <input className="checked" type="checkbox"></input>
+              <p>Keep me logged in</p>
+            </div>
+            <button type="submit" className="student-signup-btn">Join for Free</button>
+            <p>-------------------------- or -----------------------</p>
+            <div className="std-signup-google">
+              <p>Continue with Google</p>
+              {/* <FontAwesomeIcon icon={f1a0} /> */}
+            </div>
+            <p className="std-signup-p-link">
+              Already on GoLearn? <a href="#">Log in</a>
+            </p>
+            <hr></hr>
+            <p className="std-sign-org">
+              <a href="#">Sign Up with your organization</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
   );
 }
