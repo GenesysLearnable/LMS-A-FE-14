@@ -67,10 +67,12 @@ function Courses() {
       </div>
       <div className="course-btn">
         <button className="course-btn-1">
-          <Link to="/skip">skip</Link>
+          <a href="#">Skip</a>
+          {/* <Link to="/skip">skip</Link> */}
         </button>
         <button className="couse-btn-2">
-          <Link to="/golearn">GoLearn!</Link>
+          <a href="#">GoLearn!</a>
+          {/* <Link to="/golearn">GoLearn!</Link> */}
         </button>
       </div>
     </div>

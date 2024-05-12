@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./StudentLogin.css";
+import googleImage from './images/plus.svg';
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { f1a0 } from "@fortawesome/free-solid-svg-icons";
 // import { faEye } from "@fortawesome/free-solid-svg-icons";
@@ -92,7 +93,8 @@ export default function LoginForm() {
               {/* <FontAwesomeIcon icon={f1a0} /> */}
             </div>
             <p className="std-login-p-link">
-              Need an account? <Link to="/signup">Create one</Link>
+              Need an account? <a href="#">Create one</a>
+              {/* Need an account? <Link to="/signup">Create one</Link> */}
             </p>
             <hr></hr>
             <p className="std-login-org">
