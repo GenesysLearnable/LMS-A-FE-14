@@ -1,5 +1,5 @@
-.student-signup-container{
-    background-color:rgba(248, 248, 253, 1);
+.student-signup-container {
+    background-color: rgba(248, 248, 253, 1);
     height: auto;
     display: flex;
     justify-content: center;
@@ -7,7 +7,7 @@
     color: rgba(37, 50, 75, 1);
 }
 
-.student-signup-form{
+.student-signup-form {
     background-color: rgba(255, 255, 255, 1);
     padding: 2rem;
     width: 20rem;
@@ -17,15 +17,15 @@
     align-items: left;
 }
 
-.std-signup-label-card{
+.std-signup-label-card {
     display: flex;
     flex-direction: column;
     position: relative;
     margin-bottom: 1rem;
-   
+
 }
 
-.std-signup-label1{
+.std-signup-label1 {
     position: absolute;
     top: -15%;
     right: 82%;
@@ -45,7 +45,7 @@
     font-size: .6rem;
 }
 
-.std-signup-input{
+.std-signup-input {
     position: relative;
     padding: .8rem 4rem;
     /* width: 15rem; */
@@ -57,36 +57,36 @@
     border-color: 2px solid rgba(10, 101, 204, 1);
 }
 
-.eye-icon{
+.eye-icon {
     position: relative;
 
 
-   
+
 }
 
-.std-inp-for-pawd{
+.std-inp-for-pawd {
     padding: .8rem 4.85rem;
     border: 1px solid gray;
     border-radius: 5px;
 }
 
-.std-inp-for-pawd::placeholder{
+.std-inp-for-pawd::placeholder {
     text-align: left;
     font-size: .6rem;
     position: absolute;
     right: 72%;
 }
 
-.student-signup-forgot-pwd a{
-text-decoration: none;
-font-size: .8rem;
+.student-signup-forgot-pwd a {
+    text-decoration: none;
+    font-size: .8rem;
 }
 
-.std-signup-checked{
+.std-signup-checked {
     display: flex;
 }
 
-.std-signup-checked p{
+.std-signup-checked p {
     font-size: .8rem;
 }
 
@@ -94,7 +94,7 @@ font-size: .8rem;
     border: 4px solid gray;
 } */
 
-.student-signup-btn{
+.student-signup-btn {
     padding: .8rem 4.85rem;
     /* width: 18rem; */
     border: none;
@@ -105,12 +105,12 @@ font-size: .8rem;
     transition: transform 0.3s ease;
 }
 
-.student-signup-btn a{
+.student-signup-btn a {
     text-decoration: none;
     color: (255, 255, 255, 1);
 }
 
-.student-signup-btn:hover{
+.student-signup-btn:hover {
     animation: shake 0.5s;
 }
 
@@ -140,25 +140,28 @@ font-size: .8rem;
     }
 }
 
-.std-signup-google{
+.std-signup-google {
     background-color: rgba(255, 255, 255, 1);
     border: 1px solid rgb(236, 233, 233);
     border-radius: 5px;
-    
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem;
+    font-size: .8rem;
 }
 
-.std-signup-p-link{
+.std-signup-p-link {
     font-size: .8rem;
 
 }
 
-.std-signup-p-link a{
+.std-signup-p-link a {
     color: rgba(10, 101, 204, 1);
     text-decoration: none;
 }
 
-.std-sign-org a{
-text-decoration: none;
-font-size: .8rem;
+.std-sign-org a {
+    text-decoration: none;
+    font-size: .8rem;
 }
