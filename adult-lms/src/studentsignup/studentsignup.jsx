@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./studentsignup.css";
 import { Link } from "react-router-dom";
-import googleImage from './images/plus.svg';
+// import googleImage from './images/plus.svg';
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { f1a0 } from "@fortawesome/free-solid-svg-icons";
 // import { faEye } from "@fortawesome/free-solid-svg-icons";
@@ -110,7 +110,7 @@ export default function SignUpForm() {
             <p>-------------------------- or ------------------------------</p>
             <div className="std-signup-google">
               <p>Continue with Google</p>
-              <img src={googleImage} alt="googleicon"></img>
+              {/* <img src={googleImage} alt="googleicon"></img> */}
               {/* <FontAwesomeIcon icon={f1a0} /> */}
             </div>
             <p className="std-signup-p-link">

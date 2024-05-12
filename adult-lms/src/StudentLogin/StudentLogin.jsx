@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./StudentLogin.css";
-import googleImage from './images/plus.svg';
+// import googleImage from './images/plus.svg';
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { f1a0 } from "@fortawesome/free-solid-svg-icons";
 // import { faEye } from "@fortawesome/free-solid-svg-icons";
