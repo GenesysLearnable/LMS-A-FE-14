@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./studentsignup.css";
+import { Link } from "react-router-dom";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { f1a0 } from "@fortawesome/free-solid-svg-icons";
 // import { faEye } from "@fortawesome/free-solid-svg-icons";
@@ -102,18 +103,20 @@ export default function SignUpForm() {
               <input className="checked" type="checkbox"></input>
               <p>Keep me logged in</p>
             </div>
-            <button type="submit" className="student-signup-btn">Join for Free</button>
-            <p>-------------------------- or -----------------------</p>
+            <button type="submit" className="student-signup-btn">
+              <Link to="/welcome">Join for Free</Link>
+            </button>
+            <p>-------------------------- or ------------------------------</p>
             <div className="std-signup-google">
               <p>Continue with Google</p>
               {/* <FontAwesomeIcon icon={f1a0} /> */}
             </div>
             <p className="std-signup-p-link">
-              Already on GoLearn? <a href="#">Log in</a>
+              Already on GoLearn? <Link to="/login">Login</Link>
             </p>
             <hr></hr>
             <p className="std-sign-org">
-              <a href="#">Sign Up with your organization</a>
+              <Link to="/signup">Sign up with your organization</Link>
             </p>
           </form>
         </div>

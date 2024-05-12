@@ -1,9 +1,10 @@
-import {
-  Route,
-  createBrowserRouter,
-  createRoutesFromElements,
-  RouterProvider,
-} from "react-router-dom";
+// import {
+//   Route,
+//   createBrowserRouter,
+//   createRoutesFromElements,
+//   RouterProvider,
+// } from "react-router-dom";
+
 import React from "react";
 import Signup from "./Components/AdminSignUp";
 import "./App.css";
@@ -15,29 +16,23 @@ import LoginForm from "./StudentLogin/StudentLogin";
 import Courses from './Courses/selectcourse';
 import SignUpForm from "./studentsignup/studentsignup";
 
-const router = createBrowserRouter(
-  createRoutesFromElements(<Route index element={<h1>Testing Routing</h1>} />)
-);
+// const router = createBrowserRouter(
+//   createRoutesFromElements(<Route index element={<h1>Testing Routing</h1>} />)
+// );
+
+
 
 export default function GoLearn() {
-  return (
-    <div className="App">
-      <Header />
-      <Welcome />
-      <LoginForm />
-      <Signup />
-      <Login />
-    </div>
-  );
+
     return (
       <div className="App">
-        <Header />
+        {/* <Header />
         <Welcome />
-        <Signup />
+        <Signup /> */}
         <SignUpForm />
-        <Login />
+        {/* <Login />
         <Header />
-        <Courses />
+        <Courses /> */}
       </div>
     );
 }

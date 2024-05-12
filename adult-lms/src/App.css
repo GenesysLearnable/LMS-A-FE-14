@@ -154,15 +154,20 @@ margin-right: 8rem;
 
 }
 
-/* .btn-1{     SOMETHING IS NOT RIGHT HERE!!!
+.course-btn-1{     
 color: var(--primary);
 background-color: rgba(255, 255, 255, 1);
 
-} */
+}
 
-.btn-2{
+.course-btn-2{
   color: var(--box);
   background-color: var(--primary);
+  border: none;
+}
+
+.course-btn-1, .course-btn-2 Link{
+  text-decoration: none;
 }
 
 

@@ -5,6 +5,7 @@ import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { faDesktop } from "@fortawesome/free-solid-svg-icons";
 import { faPen } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 
 function Welcome() {
@@ -18,7 +19,9 @@ function Welcome() {
         <ul>
           <li>
             <FontAwesomeIcon icon={faTractor} className="category-icon" />
-            <span>Agriculture</span>
+            <span>
+              <Link to="/agriculture">Agriculture</Link>
+            </span>
             <p>
               500 Courses available
               <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
@@ -26,7 +29,9 @@ function Welcome() {
           </li>
           <li>
             <FontAwesomeIcon icon={faPen} className="category-icon" />
-            <span>Art</span>
+            <span>
+              <Link to="/art">Art</Link>
+            </span>
             <p>
               700 Courses available
               <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
@@ -34,7 +39,9 @@ function Welcome() {
           </li>
           <li>
             <FontAwesomeIcon icon={faBriefcase} className="category-icon" />
-            <span>Business</span>
+            <span>
+              <Link to="/business">Business</Link>
+            </span>
             <p>
               743 Courses available
               <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
@@ -42,7 +49,9 @@ function Welcome() {
           </li>
           <li>
             <FontAwesomeIcon icon={faDesktop} className="category-icon" />
-            <span>Technology</span>
+            <span>
+              <Link to="/technology">Technology</Link>
+            </span>
             <p>
               480 Courses available
               <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />

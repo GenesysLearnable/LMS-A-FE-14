@@ -86,13 +86,13 @@ export default function LoginForm() {
             <button type="submit" className="student-login-btn">
               Login
             </button>
-            <p>------------------------------------ or ----------------------------------</p>
+            <p>-------------------------- or -----------------------------</p>
             <div className="std-login-google">
               <p>Continue with Google</p>
               {/* <FontAwesomeIcon icon={f1a0} /> */}
             </div>
             <p className="std-login-p-link">
-              Need an account? <a href="#">Create one</a>
+              Need an account? <Link to="/signup">Create one</Link>
             </p>
             <hr></hr>
             <p className="std-login-org">
