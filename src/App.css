@@ -1,0 +1,278 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color:  var(--bg);
+}
+
+:root {
+  --primary: #0a65cc;
+  --bg: #f3f3f3;
+  --box: #fff;
+  --text: #8f8f8f;
+}
+
+.header {
+  width: 100%;
+  height: 5rem;
+  margin: 2rem 0 0 0;
+}
+
+.header-position {
+  float: right;
+}
+
+.header-logo {
+  width: 11rem;
+  margin-right: 3rem;
+}
+
+.header-text {
+  color: var(--primary);
+  margin-left: 9rem;
+}
+
+.welcome-title{
+  margin-left: 3rem;
+}
+
+.welcome-title h1{
+  font-size: 2.9rem;
+  margin-bottom: .8rem;
+  line-height: 1;
+  letter-spacing: 1;
+  color: var(--primary);
+}
+
+.welcome-title span{
+  font-size: 1.3rem;
+}
+
+.welcome-title p{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 5rem 0 2rem 0;
+}
+
+.category-box ul{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-box ul li{
+  width: 20rem;
+  height: 13.5rem;
+  border: 1px solid #e4e1e1;
+  background-color: var(--box);
+  border-radius: 1rem;
+  margin-right: 3rem;
+}
+
+.category-box ul li .category-icon{
+  display: block;
+  font-size: 1rem;
+  height: 2rem;
+  margin: 3rem 0 2.5rem 2rem;
+  cursor: pointer;
+}
+
+.category-arrow{
+  margin: 0 0 0 1rem;
+}
+
+.category-box ul li span{
+  margin: 0 0 0 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.category-box ul li p{
+  margin: 1rem 0 0 2rem;
+  color:  var(--text);
+  cursor: pointer;
+}
+
+.category-box ul li:hover{
+  background-color: var(--primary);
+  color: #fff;
+  transform: scale(1.067);
+  transition: all .6s ease-in-out;
+  cursor: pointer;
+}
+.category-box ul li:hover p{
+  color: #fff;
+  transition: all .6s ease-in-out;
+}
+
+
+/* select courses starts here! */
+.course-container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 100%;
+  width: 100vw;
+  margin: 2rem 4rem 2rem 4rem;
+}
+.c1, .c2, .c3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+p.course-text:hover{
+background-color: #8f8f8f;
+}
+
+.course-title{
+ margin-right: 3rem;
+}
+
+p.course-text{
+  font-size: .8rem;
+  border: none;
+  padding: .4rem;
+  color: rgba(8, 33, 51, 1);
+  background-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  border-radius: 2px;
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.course-btn{
+display: flex;
+justify-content: end;
+gap: .8rem;
+margin-right: 8rem;
+
+}
+
+.course-btn-1{     
+color: var(--primary);
+background-color: rgba(255, 255, 255, 1);
+
+}
+
+.course-btn-2{
+  color: var(--box);
+  background-color: var(--primary);
+  border: none;
+}
+
+.course-btn-1, .course-btn-2 Link{
+  text-decoration: none;
+}
+
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 450px) {
+  .header{
+    width: 100%;
+    height: 5rem;
+  }
+  .header-logo{
+    width: 6rem;
+    margin-left: 5rem;
+  }
+  .header-text{
+    margin-left: 7rem;
+  }
+  .welcome-title{
+    margin-left: 2rem;
+  }
+  .welcome-title h1{
+    font-size: 2rem;
+  }
+  .welcome-title span{
+    font-size: 1.2rem;
+  }
+  .welcome-title p{
+    font-size: 1.2rem;
+    margin-left: 7rem;
+  }
+
+
+  .category-box ul{
+    display: block;
+    justify-content: center;
+  }
+  .category-box ul li{
+  width: 15rem;
+  height: 13.5rem;
+  margin-left: 3.5rem;
+  margin-bottom: 1.5rem
+}
+
+.category-box .category-icon{
+  height: 1rem;
+}
+.category-box span{
+  font-size: 1.5rem;
+}
+.category-box p{
+  font-size: 1rem;
+}
+}
+
+@media screen and (max-width: 376px) {
+  .header{
+    width: 100%;
+    height: 5rem;
+  }
+  .header-logo{
+    width: 6rem;
+    margin-left: 5rem;
+  }
+  .header-text{
+    margin-left: 7rem;
+  }
+  .welcome-title{
+    margin-left: 2rem;
+  }
+  .welcome-title h1{
+    font-size: 2rem;
+  }
+  .welcome-title span{
+    font-size: 1.2rem;
+  }
+  .welcome-title p{
+    font-size: 1.2rem;
+    margin-left: 4rem;
+  }
+
+
+  .category-box ul{
+    display: block;
+    justify-content: center;
+  }
+  .category-box ul li{
+  width: 15rem;
+  height: 13.5rem;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem
+}
+
+.category-box .category-icon{
+  height: 1rem;
+}
+.category-box span{
+  font-size: 1.5rem;
+}
+.category-box p{
+  font-size: 1rem;
+}
+}
+
+@media screen and (max-width: 770px) {
+  .category-box ul li{
+    width: 15rem;
+    margin-right: 1rem;
+  }
+}
