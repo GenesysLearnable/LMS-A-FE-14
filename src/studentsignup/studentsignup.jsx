@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import "./studentsignup.css";
 import { Link } from "react-router-dom";
-// import googleImage from './images/plus.svg';
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { f1a0 } from "@fortawesome/free-solid-svg-icons";
-// import { faEye } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function SignUpForm() {
 

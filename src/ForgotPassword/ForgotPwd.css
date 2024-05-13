@@ -47,8 +47,7 @@
 .forgot-form {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
-    position: relative;
+    
 
 }
 
@@ -61,16 +60,6 @@
 
 .forgot-input-field::placeholder{
     font-size: .6rem;
-}
-
-.forgot-label {
-    color: rgba(28, 27, 31, 1);
-    font-size: .8rem;
-    position: absolute;
-    top:-25%;
-    right: 85%;
-    background-color: white;
-    width: fit-content;
 }
 
 .forgot-btn1 {
@@ -127,10 +116,8 @@
 
 .container-with-image {
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     height: 31.5rem;
-    width: 45.1rem;
+    width: 40rem;
     border: 1px solid rgb(219, 218, 218);
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -148,15 +135,9 @@
     background-color: rgba(255, 255, 255, 1);
 }
 
-.forgot-background {
-    width: 25rem;
-    height: 31.66rem;
-}
-
 .forgot-background2 {
-    width: 18rem;
-    height: 25rem;
-    position: relative;
-    top: 10%;
-    right: 45%;
+    width: 20rem;
+    height: 28rem;
+    margin-top: 2rem;
+    margin-right: 1rem;
 }
