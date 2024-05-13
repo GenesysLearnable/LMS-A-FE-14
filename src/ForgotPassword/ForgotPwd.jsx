@@ -29,7 +29,7 @@ export default function ForgotPwd() {
             </p>
           </div>
           <div className="forgot-form">
-            <label className="forgot-label" htmlFor="">
+            <label className="forgot-label" htmlFor="email">
               Email
             </label>
             <input
