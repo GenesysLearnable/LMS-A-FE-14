@@ -2,7 +2,6 @@ import React from "react";
 import logo from "../images/golearn-logo.png";
 import backarrow from "../images/chevron_back.svg";
 import googleicon from "../images/googleicon.svg";
-import BGimage from "../images/SideBGcolored.svg";
 import './ForgotPwd.css';
 import forgotpwdimage from '../images/forgpwdimage.png';
 
@@ -29,9 +28,6 @@ export default function ForgotPwd() {
             </p>
           </div>
           <div className="forgot-form">
-            <label className="forgot-label" htmlFor="email">
-              Email
-            </label>
             <input
               className="forgot-input-field"
               name="email"
@@ -52,7 +48,6 @@ export default function ForgotPwd() {
             <img className="forgot-google" src={googleicon} alt="google" />
           </div>
         </div>
-        <img className="forgot-background" src={BGimage} alt="background" />
         <img
           className="forgot-background2"
           src={forgotpwdimage}

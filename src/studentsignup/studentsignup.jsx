@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./studentsignup.css";
 import Background from "../component/background";
 import { Link } from "react-router-dom";
+
 import "../App.css"
 // import googleImage from './images/plus.svg';
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
