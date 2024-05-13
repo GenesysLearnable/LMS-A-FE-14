@@ -19,6 +19,7 @@ import AgricDropdown from "./Dropdown/AgricDropdown";
 import ArtDropdown from "./Dropdown/ArtDropdown";
 import BusinessDropdonwn from "./Dropdown/BusinessDropdown";
 import TechnologyDropdown from "./Dropdown/TechnologyDropdown";
+import ForgotPwd from "./ForgotPassword/ForgotPwd";
 
 // const router = createBrowserRouter(
 //   createRoutesFromElements(<Route index element={<h1>Testing Routing</h1>} />)
@@ -41,6 +42,7 @@ export default function GoLearn() {
         <ArtDropdown />
         <BusinessDropdonwn />
         <TechnologyDropdown />
+        <ForgotPwd />
       </div>
     );
 }
