@@ -1,22 +1,29 @@
-import React from 'react'
+import React from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import "./technologyDropdown.css";
 
 export default function TechnologyDropdown() {
   return (
     <div>
-      <div>
+      <div className="tech-dropdown-container">
         <ul>
-          <li>
+          <span>
             <p>Data Science</p>
-          </li>
-          <li>
+            <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
+          </span>
+          <span>
             <p>Information/Cyber Security</p>
-          </li>
-          <li>
+            <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
+          </span>
+          <span>
             <p>Product Management</p>
-          </li>
-          <li>
+            <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
+          </span>
+          <span>
             <p>Software Programming</p>
-          </li>
+            <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
+          </span>
         </ul>
       </div>
     </div>

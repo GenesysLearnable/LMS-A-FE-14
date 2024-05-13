@@ -15,6 +15,10 @@ import LoginForm from "./StudentLogin/StudentLogin";
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Courses from './Courses/selectcourse';
 import SignUpForm from "./studentsignup/studentsignup";
+import AgricDropdown from "./Dropdown/AgricDropdown";
+import ArtDropdown from "./Dropdown/ArtDropdown";
+import BusinessDropdonwn from "./Dropdown/BusinessDropdown";
+import TechnologyDropdown from "./Dropdown/TechnologyDropdown";
 
 // const router = createBrowserRouter(
 //   createRoutesFromElements(<Route index element={<h1>Testing Routing</h1>} />)
@@ -33,6 +37,10 @@ export default function GoLearn() {
         {/* <Login />
         <Header />
         <Courses /> */}
+        <AgricDropdown />
+        <ArtDropdown />
+        <BusinessDropdonwn />
+        <TechnologyDropdown />
       </div>
     );
 }

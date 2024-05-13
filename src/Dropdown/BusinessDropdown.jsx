@@ -1,26 +1,34 @@
-import React from 'react'
+import React from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import "./businessDropdown.css";
 
 export default function BusinessDropdown() {
   return (
     <div>
       <div>
-        <div>
+        <div className="business-dropdown-container">
           <ul>
-            <li>
+            <span>
               <p>Accounting</p>
-            </li>
-            <li>
+              <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
+            </span>
+            <span>
               <p>Business Analytics</p>
-            </li>
-            <li>
+              <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
+            </span>
+            <span>
               <p>Business Management</p>
-            </li>
-            <li>
+              <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
+            </span>
+            <span>
               <p>E-Commerce</p>
-            </li>
-            <li>
+              <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
+            </span>
+            <span>
               <p>Economics</p>
-            </li>
+              <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
+            </span>
           </ul>
         </div>
       </div>
