@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from "./App";
 import reportWebVitals from './reportWebVitals';
-// import { RouterProvider } from 'react-router-dom';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Welcome from './component/welcome';
 import LoginForm from './StudentLogin/StudentLogin';
