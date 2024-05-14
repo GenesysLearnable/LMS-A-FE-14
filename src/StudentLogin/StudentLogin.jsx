@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./StudentLogin.css";
 import Background from "../component/background";
 import { Link } from "react-router-dom";
+import googleicon from '../images/googleicon.svg';
+import axios from 'axios';
 import "../App.css"
 // import googleImage from './images/plus.svg';
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,10 +11,27 @@ import "../App.css"
 // import { faEye } from "@fortawesome/free-solid-svg-icons";
 
 export default function LoginForm() {
-  const [name, setName] = useState("");
+  // const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+
+  const handleLogin = async (email, password) => {
+    try {
+      const response = await axios.post(
+        "https://lms-a-be-14-z0ct.onrender.com/login",
+        { email, password },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log(response);
+    } catch (error) {
+      console.error('Login failed:', error.response.data.message);
+  }
+}
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -21,14 +40,31 @@ export default function LoginForm() {
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
   };
+  const handleGoogle = async (event) => {
+        try {
+      const response = await axios.get(
+        "https://lms-a-be-14-z0ct.onrender.com/google",
+        // { email, password },
+        // {
+        //   headers: {
+        //     "Content-Type": "application/json",
+        //   },
+        // }
+      );
+      console.log(response);
+    } catch (error) {
+      console.error('Login failed:', error.response.data.message);
+  }
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (!name.trim()) {
-      alert("Please enter your name.");
-      return;
-    }
+
+    // if (!name.trim()) {
+    //   alert("Please enter your name.");
+    //   return;
+    // }
 
     if (!email.trim()) {
       alert("Please enter your email.");
@@ -40,11 +76,13 @@ export default function LoginForm() {
       return;
     }
 
-    console.log("Name:", name);
+
+    // console.log("Name:", name);
     console.log("Email:", email);
     console.log("Password:", password);
+    const res = handleLogin(email, password);
 
-    setName("");
+    // setName("");
     setEmail("");
     setPassword("");
   };
@@ -88,15 +126,16 @@ export default function LoginForm() {
                 <input className="checked-login" type="checkbox"></input>
                 <p>Keep me logged in</p>
               </div>
-              <button type="submit" className="student-login-btn">
+              <button type="submit" className="student-login-btn" onClick={handleSubmit}>
                 Login
               </button>
               <p className="dash">
-                ---------- or ----------
+                ------------------ or ------------------
               </p>
-              <div className="std-login-google">
+              <div className="std-login-google" onClick={handleGoogle}>
                 <p>Continue with Google</p>
-                {/* <FontAwesomeIcon icon={f1a0} /> */}
+                <img src={googleicon} alt="google icon" />
+                
               </div>
               <p className="std-login-p-link">
                 Need an account? <Link to="/studentsignup">Create one</Link>

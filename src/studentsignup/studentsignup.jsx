@@ -2,60 +2,79 @@ import React, { useState } from "react";
 import "./studentsignup.css";
 import Background from "../component/background";
 import { Link } from "react-router-dom";
-
-import "../App.css"
+import googleicon from "../images/googleicon.svg";
+import axios from "axios";
+import "../App.css";
 // import googleImage from './images/plus.svg';
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { f1a0 } from "@fortawesome/free-solid-svg-icons";
 // import { faEye } from "@fortawesome/free-solid-svg-icons";
 
 export default function SignUpForm() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+  // SETUP FOR API AUTHENTICATION!!!
+  const handleSignup = async (username, email, password) => {
+    try {
+      const response = await axios.post(
+        "https://lms-a-be-14-z0ct.onrender.com/signup",
+        { username, email, password },
+       { headers: {
+                'Content-Type': 'application/json'
+            }}
+      );
+      console.log(response.data);
+      return true;
+    } catch (error) {
+      console.error("Signup failed:", error.response.data.message);
+    }
+  };
 
-    const handleNameChange = (event) => {
-      setName(event.target.value);
-    };
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+  };
 
-    const handleEmailChange = (event) => {
-      setEmail(event.target.value);
-    };
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
 
-    const handlePasswordChange = (event) => {
-      setPassword(event.target.value);
-    };
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  };
 
-    const handleSubmit = (event) => {
-      event.preventDefault(); 
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-      
-      if (!name.trim()) {
-        alert("Please enter your name.");
-        return;
-      }
+    if (!name.trim()) {
+      alert("Please enter your name.");
+      return;
+    }
 
-      if (!email.trim()) {
-        alert("Please enter your email.");
-        return;
-      }
+    if (!email.trim()) {
+      alert("Please enter your email.");
+      return;
+    }
 
-      if (!password.trim()) {
-        alert("Please enter a password.");
-        return;
-      }
+    if (!password.trim()) {
+      alert("Please enter a password.");
+      return;
+    }
 
-      console.log("Name:", name);
-      console.log("Email:", email);
-      console.log("Password:", password);
+    console.log("Name:", name);
+    console.log("Email:", email);
+    console.log("Password:", password);
 
-      setName("");
-      setEmail("");
-      setPassword("");
-    };
+    const success = handleSignup(name, email, password).then(() => {
+      console.log('database accessed');
+    });
+    console.log('Signup successful:' + success);
 
-
+    setName("");
+    setEmail("");
+    setPassword("");
+  };
 
   return (
     <div>
@@ -108,16 +127,18 @@ export default function SignUpForm() {
                 <input className="checked" type="checkbox"></input>
                 <p>Keep me logged in</p>
               </div>
-              <button type="submit" className="student-signup-btn">
-                <Link to="/welcome">Join for Free</Link>
+              <button
+                type="submit"
+                className="student-signup-btn"
+                onClick={handleSubmit}
+              >
+                <a href="#">Join for Free</a>
+                {/* <Link to="/welcome">Join for Free</Link> */}
               </button>
-              <p className="dash">
-                ---------- or ----------
-              </p>
+              <p className="dash">------------------ or ------------------</p>
               <div className="std-signup-google">
                 <p>Continue with Google</p>
-                {/* <img src={googleImage} alt="googleicon"></img> */}
-                {/* <FontAwesomeIcon icon={f1a0} /> */}
+                <img src={googleicon} alt="google icon" />
               </div>
               <p className="std-signup-p-link">
                 Already on GoLearn? <Link to="/login">Login</Link>
