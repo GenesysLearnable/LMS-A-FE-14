@@ -24,15 +24,15 @@ export default function GoLearn() {
         {/* <Header />
         <Welcome />
         <Signup /> */}
-        <SignUpForm />
+        {/* <SignUpForm /> */}
         {/* <Login />
         <Header />
         <Courses /> */}
-        <AgricDropdown />
+        {/* <AgricDropdown />
         <ArtDropdown />
         <BusinessDropdonwn />
         <TechnologyDropdown />
-        <ForgotPwd />
+        <ForgotPwd /> */}
       </div>
     );
 }

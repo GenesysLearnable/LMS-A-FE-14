@@ -47,33 +47,33 @@ export default function SignUpForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (!name.trim()) {
-      alert("Please enter your name.");
-      return;
-    }
+    // if (!name.trim()) {
+    //   alert("Please enter your name.");
+    //   return;
+    // }
 
-    if (!email.trim()) {
-      alert("Please enter your email.");
-      return;
-    }
+    // if (!email.trim()) {
+    //   alert("Please enter your email.");
+    //   return;
+    // }
 
-    if (!password.trim()) {
-      alert("Please enter a password.");
-      return;
-    }
+    // if (!password.trim()) {
+    //   alert("Please enter a password.");
+    //   return;
+    // }
 
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Password:", password);
+    // console.log("Name:", name);
+    // console.log("Email:", email);
+    // console.log("Password:", password);
 
     const success = handleSignup(name, email, password).then(() => {
       console.log('database accessed');
     });
     console.log('Signup successful:' + success);
 
-    setName("");
-    setEmail("");
-    setPassword("");
+    // setName("");
+    // setEmail("");
+    // setPassword("");
   };
 
   return (
@@ -132,8 +132,8 @@ export default function SignUpForm() {
                 className="student-signup-btn"
                 onClick={handleSubmit}
               >
-                <a href="#">Join for Free</a>
-                {/* <Link to="/welcome">Join for Free</Link> */}
+                {/* <a href="#">Join for Free</a> */}
+                <Link to="/welcome">Join for Free</Link>
               </button>
               <p className="dash">------------------ or ------------------</p>
               <div className="std-signup-google">

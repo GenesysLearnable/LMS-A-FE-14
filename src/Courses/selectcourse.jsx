@@ -1,4 +1,6 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTractor } from "@fortawesome/free-solid-svg-icons";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
@@ -10,29 +12,29 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 function Courses() {
   return (
     <div className="course-container">
-      <p>Select Course</p>
+      <p className="course-header-text">Select Course</p>
       <div className="course-cat">
         <div className="course-title">
-          <div className="c1">
+          <div className="c11">
             <p className="course-text">
               Application Development
               <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
             </p>
 
             <p className="course-text">
-              Cloud Computing
+              Design
               <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
             </p>
 
             <p className="course-text">
-              Data Science
+              Website Design/Engineer
               <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
             </p>
           </div>
 
-          <div className="c2">
+          <div className="c22">
             <p className="course-text">
-              Design
+              Cloud Computing
               <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
             </p>
 
@@ -42,19 +44,19 @@ function Courses() {
             </p>
 
             <p className="course-text">
-              Information/Cyber Security
+              Product Management
               <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
             </p>
           </div>
 
-          <div className="c3">
+          <div className="c33">
             <p className="course-text">
-              Website Design/Engineer
+              Data Science
               <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
             </p>
 
             <p className="course-text">
-              Product Management
+              Information/Cyber Security
               <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
             </p>
 
@@ -67,12 +69,10 @@ function Courses() {
       </div>
       <div className="course-btn">
         <button className="course-btn-1">
-          <a href="#">Skip</a>
-          {/* <Link to="/skip">skip</Link> */}
+          <Link to="/skip" className="course-link-btn">skip</Link>
         </button>
         <button className="couse-btn-2">
-          <a href="#">GoLearn!</a>
-          {/* <Link to="/golearn">GoLearn!</Link> */}
+          <Link to="/golearn" className="course-link-btn2">GoLearn!</Link>
         </button>
       </div>
     </div>
