@@ -9,6 +9,7 @@ import ArtDropdown from "./Dropdown/ArtDropdown";
 import BusinessDropdonwn from "./Dropdown/BusinessDropdown";
 import TechnologyDropdown from "./Dropdown/TechnologyDropdown";
 import ForgotPwd from "./ForgotPassword/ForgotPwd";
+import VerifyPwd from "./ForgotPassword/VerifyPwd";
 
 // const router = createBrowserRouter(
 //   createRoutesFromElements(<Route index element={<h1>Testing Routing</h1>} />)
@@ -23,16 +24,17 @@ export default function GoLearn() {
         <LoginForm />
         {/* <Header />
         <Welcome />
-        <Signup /> */}
-        {/* <SignUpForm /> */}
-        {/* <Login />
+        <Signup />
+        <SignUpForm />
+        <Login />
         <Header />
-        <Courses /> */}
-        {/* <AgricDropdown />
+        <Courses />
+        <AgricDropdown />
         <ArtDropdown />
         <BusinessDropdonwn />
-        <TechnologyDropdown />
-        <ForgotPwd /> */}
+        <TechnologyDropdown /> */}
+        <ForgotPwd />
+        <VerifyPwd />
       </div>
     );
 }
