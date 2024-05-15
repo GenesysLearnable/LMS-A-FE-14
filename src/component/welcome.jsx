@@ -1,10 +1,12 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTractor } from "@fortawesome/free-solid-svg-icons";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
-import { faDesktop } from "@fortawesome/free-solid-svg-icons";
-import { faPen } from "@fortawesome/free-solid-svg-icons";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faTractor,
+  faBriefcase,
+  faDesktop,
+  faPen,
+  faArrowRight
+} from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 

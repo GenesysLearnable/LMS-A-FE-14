@@ -15,6 +15,7 @@ import LoginForm from "./StudentLogin/StudentLogin";
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Courses from './Courses/selectcourse';
 import SignUpForm from "./studentsignup/studentsignup";
+import Navbar from "./component/navbar";
 
 // const router = createBrowserRouter(
 //   createRoutesFromElements(<Route index element={<h1>Testing Routing</h1>} />)
@@ -29,7 +30,8 @@ export default function GoLearn() {
         {/* <Header />
         <Welcome />
         <Signup /> */}
-        <SignUpForm />
+        <Navbar />
+        {/*<SignUpForm />*/}
         {/* <Login />
         <Header />
         <Courses /> */}

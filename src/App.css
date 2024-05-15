@@ -12,6 +12,103 @@ body {
   --text: #8f8f8f;
 }
 
+/*Navbar*/
+.navbar-container{
+  width: 100%;
+  background: #e4e1e1;
+}
+
+.navbar{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background: #e4e1e1;
+  padding-top: 1rem;
+}
+
+.navbar-logo {
+  cursor: pointer;
+  margin-left: 2.8rem;
+  width: 150px;
+}
+
+.navbar-links ul{
+  list-style: none;
+  border-bottom: 1px solid #cecbcb;
+  background: #e4e1e1;
+}
+
+.navbar-links ul li{
+  display: inline-block;
+  margin: .5rem 1rem 0 .5rem;
+  color: #818080;
+  font-size: 1.1rem;
+  border: 3px solid transparent;
+  cursor: pointer;
+  padding-bottom: .6rem;
+}
+
+.navbar-links ul .active{
+  color: #000;
+  border-bottom: 3px solid #0a65cc;
+}
+
+.navbar-links ul li:hover{
+  border-bottom: 3px solid #0a65cc;
+}
+
+.nav-text {
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  color: #0a65cc;
+
+}
+
+.search-box{
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem 1rem 1.7rem;
+}
+
+.search-box input{
+  background: #fff;
+  outline: 0;
+  border: 1px solid #cecbcb;
+  border-radius: 2rem;
+  font-size: 1rem;
+  padding: .8rem;
+  width: 700px;
+}
+
+.search-icon{
+  color: #818080;
+}
+
+.search-box input::placeholder{
+  padding-left: 2.5rem;
+  color: #8f8f8f;
+}
+
+.search-box .search-icon{
+  position: absolute;
+  width: 20px;
+  cursor: pointer;
+  padding-left: 1rem;
+}
+
+.nav-text-link{
+  font-size: 1.2rem;
+  color: #818080;
+  padding-left: 1.5rem;
+}
+
+.notification-icon,
+.user-icon{
+  margin-left: 2rem;
+  color: #818080;
+  height: 25px;
+}
+/*Welcome*/
 .header {
   width: 100%;
   height: 5rem;
@@ -31,6 +128,7 @@ body {
   color: var(--primary);
   margin-left: 9rem;
 }
+
 
 .welcome-title{
   margin-left: 3rem;
