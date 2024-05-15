@@ -4,6 +4,7 @@ import LoginForm from "./StudentLogin/StudentLogin";
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Courses from './Courses/selectcourse';
 import SignUpForm from "./studentsignup/studentsignup";
+import Navbar from "./component/navbar";
 import AgricDropdown from "./Dropdown/AgricDropdown";
 import ArtDropdown from "./Dropdown/ArtDropdown";
 import BusinessDropdonwn from "./Dropdown/BusinessDropdown";
@@ -24,6 +25,10 @@ export default function GoLearn() {
         <LoginForm />
         {/* <Header />
         <Welcome />
+        <Signup /> */}
+        <Navbar />
+        {/*<SignUpForm />*/}
+        {/* <Login />
         <Signup />
         <SignUpForm />
         <Login />
