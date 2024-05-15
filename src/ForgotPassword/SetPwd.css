@@ -1,21 +1,20 @@
-.forgot-container {
+.set-container {
     display: flex;
     flex-direction: column;
-    height: fit-content;
     padding: 0 1rem;
+    height: fit-content;
     margin-top: 2rem;
     margin-left: 1rem;
-
 }
 
-.forgot-logo {
+.set-logo {
     width: 60px;
     margin-bottom: 2rem;
 }
 
-.forgot-nav-head {
-    display: flex;
+.set-nav-head {
     font-size: .7rem;
+    display: flex;
     align-items: center;
     gap: .2rem;
     border: none;
@@ -24,50 +23,67 @@
     padding: 0;
 }
 
-.forgot-nav-head span a {
+.set-nav-head span a {
     color: rgba(49, 49, 49, 1);
     text-decoration: none;
 }
 
-.forgot-arrow {
+.set-arrow {
     width: 15px;
 }
 
-.forgot-head {
+.set-head {
     display: flex;
     flex-direction: column;
     width: fit-content;
 }
 
-.forgot-head-text {
+.set-head-text {
     width: fit-content;
-    margin: 0rem;
+    margin: 0;
 }
 
-.forgot-paragraph {
+.set-paragraph {
     font-size: .6rem;
-    width: 18rem;
     color: rgba(49, 49, 49, 1);
 }
 
-.forgot-form {
+.set-form {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
-.forgot-input-field {
+.set-input-field {
     width: 17.2rem;
     padding: .4rem;
     border: 1px solid rgb(215, 212, 212);
     border-radius: 5px;
-    margin-bottom: .4rem;
 }
 
-.forgot-input-field::placeholder {
+.set-input-field::placeholder {
     font-size: .6rem;
 }
 
-.forgot-btn1 {
+.seteye {
+    width: 20px;
+    position: absolute;
+    top: 30%;
+    right: -1%;
+    transform: translate(-50%);
+    pointer-events: none;
+}
+
+.set-resend-code {
+    font-size: .6rem;
+}
+
+.set-resend-code a {
+    text-decoration: none;
+    color: rgba(255, 134, 130, 1);
+}
+
+.set-btn1 {
     background-color: rgba(10, 101, 204, 1);
     color: rgba(248, 248, 253, 1);
     width: 18rem;
@@ -77,66 +93,13 @@
     cursor: pointer;
 }
 
-.forgot-btn1:hover {
-    background-color: rgba(248, 248, 253, 1);
+.set-btn1:hover {
+    background-color: #fff;
     color: rgba(10, 101, 204, 1);
     border: 1px solid rgba(10, 101, 204, 1);
 }
 
-.horizontal-line {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 17.5rem;
-}
-
-.line {
-    flex: 1;
-    height: 1px;
-    background-color: rgb(232, 232, 232);
-}
-
-.horizontal-line p {
-    padding: 5px;
-    color: rgb(188, 187, 187);
-    font-size: .6rem;
-}
-
-.forgot-btn2 {
-    background-color: rgba(255, 255, 255, 1);
-    color: rgba(37, 50, 75, 1);
-    width: 17rem;
-    height: 1.6rem;
-    border: 1px solid rgb(222, 217, 217);
-    border-radius: 5px;
-    padding: .2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .8rem;
-    cursor: pointer;
-}
-
-.forgot-btn2:hover {
-    background-color: rgba(10, 101, 204, 1);
-    color: rgb(222, 217, 217);
-}
-
-.forgot-btn2 p {
-    font-size: .7rem;
-    font-weight: bolder;
-}
-
-.forgot-google {
-    width: 15px;
-}
-
-.forgot-btn2 .forgot-google:hover {
-    background-color: rgb(222, 217, 217);
-}
-
-.container-with-image {
+.set-container-with-image {
     display: flex;
     padding-bottom: 1rem;
     width: 40rem;
@@ -146,7 +109,7 @@
     background-color: rgba(255, 255, 255, 1);
 }
 
-.forget-all-container {
+.set-all-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -156,9 +119,9 @@
     background-color: rgba(255, 255, 255, 1);
 }
 
-.forgot-background2 {
+.set-background2 {
     width: 16rem;
-    height: 15.2rem;
+    height: 18rem;
     margin-top: 6rem;
     margin-right: 2rem;
 }
