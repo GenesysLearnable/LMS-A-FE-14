@@ -11,7 +11,8 @@ import BusinessDropdonwn from "./Dropdown/BusinessDropdown";
 import TechnologyDropdown from "./Dropdown/TechnologyDropdown";
 import ForgotPwd from "./ForgotPassword/ForgotPwd";
 import VerifyPwd from "./ForgotPassword/VerifyPwd";
-import SetPwd  from "./ForgotPassword/SetPwd";
+import SetPwd from "./ForgotPassword/SetPwd";
+import StudentSavedCourse from "./StudentScreens/StudentSavedCourse";
 
 // const router = createBrowserRouter(
 //   createRoutesFromElements(<Route index element={<h1>Testing Routing</h1>} />)
@@ -42,6 +43,7 @@ export default function GoLearn() {
         <ForgotPwd />
         <VerifyPwd />
         <SetPwd />
+        <StudentSavedCourse />
       </div>
     );
 }
