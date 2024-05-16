@@ -13,6 +13,8 @@ import ForgotPwd from "./ForgotPassword/ForgotPwd";
 import VerifyPwd from "./ForgotPassword/VerifyPwd";
 import SetPwd from "./ForgotPassword/SetPwd";
 import StudentSavedCourse from "./StudentScreens/StudentSavedCourse";
+import Footer from "./StudentScreens/Footer";
+import StudentReminder from "./StudentScreens/StudentReminder"
 
 // const router = createBrowserRouter(
 //   createRoutesFromElements(<Route index element={<h1>Testing Routing</h1>} />)
@@ -29,6 +31,7 @@ export default function GoLearn() {
         <Welcome />
         <Signup /> */}
         <Navbar />
+        <Footer />
         {/*<SignUpForm />*/}
         {/* <Login />
         <Signup />
@@ -44,6 +47,7 @@ export default function GoLearn() {
         <VerifyPwd />
         <SetPwd />
         <StudentSavedCourse />
+        <StudentReminder />
       </div>
     );
 }
