@@ -15,6 +15,7 @@ import SetPwd from "./ForgotPassword/SetPwd";
 import StudentSavedCourse from "./StudentScreens/StudentSavedCourse";
 import Footer from "./StudentScreens/Footer";
 import StudentReminder from "./StudentScreens/StudentReminder"
+import StudentCart from "./StudentScreens/StudentCart";
 
 // const router = createBrowserRouter(
 //   createRoutesFromElements(<Route index element={<h1>Testing Routing</h1>} />)
@@ -48,6 +49,7 @@ export default function GoLearn() {
         <SetPwd />
         <StudentSavedCourse />
         <StudentReminder />
+        <StudentCart />
       </div>
     );
 }

@@ -165,6 +165,122 @@ h3 {
     align-items: start;
 }
 
-.saved-general-container{
+.saved-general-container {
     border-radius: 10px;
+}
+
+
+/* FOR STUDENT NOTIFICATION PLEASE!!! */
+.reminder-container {
+    margin: 0;
+    padding: 3rem;
+    margin-bottom: 5rem;
+}
+
+.reminder-container h3 {
+    color: rgba(2, 20, 41, 1);
+    font-size: .7rem;
+}
+
+.reminder-container p {
+    font-size: .7rem;
+    width: 700px;
+    line-height: 1.6;
+}
+
+.reminder-download-container {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.reminder-store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+    padding: .2rem 1.5rem;
+    background-color: rgba(2, 20, 41, 1);
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.reminder-store img {
+    width: 30px;
+    height: 30px;
+}
+
+.reminder-btn{
+    padding: 1rem;
+    color: rgba(10, 101, 204, 1);
+    font-size: .7rem;
+    font-weight: bolder;
+    border: 1px solid rgba(10, 101, 204, 1);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.reminder-downloader {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.reminder-downloader p {
+    width: fit-content;
+
+}
+
+.reminder-downloader span {
+    font-size: 1.6rem;
+}
+
+.reminder-store-name {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+
+
+    /* FOR STUDENT CART SCREEN */
+.cart-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem 1rem 2rem 1rem;
+    padding: 0 2rem;
+    color: rgba(10, 101, 204, 1);
+    font-weight: bold;
+}
+
+.cart-card{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.cart-image{
+width: 150px;
+}
+
+.cart-btn{
+color: rgba(10, 101, 204, 1);
+padding: .6rem 1.2rem;
+border: 1px solid rgba(10, 101, 204, 1);
+border-radius: 3px;
+cursor: pointer;
+font-weight: bold;
+margin-bottom: 5rem;
+}
+
+.cart-saved-courses h3{
+color: rgba(10, 101, 204, 1);
+margin-left: 1.4rem;
 }

@@ -92,7 +92,7 @@ const StudentSavedCourse = () => {
                 </div>
                 <div className="saved-user-count">
                   <img src={user} alt="user" />
-                  <p>211,434</p>
+                  <p>197,637</p>
                   <span>students</span>
                 </div>
               </div>
@@ -112,7 +112,7 @@ const StudentSavedCourse = () => {
                 </div>
                 <div className="saved-user-count">
                   <img src={user} alt="user" />
-                  <p>211,434</p>
+                  <p>236,568</p>
                   <span>students</span>
                 </div>
               </div>
@@ -132,7 +132,7 @@ const StudentSavedCourse = () => {
                 </div>
                 <div className="saved-user-count">
                   <img src={user} alt="user" />
-                  <p>211,434</p>
+                  <p>511,123</p>
                   <span>students</span>
                 </div>
               </div>
@@ -156,7 +156,7 @@ const StudentSavedCourse = () => {
                 </div>
                 <div className="saved-user-count">
                   <img src={user} alt="user" />
-                  <p>211,434</p>
+                  <p>154,817</p>
                   <span>students</span>
                 </div>
               </div>
@@ -176,7 +176,7 @@ const StudentSavedCourse = () => {
                 </div>
                 <div className="saved-user-count">
                   <img src={user} alt="user" />
-                  <p>211,434</p>
+                  <p>451,444</p>
                   <span>students</span>
                 </div>
               </div>
@@ -196,7 +196,7 @@ const StudentSavedCourse = () => {
                 </div>
                 <div className="saved-user-count">
                   <img src={user} alt="user" />
-                  <p>211,434</p>
+                  <p>197,637</p>
                   <span>students</span>
                 </div>
               </div>
@@ -218,7 +218,7 @@ const StudentSavedCourse = () => {
                 </div>
                 <div className="saved-user-count">
                   <img src={user} alt="user" />
-                  <p>211,434</p>
+                  <p>435,671</p>
                   <span>students</span>
                 </div>
               </div>
