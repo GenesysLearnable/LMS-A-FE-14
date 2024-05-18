@@ -24,10 +24,11 @@ export default function ForgotPwd() {
             <h2 className="forgot-head-text">Forgot your password?</h2>
             <p className="forgot-paragraph">
               Don’t worry, happens to all of us. Enter your email below to
-              recover your password
+              recover your password.
             </p>
           </div>
           <div className="forgot-form">
+            {/* <label className="forgot-label" htmlFor="email">Email</label> */}
             <input
               className="forgot-input-field"
               name="email"
