@@ -16,7 +16,7 @@ export default function SignUpForm() {
   const [password, setPassword] = useState("");
 
   // SETUP FOR API AUTHENTICATION!!!
-  const handleSignup = async (username, email, password) => {
+   const handleSignup = async (username, email, password) => {
     try {
       const response = await axios.post(
         "https://lms-a-be-14-z0ct.onrender.com/signup",
