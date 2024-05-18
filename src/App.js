@@ -11,6 +11,9 @@ import BusinessDropdonwn from "./Dropdown/BusinessDropdown";
 import TechnologyDropdown from "./Dropdown/TechnologyDropdown";
 import ForgotPwd from "./ForgotPassword/ForgotPwd";
 import VerifyPwd from "./ForgotPassword/VerifyPwd";
+import Footer from "./component/footer";
+import Uxhero from "./UXcomponent/Uxhero";
+import HeroBottom from "./UXcomponent/HeroBottom";
 
 // const router = createBrowserRouter(
 //   createRoutesFromElements(<Route index element={<h1>Testing Routing</h1>} />)
@@ -22,24 +25,7 @@ export default function GoLearn() {
 
     return (
       <div className="App">
-        <LoginForm />
-        {/* <Header />
-        <Welcome />
-        <Signup /> */}
-        <Navbar />
-        {/*<SignUpForm />*/}
-        {/* <Login />
-        <Signup />
-        <SignUpForm />
-        <Login />
-        <Header />
-        <Courses />
-        <AgricDropdown />
-        <ArtDropdown />
-        <BusinessDropdonwn />
-        <TechnologyDropdown /> */}
-        <ForgotPwd />
-        <VerifyPwd />
+        <HeroBottom />
       </div>
     );
 }
