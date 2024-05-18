@@ -1,8 +1,14 @@
 import React from "react";
 import "../App.css";
 import "./StudentSavedCourse.css";
-import Navbar from "../component/navbar.jsx";
+// import Navbar from "../component/navbar.jsx";
 import Footer from "./Footer.jsx";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBell,
+  faSearch,
+  faCircleUser,
+} from "@fortawesome/free-solid-svg-icons";
 import cart from "../images/shopping-cart.png";
 import ITimage from "../images/IT&Software.png";
 import star from "../images/Star .png";
@@ -16,7 +22,34 @@ const StudentCart = () => {
     <div>
       <div className="saved-general-container">
         <div>
-          <Navbar />
+          {/* <Navbar /> */}
+          <div className="navbar-container">
+            <div className="navbar">
+              <img
+                className="navbar-logo"
+                src={process.env.PUBLIC_URL + "/images/golearn-logo.png"}
+                alt="Logo"
+              />
+              <span className="nav-text">Explore</span>
+              <div className="search-box">
+                <FontAwesomeIcon icon={faSearch} className="search-icon" />
+                <input type="text" placeholder="Search Course" />
+              </div>
+              <span className="nav-text-link">GoLearn Business</span>
+              <span className="nav-text-link">Admin</span>
+              <FontAwesomeIcon icon={faBell} className="notification-icon" />
+              <FontAwesomeIcon icon={faCircleUser} className="user-icon" />
+            </div>
+            <div className="navbar-links">
+              <ul>
+                <li>Home</li>
+                <li>My Course</li>
+                <li>Saved</li>
+                <li>Reminder</li>
+                <li className="active">Cart</li>
+              </ul>
+            </div>
+          </div>
 
           <div className="cart-container">
             <div className="cart-card">
@@ -59,7 +92,7 @@ const StudentCart = () => {
                   <div className="saved-user">
                     <div className="saved-star-left">
                       <img src={star} alt="star"></img>
-                      <p>4.0</p>
+                      <p>4.9</p>
                     </div>
                     <div className="saved-user-count">
                       <img src={user} alt="user" />
@@ -79,7 +112,7 @@ const StudentCart = () => {
                   <div className="saved-user">
                     <div className="saved-star-left">
                       <img src={star} alt="star"></img>
-                      <p>4.0</p>
+                      <p>4.6</p>
                     </div>
                     <div className="saved-user-count">
                       <img src={user} alt="user" />
@@ -101,7 +134,7 @@ const StudentCart = () => {
                   <div className="saved-user">
                     <div className="saved-star-left">
                       <img src={star} alt="star"></img>
-                      <p>4.0</p>
+                      <p>4.</p>
                     </div>
                     <div className="saved-user-count">
                       <img src={user} alt="user" />

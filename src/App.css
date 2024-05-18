@@ -16,6 +16,12 @@ body {
   --text: #8f8f8f;
 }
 
+
+/* ExMain Reusable starts here */
+.general-course-title{
+  line-height: 1.5;
+}
+
 /* Footer starts here */
 .saved-footer {
   background-color: rgba(2, 20, 41, 1);

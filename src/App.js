@@ -16,10 +16,8 @@ import StudentSavedCourse from "./StudentScreens/StudentSavedCourse";
 import Footer from "./StudentScreens/Footer";
 import StudentReminder from "./StudentScreens/StudentReminder"
 import StudentCart from "./StudentScreens/StudentCart";
-
-// const router = createBrowserRouter(
-//   createRoutesFromElements(<Route index element={<h1>Testing Routing</h1>} />)
-// );
+import ExMain from './Reusables/ExploreMain';
+import ExploreSideBar from "./Reusables/ExploreSideBar";
 
 
 
@@ -31,8 +29,8 @@ export default function GoLearn() {
         {/* <Header />
         <Welcome />
         <Signup /> */}
-        <Navbar />
-        <Footer />
+        {/* <Navbar />
+        <Footer /> */}
         {/*<SignUpForm />*/}
         {/* <Login />
         <Signup />
@@ -44,12 +42,14 @@ export default function GoLearn() {
         <ArtDropdown />
         <BusinessDropdonwn />
         <TechnologyDropdown /> */}
-        <ForgotPwd />
+        {/* <ForgotPwd />
         <VerifyPwd />
         <SetPwd />
         <StudentSavedCourse />
         <StudentReminder />
-        <StudentCart />
+        <StudentCart /> */}
+        <ExMain />
+        <ExploreSideBar />
       </div>
     );
 }
