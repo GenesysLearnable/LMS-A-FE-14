@@ -1,0 +1,160 @@
+.Uxhero-directory-container{
+    display: flex;
+    padding: 3rem 0 1rem 2rem;
+    color: #818080;
+}
+.Uxhero-directory{
+    padding: 0 1rem 0 0;
+}
+
+.Uxhero-arrow{
+    padding: 0 0 0 1rem;
+}
+
+.Uxhero-current{
+    color: #0a65cc;
+    padding-top: 1rem;
+}
+
+.Uxhero-container{
+    display: flex;
+    padding: 0 0 2rem 2rem;
+}
+
+.Uxhero-right-container{
+    width: 500px;
+    margin: 0 0 0 2rem;
+}
+
+
+.Uxhero-right-container h2{
+    font-size: 2.5rem;
+}
+
+.Uxhero-right-container .Uxhero-text{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.Uxhero-rating-button-container{
+    display: flex;
+}
+
+.Uxhero-rating-container{
+    display: block;
+    margin: 0 0 0 1.5rem
+}
+
+.Uxhero-free{
+    width: 170px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    background-color: #e99700;
+    color: #fff;
+}
+
+.Uxhero-rating{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1;
+    text-align: center;
+}
+
+.video-icon-text{
+    letter-spacing: 1;
+}
+
+.Uxhero-creator{
+    margin: 1.2rem 0 1.2rem 0;
+}
+
+.Uxhero-creator span{
+    color: #0a65cc;
+}
+
+.Uxhero-free-text{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.Uxhero-enroll{
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+    font-size: 1rem;
+    background-color: #0a65cc;
+    color: #fff;
+}
+
+/*Paid frame*/
+.payframe-container{
+    display: flex;
+    background: #e7e3e3;
+    padding: 2rem 0 0 2rem;
+}
+
+.payframe-header{
+    font-size: 1.3rem;
+    padding-bottom: 1rem
+}
+
+.payframe-grant{
+    width: 350px;
+    height: 120px;
+    border: 1px solid;
+    background: #fff;
+    margin-bottom: 2rem;
+}
+
+.attention{
+    position: absolute;
+    height: 30px;
+    margin: 2.5rem 0 0 1.5rem ;
+}
+
+.attention-text{   
+    padding: 1.5rem 0 0 4.3rem;
+    width: 250px;
+    line-height: 1.2;
+}
+
+.grant-btn{
+    padding: 1rem;
+    margin-bottom: 6rem;
+    width: 300px;
+}
+
+.paid-options{
+    display: flex;
+    margin: 0 0 0 7rem;
+}
+
+.paid-options h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.paid-options ul li{
+    list-style: none;
+    padding: 1rem 5rem 1rem 0;
+}
+
+.paid-options ul li .good-mark{
+    color: green;
+    padding-right: 1rem;
+}
+
+.paid-options ul li .bad-mark{
+    color: red;
+    padding-right: 1rem;
+}
+
+

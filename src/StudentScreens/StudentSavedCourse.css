@@ -1,0 +1,286 @@
+.saved-course-main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.saved-card-row1 {
+    display: flex;
+}
+
+.saved-card {
+    margin: .6rem;
+    padding: 1rem;
+}
+
+.it-image {
+    width: 240px;
+}
+
+.saved-title-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+}
+
+.saved-title-text .saved-price {
+    font-size: .8rem;
+}
+
+.saved-text-price {
+    color: rgba(128, 50, 40, 1);
+    background-color: rgba(255, 224, 220, 1);
+    font-size: .4rem;
+    padding: .2rem;
+}
+
+.saved-text-priceD {
+    color: rgba(128, 50, 40, 1);
+    font-size: .4rem;
+    padding: .2rem;
+}
+
+.saved-text-priceDE,
+.saved-text-priceM {
+    color: rgba(10, 101, 204, 1);
+    font-size: .4rem;
+    padding: .2rem;
+}
+
+.saved-price {
+    color: rgba(10, 101, 204, 1);
+}
+
+.saved-card h6 {
+    width: 180px;
+    font-size: .6rem;
+    color: rgba(37, 50, 75, 1);
+}
+
+.saved-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.saved-star-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .1rem;
+}
+
+.saved-star-left img {
+    width: 12px;
+    height: 12px;
+}
+
+.saved-user-count img {
+    width: 12px;
+    height: 12px;
+}
+
+.saved-user-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+    font-size: .6rem;
+}
+
+.saved-star-left p {
+    font-size: .6rem;
+}
+
+.saved-user-count p {
+    font-size: .4rem;
+    font-weight: bold;
+    color: rgba(81, 91, 111, 1);
+}
+
+.saved-user-count span {
+    color: rgba(168, 173, 183, 1);
+    font-size: .5rem;
+}
+
+.saved-footer {
+    background-color: rgba(2, 20, 41, 1);
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    gap: 5rem;
+    border-radius: 0 0 10px 15px;
+}
+
+.saved-footer-first,
+.saved-footer-second,
+.saved-footer-third,
+.saved-footer-fourth,
+h3 {
+    color: rgba(37, 50, 75, 1);
+}
+
+.saved-footer-first img {
+    width: 100px;
+}
+
+.saved-footer-first p {
+    width: 400px;
+    line-height: 1.8;
+    color: rgba(81, 91, 111, 1);
+    font-size: .8rem;
+}
+
+.saved-footer-help p {
+    font-size: .8rem;
+}
+
+.saved-footer-first,
+.saved-footer-second,
+.saved-footer-third,
+.saved-footer-fourth {
+    color: rgba(81, 91, 111, 1);
+    cursor: pointer;
+}
+
+.saved-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+}
+
+.saved-socials img {
+    width: 20px;
+}
+
+.saved-footer-fourth {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+}
+
+.saved-general-container {
+    border-radius: 10px;
+}
+
+
+/* FOR STUDENT NOTIFICATION PLEASE!!! */
+.reminder-container {
+    margin: 0;
+    padding: 3rem;
+    margin-bottom: 5rem;
+}
+
+.reminder-container h3 {
+    color: rgba(2, 20, 41, 1);
+    font-size: .7rem;
+}
+
+.reminder-container p {
+    font-size: .7rem;
+    width: 700px;
+    line-height: 1.6;
+}
+
+.reminder-download-container {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.reminder-store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+    padding: .2rem 1.5rem;
+    background-color: rgba(2, 20, 41, 1);
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.reminder-store img {
+    width: 30px;
+    height: 30px;
+}
+
+.reminder-btn{
+    padding: 1rem;
+    color: rgba(10, 101, 204, 1);
+    font-size: .7rem;
+    font-weight: bolder;
+    border: 1px solid rgba(10, 101, 204, 1);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.reminder-downloader {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.reminder-downloader p {
+    width: fit-content;
+
+}
+
+.reminder-downloader span {
+    font-size: 1.6rem;
+}
+
+.reminder-store-name {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+
+
+    /* FOR STUDENT CART SCREEN */
+.cart-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem 1rem 2rem 1rem;
+    padding: 0 2rem;
+    color: rgba(10, 101, 204, 1);
+    font-weight: bold;
+}
+
+.cart-card{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.cart-image{
+width: 150px;
+}
+
+.cart-btn{
+color: rgba(10, 101, 204, 1);
+padding: .6rem 1.2rem;
+border: 1px solid rgba(10, 101, 204, 1);
+border-radius: 3px;
+cursor: pointer;
+font-weight: bold;
+margin-bottom: 5rem;
+}
+
+.cart-saved-courses h3{
+color: rgba(10, 101, 204, 1);
+margin-left: 1.4rem;
+}

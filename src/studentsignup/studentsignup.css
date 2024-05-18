@@ -1,17 +1,18 @@
 .student-signup-container {
-    background-color: rgba(248, 248, 253, 1);
-    height: auto;
+    height: 100vh;
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
-    color: rgba(37, 50, 75, 1);
 }
 
 .student-signup-form {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #fff;
+    border-radius: 2rem;
     padding: 2rem;
     width: 20rem;
     display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px 0 10px  rgba(0, 0, 0, 0.2);
     flex-direction: column;
     justify-content: center;
     align-items: left;
@@ -59,9 +60,6 @@
 
 .eye-icon {
     position: relative;
-
-
-
 }
 
 .std-inp-for-pawd {
@@ -98,46 +96,23 @@
     padding: .8rem 4.85rem;
     /* width: 18rem; */
     border: none;
-    background-color: rgba(10, 101, 204, 1);
+    background-color: #0a65cc;
+    border: 1px solid;
     cursor: pointer;
     border-radius: 5px;
-    color: rgba(255, 255, 255, 1);
+    color: #fff;
     transition: transform 0.3s ease;
 }
 
-.student-signup-btn a {
+.student-signup-btn a{
     text-decoration: none;
-    color: (255, 255, 255, 1);
+    color: #fff;
 }
 
-.student-signup-btn:hover {
-    animation: shake 0.5s;
-}
-
-@keyframes shake {
-    0% {
-        transform: translate(0, 0) rotate(0);
-    }
-
-    20% {
-        transform: translate(-10px, 0) rotate(-5deg);
-    }
-
-    40% {
-        transform: translate(10px, 0) rotate(5deg);
-    }
-
-    60% {
-        transform: translate(-10px, 0) rotate(-5deg);
-    }
-
-    80% {
-        transform: translate(10px, 0) rotate(5deg);
-    }
-
-    100% {
-        transform: translate(0, 0) rotate(0);
-    }
+.student-signup-btn:hover{
+    background-color: #fff;
+    color: #0a65cc;
+    border: 1px solid #0a65cc;
 }
 
 .std-signup-google {
@@ -145,10 +120,20 @@
     border: 1px solid rgb(236, 233, 233);
     border-radius: 5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: .8rem;
+    gap: 2rem;
+   cursor: pointer;
+   padding: .2rem;
     font-size: .8rem;
+}
+
+.std-signup-google img{
+width: 20px;
+}
+
+.std-signup-google p{
+    font-size: .7rem;
 }
 
 .std-signup-p-link {

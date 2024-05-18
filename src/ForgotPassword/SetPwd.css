@@ -1,0 +1,130 @@
+.set-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    height: fit-content;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.set-logo {
+    width: 60px;
+    margin-bottom: 2rem;
+}
+
+.set-nav-head {
+    font-size: .7rem;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0;
+}
+
+.set-nav-head span a {
+    color: rgba(49, 49, 49, 1);
+    text-decoration: none;
+}
+
+.set-arrow {
+    width: 15px;
+}
+
+.set-head {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.set-head-text {
+    width: fit-content;
+    margin: 0;
+}
+
+.set-paragraph {
+    font-size: .6rem;
+    color: rgba(49, 49, 49, 1);
+}
+
+.set-form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.set-input-field {
+    width: 17.2rem;
+    padding: .4rem;
+    border: 1px solid rgb(215, 212, 212);
+    border-radius: 5px;
+}
+
+.set-input-field::placeholder {
+    font-size: .6rem;
+}
+
+.seteye {
+    width: 20px;
+    position: absolute;
+    top: 30%;
+    right: -1%;
+    transform: translate(-50%);
+    pointer-events: none;
+}
+
+.set-resend-code {
+    font-size: .6rem;
+}
+
+.set-resend-code a {
+    text-decoration: none;
+    color: rgba(255, 134, 130, 1);
+}
+
+.set-btn1 {
+    background-color: rgba(10, 101, 204, 1);
+    color: rgba(248, 248, 253, 1);
+    width: 18rem;
+    border: none;
+    border-radius: 5px;
+    padding: .4rem 7.6rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.set-btn1:hover {
+    background-color: #fff;
+    color: rgba(10, 101, 204, 1);
+    border: 1px solid rgba(10, 101, 204, 1);
+}
+
+.set-container-with-image {
+    display: flex;
+    padding-bottom: 1rem;
+    width: 40rem;
+    border: 1px solid rgb(219, 218, 218);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.set-all-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.set-background2 {
+    width: 16rem;
+    height: 18rem;
+    margin-top: 6rem;
+    margin-right: 2rem;
+}

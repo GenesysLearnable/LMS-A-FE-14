@@ -1,31 +1,41 @@
-import React from 'react'
+import React from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import './agricDropdown.css';
 
 export default function AgricDropdown() {
   return (
     <div>
-      <div>
+      <div className='agric-dropdown-container'>
         <ul>
-          <li>
+          <span>
             <p>Agricultural Economics</p>
-          </li>
-          <li>
+            <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
+          </span>
+          <span>
             <p>Agricultural Management</p>
-          </li>
-          <li>
+            <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
+          </span>
+          <span>
             <p>Agricultural Science</p>
-          </li>
-          <li>
+            <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
+          </span>
+          <span>
             <p>Farming</p>
-          </li>
-          <li>
+            <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
+          </span>
+          <span>
             <p>Food Science</p>
-          </li>
-          <li>
+            <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
+          </span>
+          <span>
             <p>Horticulture, Forestry, Fishery</p>
-          </li>
-          <li>
+            <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
+          </span>
+          <span>
             <p>IoT Enabled Farming</p>
-          </li>
+            <FontAwesomeIcon icon={faArrowRight} className="category-arrow" />
+          </span>
         </ul>
       </div>
     </div>
