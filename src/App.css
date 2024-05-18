@@ -22,6 +22,69 @@ body {
   line-height: 1.5;
 }
 
+/* EXPLORE ASIDE */
+
+.aside-container{
+  border: 1px solid;
+  width: 20rem;
+}
+.aside-category-head, .aside-tech-check{
+  display: flex;
+  justify-content: space-between;
+  padding: .4rem;
+  width: 18rem;
+  
+}
+
+.aside-tech-check{
+  display: flex;
+  gap: 1.2rem;
+  cursor: pointer;
+}
+
+.aside-tech{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .2rem;
+  font-size: .7rem;
+}
+
+.aside-tech:active{
+  color: rgba(10, 101, 204, 1);
+}
+
+.numbers-and-arrow{
+  font-size: .7rem;
+}
+
+.aside-tech img{
+  width: 20px;
+}
+
+.aside-star{
+  width: 12px;
+  height: 12px;
+}
+
+
+.aside-price{
+  display: flex;
+  gap: 4rem;
+  padding: .4rem;
+}
+
+.aside-price p{
+border: 1px solid;
+padding: .4rem 1.4rem;
+cursor: pointer;
+}
+
+.aside-price p span{
+  color: rgba(124, 132, 147, 1);
+}
+
+
 /* Footer starts here */
 .saved-footer {
   background-color: rgba(2, 20, 41, 1);
