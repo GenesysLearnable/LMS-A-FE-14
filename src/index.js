@@ -8,6 +8,9 @@ import LoginForm from './StudentLogin/StudentLogin';
 import Signup from './Components/AdminSignUp';
 import Courses from './Courses/selectcourse';
 import SignUpForm from './studentsignup/studentsignup';
+import ForgotPwd from './ForgotPassword/ForgotPwd';
+import VerifyPwd from './ForgotPassword/VerifyPwd';
+import SetPwd from './ForgotPassword/SetPwd';
 
 
 
@@ -21,6 +24,9 @@ const router = createBrowserRouter([
   { path: "art", element: <Courses /> },
   { path: "agriculture", element: <Courses /> },
   { path: "studentsignup", element: <SignUpForm /> },
+  { path: "Forgotpassword", element: <ForgotPwd /> },
+  { path: "Verifypassword", element: <VerifyPwd /> },
+  { path: "setpassword", element: <SetPwd /> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

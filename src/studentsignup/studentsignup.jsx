@@ -120,9 +120,9 @@ export default function SignUpForm() {
                 ></input>
                 {/* <FontAwesomeIcon icon={faEye} className="eye-icon" /> */}
               </div>
-              <p className="student-signup-forgot-pwd">
+              {/* <p className="student-signup-forgot-pwd">
                 <a href="#">Forgot Password?</a>
-              </p>
+              </p> */}
               <div className="std-signup-checked">
                 <input className="checked" type="checkbox"></input>
                 <p>Keep me logged in</p>

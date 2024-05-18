@@ -4,6 +4,7 @@ import backarrow from "../images/chevron_back.svg";
 import "./SetPwd.css";
 import setimage from "../images/setpwd.png";
 import verifyeye from "../images/veirfy-eye.svg";
+import { Link } from "react-router-dom";
 
 export default function SetPwd() {
   return (
@@ -17,7 +18,7 @@ export default function SetPwd() {
               <p className="set-text-arrow">
                 Back to{" "}
                 <span>
-                  <a href="#">Login</a>
+                  <Link to="/login">Login</Link>
                 </span>
               </p>
             </button>
@@ -39,9 +40,9 @@ export default function SetPwd() {
             <p className="set-resend-code">
               Didn't receive a code? <a href="#">Resend</a>{" "}
             </p>
-            <button className="set-btn1" type="submit">
+            <Link to="/login" className="set-btn1">
               Verify
-            </button>
+            </Link>
           </div>
         </div>
         <img

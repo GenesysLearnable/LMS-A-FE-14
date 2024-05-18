@@ -274,7 +274,8 @@ Link {
 
 .header-text {
   color: var(--primary);
-  margin-left: 9rem;
+  margin-right: 3.5rem;
+  float: right;
 }
 
 /*welcome body*/
@@ -379,7 +380,7 @@ Link {
 }
 
 p.course-text:hover {
-  background-color: rgb(52, 28, 229);
+  background-color: #0a65cc;
   color: #fff;
 }
 
@@ -410,34 +411,33 @@ p.course-text {
   justify-content: end;
   gap: 0.8rem;
   margin-left: 67rem;
-  /* border: 1px solid; */
   width: fit-content;
   padding: 0.8rem 0;
 }
-
-.course-link-btn {
-  padding: 1rem 1.8rem;
-  color: #0a65cc;
-  background-color: #fff;
-  border-radius: 3px;
-  cursor: pointer;
-  font-weight: bolder;
-  border: none;
-}
-
-.course-link-btn2 {
-  padding: 1rem 1rem;
-  color: #fff;
-  background-color: #0a65cc;
-  border-radius: 3px;
-  cursor: pointer;
-  font-weight: bolder;
-}
-
-.course-link-btn,
-.course-link-btn2 {
+.course-btn-link1{
   text-decoration: none;
+  border: 1px solid;
+  padding: .6rem 1rem;
+  border-radius: 3px;
+  font-size: .7rem;
+  cursor: pointer;
+  font-weight: bold;
 }
+
+.course-btn-link2{
+    text-decoration: none;
+      border: 1px solid;
+      padding: .6rem .4rem;
+      border-radius: 3px;
+      font-size: .7rem;
+      background-color: #0a65cc;
+      color: rgba(255, 255, 255, 1);
+      font-weight: bold;
+      cursor: pointer;
+}
+
+
+
 /*Star Rating*/
 .star-rating{
   color: gold;

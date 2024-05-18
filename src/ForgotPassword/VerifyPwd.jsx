@@ -4,6 +4,7 @@ import backarrow from "../images/chevron_back.svg";
 import "./VerifyPwd.css";
 import verifyimage from "../images/verifyimage.png";
 import verifyeye from "../images/veirfy-eye.svg";
+import { Link } from "react-router-dom";
 
 export default function VerifyPwd() {
   return (
@@ -16,7 +17,7 @@ export default function VerifyPwd() {
             <p className="verify-text-arrow">
               Back to{" "}
               <span>
-                <a href="#">Login</a>
+                <Link to="/login">Login</Link>
               </span>
             </p>
           </button>
@@ -38,9 +39,9 @@ export default function VerifyPwd() {
           <p className="verify-resend-code">
             Didn't receive a code? <a href="#">Resend</a>{" "}
           </p>
-          <button className="verify-btn1" type="submit">
+          <Link to="/setpassword" className="verify-btn1">
             Verify
-          </button>
+          </Link>
         </div>
         <img
           className="verify-background2"

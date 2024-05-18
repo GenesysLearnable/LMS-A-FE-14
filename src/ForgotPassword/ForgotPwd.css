@@ -70,11 +70,14 @@
 .forgot-btn1 {
     background-color: rgba(10, 101, 204, 1);
     color: rgba(248, 248, 253, 1);
-    width: 18rem;
+    width: 17.2rem;
     border: none;
+    border: 1px solid transparent;
     border-radius: 5px;
     padding: .4rem;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
 }
 
 .forgot-btn1:hover {

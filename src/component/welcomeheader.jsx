@@ -9,7 +9,6 @@ function Header() {
             src={process.env.PUBLIC_URL + "/images/golearn-logo.png"}
             alt="Logo"
           ></img>
-          <p className="header-text">1/2</p>
         </div>
       </div>
     );

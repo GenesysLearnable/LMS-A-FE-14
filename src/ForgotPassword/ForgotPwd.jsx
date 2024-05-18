@@ -4,6 +4,7 @@ import backarrow from "../images/chevron_back.svg";
 import googleicon from "../images/googleicon.svg";
 import './ForgotPwd.css';
 import forgotpwdimage from '../images/forgpwdimage.png';
+import { Link } from "react-router-dom";
 
 export default function ForgotPwd() {
   return (
@@ -16,7 +17,8 @@ export default function ForgotPwd() {
             <p className="forgot-text-arrow">
               Back to{" "}
               <span>
-                <a href="#">Login</a>
+                {/* <a href="#">Login</a> */}
+                <Link to="/login">Login</Link>
               </span>
             </p>
           </button>
@@ -36,9 +38,9 @@ export default function ForgotPwd() {
               placeholder="johndoe@gmail.com"
             ></input>
           </div>
-          <button className="forgot-btn1" type="submit">
+          <Link to="/Verifypassword" className="forgot-btn1">
             Submit
-          </button>
+          </Link>
           <div className="horizontal-line">
             <div className="line"></div>
             <p>or login with</p>

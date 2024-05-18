@@ -120,22 +120,24 @@ export default function LoginForm() {
                 {/* <FontAwesomeIcon icon={faEye} className="eye-icon" /> */}
               </div>
               <p className="student-login-forgot-pwd">
-                <a href="/">Forgot Password?</a>
+                {/* <a href="/">Forgot Password?</a> */}
+                <Link to="/Forgotpassword">Forgot Password</Link>
               </p>
               <div className="std-login-checked">
                 <input className="checked-login" type="checkbox"></input>
                 <p>Keep me logged in</p>
               </div>
-              <button type="submit" className="student-login-btn" onClick={handleSubmit}>
+              <button
+                type="submit"
+                className="student-login-btn"
+                onClick={handleSubmit}
+              >
                 Login
               </button>
-              <p className="dash">
-                ------------------ or ------------------
-              </p>
+              <p className="dash">------------------ or ------------------</p>
               <div className="std-login-google" onClick={handleGoogle}>
                 <p>Continue with Google</p>
                 <img src={googleicon} alt="google icon" />
-                
               </div>
               <p className="std-login-p-link">
                 Need an account? <Link to="/studentsignup">Create one</Link>
