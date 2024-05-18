@@ -48,8 +48,8 @@ export default function GoLearn() {
         <StudentSavedCourse />
         <StudentReminder />
         <StudentCart /> */}
-        <ExMain />
-        <ExploreSideBar />
+        {/* <ExMain />
+        <ExploreSideBar /> */}
       </div>
     );
 }
