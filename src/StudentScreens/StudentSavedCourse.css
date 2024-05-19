@@ -170,7 +170,137 @@ h3 {
 }
 
 
-/* FOR STUDENT NOTIFICATION PLEASE!!! */
+/* FOR STUDENT PROFILE!!! */
+.std-main-profile {
+    margin: 4rem auto;
+    padding: 1.6rem;
+    max-width: 800px;
+}
+
+.std-main-profile h3{
+    color: rgba(124, 132, 147, 1);
+}
+
+.std-profile-details{
+    display: flex;
+    gap: 5rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.profile-hero-image{
+    width: 250px;
+    height: 250px;
+}
+
+.std-profile-body p{
+    font-size: .77rem;
+    line-height: 1.4;
+}
+
+.profile-country, .std-email-address{
+    display: flex;
+    gap: .2rem;
+}
+
+.std-address{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+}
+
+.std-address img{
+    width: 15px;
+}
+
+.std-profile-body .std-name{
+font-size: 1rem;
+font-weight: 600;
+}
+
+.std-profile-body span{
+font-size: .8rem;
+font-weight: 400;
+}
+
+.std-certification{
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    margin-top: 1rem;
+}
+
+.std-profile-row{
+    display: flex;
+    gap: 1rem;
+}
+
+.std-profile-row p{
+    padding: .6rem;
+    width: 15rem;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(124, 132, 147, 1);
+    font-weight: 600;
+    box-shadow: 0 10px 10px -5px rgb(186, 184, 184);
+}
+
+.active-profile-user {
+    color: rgba(10, 101, 204, 1);
+}
+
+
+/* ERROR PAGE HERE!!! */
+.error-container{
+    margin: 5rem auto;
+    padding: 0 auto;
+    max-width: 800px;
+}
+
+.error-body{
+display: flex;
+}
+.error-body img{
+width: 300px;
+}
+
+.error-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.error-text li{
+
+}
+
+.error-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+    border: 1px solid;
+    margin-top: 5rem;
+    margin-left: 18rem;
+    width: 6rem;
+    background-color: rgba(10, 101, 204, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: .6rem;
+    padding: .6rem 1.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.error-btn img{
+    width: 20px;
+}
+
+.nav-text-link-error{
+margin-left: 2.5rem;
+}
+
+
+/* FOR STUDENT REMINDER PLEASE!!! */
 .reminder-container {
     margin: 0;
     padding: 3rem;
@@ -211,7 +341,7 @@ h3 {
     height: 30px;
 }
 
-.reminder-btn{
+.reminder-btn {
     padding: 1rem;
     color: rgba(10, 101, 204, 1);
     font-size: .7rem;
@@ -247,8 +377,8 @@ h3 {
 
 
 
-    /* FOR STUDENT CART SCREEN */
-.cart-container{
+/* FOR STUDENT CART SCREEN */
+.cart-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -259,28 +389,28 @@ h3 {
     font-weight: bold;
 }
 
-.cart-card{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+.cart-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.cart-image{
-width: 150px;
+.cart-image {
+    width: 150px;
 }
 
-.cart-btn{
-color: rgba(10, 101, 204, 1);
-padding: .6rem 1.2rem;
-border: 1px solid rgba(10, 101, 204, 1);
-border-radius: 3px;
-cursor: pointer;
-font-weight: bold;
-margin-bottom: 5rem;
+.cart-btn {
+    color: rgba(10, 101, 204, 1);
+    padding: .6rem 1.2rem;
+    border: 1px solid rgba(10, 101, 204, 1);
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 5rem;
 }
 
-.cart-saved-courses h3{
-color: rgba(10, 101, 204, 1);
-margin-left: 1.4rem;
+.cart-saved-courses h3 {
+    color: rgba(10, 101, 204, 1);
+    margin-left: 1.4rem;
 }
