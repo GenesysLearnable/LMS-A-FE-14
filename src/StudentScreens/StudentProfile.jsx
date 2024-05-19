@@ -8,7 +8,7 @@ import camera from "../images/camera.svg";
 import link from "../images/link-2.svg";
 import joel from "../images/joel.png";
 import email from "../images/email.svg";
-import "../App.css";
+import naija from "../images/naija.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,
@@ -20,8 +20,7 @@ const StudentProfile = () => {
   return (
     <div>
       <div className="saved-general-container">
-        <div>
-          {/* <Navbar /> */}
+        <div className="std-profile-container">
           <div className="navbar-container">
             <div className="navbar">
               <img
@@ -39,30 +38,28 @@ const StudentProfile = () => {
               <FontAwesomeIcon icon={faBell} className="notification-icon" />
               <FontAwesomeIcon
                 icon={faCircleUser}
-                className="user-icon active"
+                className="user-icon active-profile-user"
               />
             </div>
-            {/* <div className="navbar-links">
-              <ul>
-                <li>Home</li>
-                <li>My Course</li>
-                <li>Saved</li>
-                <li>Reminder</li>
-                <li>Cart</li>
-              </ul>
-            </div> */}
           </div>
 
           <div className="std-main-profile">
             <h3>Profile</h3>
             <div className="std-profile-details">
-              <img src={joel} alt="student"></img>
+              <img
+                className="profile-hero-image"
+                src={joel}
+                alt="student"
+              ></img>
               <div className="std-profile-body">
-                <h4>
+                <p className="std-name">
                   Joel Michael | <span>Product Designer</span>
-                </h4>
+                </p>
                 <div className="std-address">
-                  <p>Benin City, Nigeria</p>
+                  <div className="profile-country">
+                    <img src={naija} alt="country"></img>
+                    <p>Benin City, Nigeria</p>
+                  </div>
                   <div className="std-email-address">
                     <img src={email} alt="email address"></img>
                     <p>cherrystouch@gmail.com</p>
@@ -75,7 +72,7 @@ const StudentProfile = () => {
                   creative solutions that meet all deadlines. As an avid learner
                   and quick thinker, I'm constantly searching for opportunities
                   to improve myself and add to my skill set so as to provide the
-                  best experience possible for clients and colleagues alike
+                  best experience possible for clients and colleagues alike.
                 </p>
               </div>
             </div>
