@@ -17,14 +17,211 @@ body {
 }
 
 
+.Explorebody-side {
+  display: flex;
+}
+
+.ex-cart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem 1rem 2rem 1rem;
+  padding: 0 2rem;
+}
+
+.ex-saved-card-row1 {
+  display: flex;
+  gap: 2rem;
+}
+
+.ex-it-image {
+  width: 350px;
+}
+
+.ex-saved-title-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.ex-general-course-title {
+  width: 18rem;
+  line-height: 1.4;
+  font-size: 1rem;
+  color: rgba(37, 50, 75, 1);
+  margin: 0 1rem;
+}
+
+.ex-saved-user {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.ex-saved-star-left,
+.ex-saved-user-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .4rem;
+}
+
+.ex-saved-user p {
+  font-size: .7rem;
+}
+
+.ex-saved-user-count span {
+  font-size: .7rem;
+  color: rgba(168, 173, 183, 1);
+}
+
+.ex-saved-star-left img,
+.ex-saved-user-count img {
+  width: 15px;
+}
+
+.number-slider {
+  display: flex;
+  justify-content: space-between;
+  width: 20rem;
+  margin-bottom: 2rem;
+  margin-left: 46rem;
+  padding-left: .4rem;
+  padding-right: .4rem;
+  cursor: pointer;
+}
+
+.number-slider img {
+  width: 15px;
+}
+
+.number-slider p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .6rem;
+  border-radius: 50%;
+  border: 1px solid rgb(202, 202, 202);
+  color: rgba(37, 50, 75, 1);
+}
+
+.number-slider p:active {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(10, 101, 204, 1);
+}
+
+.number-slider img:active {
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .4rem .6rem;
+}
+
+.search-field {
+  width: 25rem;
+  border-radius: 5px;
+}
+
+.explore-bar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-align{
+  display: flex;
+  justify-content: space-between;
+  gap: 15rem;
+}
+
+.filter-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+.filter-box:active{
+  border: 1px solid rgba(255, 102, 54, 1);
+}
+
+.filter-box .filter-number:active{
+  background-color: rgba(10, 101, 204, 1);
+  color: #fff;
+}
+
+.filter-box .filter:active{
+  color: rgba(10, 101, 204, 1);
+}
+
+.filter-box img{
+  width: 20px;
+}
+
+.trending{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+.inner-trending{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 0 1rem;
+
+}
+
+.inner-trending img{
+  width: 15px;
+}
+
+.suggestion-box{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.suggestion{
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+
+.suggestion-head{
+  color: rgba(10, 101, 204, 1);
+  font-size: .8rem;
+}
+
+.suggestion-number{
+  font-size: .8rem;
+}
+
+
+
+
+
+
+
+
+
+
 /* ExMain Reusable starts here */
-.general-course-title{
+.general-course-title {
   line-height: 1.5;
 }
 
 /* EXPLORE ASIDE */
-
-
 
 /* .slider-container {
   position: relative;
@@ -81,30 +278,32 @@ body {
 } */
 
 
-.aside-container{
+.aside-container {
   width: 18.84rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
-  
+
 }
-.aside-category-head, .aside-tech-check{
+
+.aside-category-head,
+.aside-tech-check {
   display: flex;
   justify-content: space-between;
   padding: .4rem;
   width: 18rem;
 }
 
-.aside-category-head{
+.aside-category-head {
   border: 1px solid #e7e7e7;
 }
 
-.aside-tech-check{
+.aside-tech-check {
   display: flex;
   gap: 1.2rem;
   cursor: pointer;
 }
 
-.aside-tech{
+.aside-tech {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,44 +311,44 @@ body {
   font-size: .6rem;
 }
 
-.aside-tech:active{
+.aside-tech:active {
   color: rgba(10, 101, 204, 1);
 }
 
-.numbers-and-arrow{
+.numbers-and-arrow {
   font-size: .6rem;
 }
 
-.aside-tech img{
+.aside-tech img {
   width: 20px;
 }
 
-.aside-star{
+.aside-star {
   width: 12px;
   height: 15px;
 }
 
 
-.aside-price{
+.aside-price {
   display: flex;
   gap: 4rem;
   padding: .4rem;
 }
 
-.aside-price p{
-border: 1px solid rgb(241, 241, 241);
-padding: .4rem;
-width: 6.2rem;
-cursor: pointer;
-text-align: left;
-font-size: .6rem;
+.aside-price p {
+  border: 1px solid rgb(241, 241, 241);
+  padding: .4rem;
+  width: 6.2rem;
+  cursor: pointer;
+  text-align: left;
+  font-size: .6rem;
 }
 
-.aside-price p span{
+.aside-price p span {
   color: rgba(124, 132, 147, 1);
 }
 
-.aside-all-bg{
+.aside-all-bg {
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -316,6 +515,7 @@ h3 {
   color: #818080;
   height: 25px;
 }
+
 /*Welcome*/
 Link {
   color: var(--box);
@@ -327,6 +527,7 @@ Link {
   align-items: center;
   margin: 1rem auto;
 }
+
 /*welcome head*/
 .header {
   width: 100%;
@@ -419,6 +620,7 @@ Link {
   transition: all 0.6s ease-in-out;
   cursor: pointer;
 }
+
 .category-box ul li:hover p {
   color: #fff;
   transition: all 0.6s ease-in-out;
@@ -438,6 +640,7 @@ Link {
   font-weight: bolder;
   font-size: 1.4rem;
 }
+
 .c11,
 .c22,
 .c33 {
@@ -485,7 +688,8 @@ p.course-text {
   width: fit-content;
   padding: 0.8rem 0;
 }
-.course-btn-link1{
+
+.course-btn-link1 {
   text-decoration: none;
   border: 1px solid;
   padding: .6rem 1rem;
@@ -495,25 +699,26 @@ p.course-text {
   font-weight: bold;
 }
 
-.course-btn-link2{
-    text-decoration: none;
-      border: 1px solid;
-      padding: .6rem .4rem;
-      border-radius: 3px;
-      font-size: .7rem;
-      background-color: #0a65cc;
-      color: rgba(255, 255, 255, 1);
-      font-weight: bold;
-      cursor: pointer;
+.course-btn-link2 {
+  text-decoration: none;
+  border: 1px solid;
+  padding: .6rem .4rem;
+  border-radius: 3px;
+  font-size: .7rem;
+  background-color: #0a65cc;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  cursor: pointer;
 }
 
 
 
 /*Star Rating*/
-.star-rating{
+.star-rating {
   color: gold;
   margin: 0 .7rem 0 .7rem;
 }
+
 /* Back-color*/
 .back-color {
   width: 100%;
@@ -545,7 +750,7 @@ p.course-text {
 }
 
 /*Footer*/
-.footer-container{
+.footer-container {
   background-color: #021429;
   display: flex;
   justify-content: center;
@@ -555,11 +760,11 @@ p.course-text {
   gap: 5rem;
 }
 
-.footer-first img{
+.footer-first img {
   width: 100px;
 }
 
-.footer-first-text{
+.footer-first-text {
   width: 400px;
   font-size: .8rem;
 }
@@ -572,22 +777,28 @@ p.course-text {
     width: 100%;
     height: 5rem;
   }
+
   .header-logo {
     width: 6rem;
     margin-left: 5rem;
   }
+
   .header-text {
     margin-left: 7rem;
   }
+
   .welcome-title {
     margin-left: 2rem;
   }
+
   .welcome-title h1 {
     font-size: 2rem;
   }
+
   .welcome-title span {
     font-size: 1.2rem;
   }
+
   .welcome-title p {
     font-size: 1.2rem;
     margin-left: 7rem;
@@ -597,6 +808,7 @@ p.course-text {
     display: block;
     justify-content: center;
   }
+
   .category-box ul li {
     width: 15rem;
     height: 13.5rem;
@@ -607,9 +819,11 @@ p.course-text {
   .category-box .category-icon {
     height: 1rem;
   }
+
   .category-box span {
     font-size: 1.5rem;
   }
+
   .category-box p {
     font-size: 1rem;
   }
@@ -620,22 +834,28 @@ p.course-text {
     width: 100%;
     height: 5rem;
   }
+
   .header-logo {
     width: 6rem;
     margin-left: 5rem;
   }
+
   .header-text {
     margin-left: 7rem;
   }
+
   .welcome-title {
     margin-left: 2rem;
   }
+
   .welcome-title h1 {
     font-size: 2rem;
   }
+
   .welcome-title span {
     font-size: 1.2rem;
   }
+
   .welcome-title p {
     font-size: 1.2rem;
     margin-left: 4rem;
@@ -645,6 +865,7 @@ p.course-text {
     display: block;
     justify-content: center;
   }
+
   .category-box ul li {
     width: 15rem;
     height: 13.5rem;
@@ -655,9 +876,11 @@ p.course-text {
   .category-box .category-icon {
     height: 1rem;
   }
+
   .category-box span {
     font-size: 1.5rem;
   }
+
   .category-box p {
     font-size: 1rem;
   }

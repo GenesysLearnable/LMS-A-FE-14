@@ -1,15 +1,13 @@
 import React from "react";
 import "./App.css";
 import LoginForm from "./StudentLogin/StudentLogin";
-import ExploreSideBar from "./Reusables/ExploreSideBar";
+import ExpMain from "./Reusables/ExploreMain";
 
 export default function GoLearn() {
-
-    return (
-      <div className="App">
-        <LoginForm />
-        <ExploreSideBar />
-      </div>
-    );
+  return (
+    <div className="App">
+      <LoginForm />
+      {/* <ExpMain /> */}
+    </div>
+  );
 }
-

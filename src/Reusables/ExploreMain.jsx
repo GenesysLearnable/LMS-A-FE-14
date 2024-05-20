@@ -1,10 +1,14 @@
 import React from "react";
 import "../App.css";
+import ExploreSideBar from "./ExploreSideBar";
+import Footer from "../StudentScreens/Footer";
+import Navbar from "../component/navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,
   faSearch,
   faCircleUser,
+  faArrowDown,
 } from "@fortawesome/free-solid-svg-icons";
 import ITgirl from "../images/IT & Software3.png";
 import IT2 from "../images/IT&Software.png";
@@ -17,30 +21,69 @@ import development3 from "../images/development3.png";
 import marketing from "../images/marketing 3.png";
 import marketing6 from "../images/marketing 5.png";
 import marketing5 from "../images/marketing 4.png";
+import arrowleft from "../images/ArrowLeft.svg";
+import arrowright from "../images/ArrowRight.svg";
+import fader from "../images/Faders.svg";
+import chevron from "../images/donwarrow.svg";
 
 const ExMain = () => {
   return (
     <div>
+      <Navbar />
       <div className="saved-general-container">
-        <div>
-          <div className="cart-container">
-            <div className="cart-saved-courses">
-              <div className="saved-card-row1">
-                <div className="saved-card">
-                  <img className="it-image" src={design} alt="IT"></img>
-                  <div className="saved-title-text">
-                    <p className="saved-text-priceD">DESIGN</p>
-                    <p className="saved-price">$49</p>
+        <div className="explore-bar">
+          <div className="left-align">
+            <div className="filter-box">
+              <img src={fader} alt="filter: "></img>
+              <p className="filter">Filter</p>
+              <p className="filter-number">3</p>
+            </div>
+            <div className="search-box search-field">
+              <FontAwesomeIcon icon={faSearch} className="search-icon" />
+              <input type="text" placeholder="UI/UX Design" />
+            </div>
+          </div>
+          <div className="trending">
+            <p>Sort by:</p>
+            <div className="inner-trending">
+              <p>Trending</p>
+              <img src={chevron} alt="arrow down"></img>
+            </div>
+          </div>
+        </div>
+
+        <div className="suggestion-box">
+          <div className="suggestion">
+            <p>Suggestion: </p>
+            <p className="suggestion-head">user interface</p>
+            <p className="suggestion-head">user experience</p>
+            <p className="suggestion-head">web design</p>
+            <p className="suggestion-head">interface</p>
+            <p className="suggestion-head">app</p>
+          </div>
+          <p className="suggestion-number">3, 145,684 results found for "ui/ux design"</p>
+        </div>
+
+        <div className="Explorebody-side">
+          <ExploreSideBar />
+          <div className="ex-cart-container">
+            <div className="ex-cart-saved-courses">
+              <div className="ex-saved-card-row1">
+                <div className="ex-saved-card">
+                  <img className="ex-it-image" src={design} alt="IT"></img>
+                  <div className="ex-saved-title-text">
+                    <p className="ex-saved-text-priceD">DESIGN</p>
+                    <p className="ex-saved-price">$49</p>
                   </div>
-                  <h6 className="general-course-title">
+                  <h6 className="ex-general-course-title">
                     Complete Blender Creator: Learn 3D Modelling for Beginners
                   </h6>
-                  <div className="saved-user">
-                    <div className="saved-star-left">
+                  <div className="ex-saved-user">
+                    <div className="ex-saved-star-left">
                       <img src={star} alt="star"></img>
                       <p>4.9</p>
                     </div>
-                    <div className="saved-user-count">
+                    <div className="ex-saved-user-count">
                       <img src={user} alt="user" />
                       <p>197,637</p>
                       <span>students</span>
@@ -48,21 +91,25 @@ const ExMain = () => {
                   </div>
                 </div>
 
-                <div className="saved-card">
-                  <img className="it-image" src={development4} alt="IT"></img>
-                  <div className="saved-title-text">
-                    <p className="saved-text-priceDE">DEVELOPMENTS</p>
-                    <p className="saved-price">$9</p>
+                <div className="ex-saved-card">
+                  <img
+                    className="ex-it-image"
+                    src={development4}
+                    alt="IT"
+                  ></img>
+                  <div className="ex-saved-title-text">
+                    <p className="ex-saved-text-priceDE">DEVELOPMENTS</p>
+                    <p className="ex-saved-price">$9</p>
                   </div>
-                  <h6 className="general-course-title">
+                  <h6 className="ex-general-course-title">
                     Selenium WebDriver with Java -Basics to Advanced+Frameworks
                   </h6>
-                  <div className="saved-user">
-                    <div className="saved-star-left">
+                  <div className="ex-saved-user">
+                    <div className="ex-saved-star-left">
                       <img src={star} alt="star"></img>
                       <p>4.4</p>
                     </div>
-                    <div className="saved-user-count">
+                    <div className="ex-saved-user-count">
                       <img src={user} alt="user" />
                       <p>154,817</p>
                       <span>students</span>
@@ -70,21 +117,21 @@ const ExMain = () => {
                   </div>
                 </div>
 
-                <div className="saved-card">
-                  <img className="it-image" src={marketing} alt="IT"></img>
-                  <div className="saved-title-text">
-                    <p className="saved-text-priceM">MARKETING</p>
-                    <p className="saved-price">$49</p>
+                <div className="ex-saved-card">
+                  <img className="ex-it-image" src={marketing} alt="IT"></img>
+                  <div className="ex-saved-title-text">
+                    <p className="ex-saved-text-priceM">MARKETING</p>
+                    <p className="ex-saved-price">$49</p>
                   </div>
-                  <h6 className="general-course-title">
+                  <h6 className="ex-general-course-title">
                     The Ultimate Drawing Course - Beginner to Advanced
                   </h6>
-                  <div className="saved-user">
-                    <div className="saved-star-left">
+                  <div className="ex-saved-user">
+                    <div className="ex-saved-star-left">
                       <img src={star} alt="star"></img>
                       <p>4.9</p>
                     </div>
-                    <div className="saved-user-count">
+                    <div className="ex-saved-user-count">
                       <img src={user} alt="user" />
                       <p>197,637</p>
                       <span>students</span>
@@ -93,22 +140,22 @@ const ExMain = () => {
                 </div>
               </div>
 
-              <div className="saved-card-row1">
-                <div className="saved-card">
-                  <img className="it-image" src={ITgirl} alt="IT"></img>
-                  <div className="saved-title-text">
-                    <p className="saved-text-priceD">IT & SOFTWARE</p>
-                    <p className="saved-price">$24</p>
+              <div className="ex-saved-card-row1">
+                <div className="ex-saved-card">
+                  <img className="ex-it-image" src={ITgirl} alt="IT"></img>
+                  <div className="ex-saved-title-text">
+                    <p className="ex-saved-text-priceD">IT & SOFTWARE</p>
+                    <p className="ex-saved-price">$24</p>
                   </div>
-                  <h6 className="general-course-title">
+                  <h6 className="ex-general-course-title">
                     Complete Website Responsive Design
                   </h6>
-                  <div className="saved-user">
-                    <div className="saved-star-left">
+                  <div className="ex-saved-user">
+                    <div className="ex-saved-star-left">
                       <img src={star} alt="star"></img>
                       <p>4.7</p>
                     </div>
-                    <div className="saved-user-count">
+                    <div className="ex-saved-user-count">
                       <img src={user} alt="user" />
                       <p>451,444</p>
                       <span>students</span>
@@ -116,22 +163,25 @@ const ExMain = () => {
                   </div>
                 </div>
 
-                <div className="saved-card">
-                  <img className="it-image" src={development3} alt="IT"></img>
-                  <div className="saved-title-text">
-                    <p className="saved-text-priceDE">DEVELOPMENTS</p>
-                    <p className="saved-price">$35</p>
+                <div className="ex-saved-card">
+                  <img
+                    className="ex-it-image"
+                    src={development3}
+                    alt="IT"
+                  ></img>
+                  <div className="ex-saved-title-text">
+                    <p className="ex-saved-text-priceDE">DEVELOPMENTS</p>
+                    <p className="ex-saved-price">$35</p>
                   </div>
-                  <h6 className="general-course-title">
-                    2021 Complete Python Bootcamp From Zero to Hero in
-                    Python
+                  <h6 className="ex-general-course-title">
+                    2021 Complete Python Bootcamp From Zero to Hero in Python
                   </h6>
-                  <div className="saved-user">
-                    <div className="saved-star-left">
+                  <div className="ex-saved-user">
+                    <div className="ex-saved-star-left">
                       <img src={star} alt="star"></img>
                       <p>4.8</p>
                     </div>
-                    <div className="saved-user-count">
+                    <div className="ex-saved-user-count">
                       <img src={user} alt="user" />
                       <p>982,941</p>
                       <span>students</span>
@@ -139,21 +189,21 @@ const ExMain = () => {
                   </div>
                 </div>
 
-                <div className="saved-card">
-                  <img className="it-image" src={marketing5} alt="IT"></img>
-                  <div className="saved-title-text">
-                    <p className="saved-text-priceM">MARKETING</p>
-                    <p className="saved-price">$24</p>
+                <div className="ex-saved-card">
+                  <img className="ex-it-image" src={marketing5} alt="IT"></img>
+                  <div className="ex-saved-title-text">
+                    <p className="ex-saved-text-priceM">MARKETING</p>
+                    <p className="ex-saved-price">$24</p>
                   </div>
-                  <h6 className="general-course-title">
+                  <h6 className="ex-general-course-title">
                     iPhone Photography | Take Professional Photos On Your iPhone
                   </h6>
-                  <div className="saved-user">
-                    <div className="saved-star-left">
+                  <div className="ex-saved-user">
+                    <div className="ex-saved-star-left">
                       <img src={star} alt="star"></img>
                       <p>4.8</p>
                     </div>
-                    <div className="saved-user-count">
+                    <div className="ex-saved-user-count">
                       <img src={user} alt="user" />
                       <p>211,434</p>
                       <span>students</span>
@@ -162,22 +212,22 @@ const ExMain = () => {
                 </div>
               </div>
 
-              <div className="saved-card-row1">
-                <div className="saved-card">
-                  <img className="it-image" src={IT2} alt="IT"></img>
-                  <div className="saved-title-text">
-                    <p className="saved-text-priceD">IT & SOFTWARE</p>
-                    <p className="saved-price">$35</p>
+              <div className="ex-saved-card-row1">
+                <div className="ex-saved-card">
+                  <img className="ex-it-image" src={IT2} alt="IT"></img>
+                  <div className="ex-saved-title-text">
+                    <p className="ex-saved-text-priceD">IT & SOFTWARE</p>
+                    <p className="ex-saved-price">$35</p>
                   </div>
-                  <h6 className="general-course-title">
+                  <h6 className="ex-general-course-title">
                     Learn Python Programming Masterclass
                   </h6>
-                  <div className="saved-user">
-                    <div className="saved-star-left">
+                  <div className="ex-saved-user">
+                    <div className="ex-saved-star-left">
                       <img src={star} alt="star"></img>
                       <p>4.0</p>
                     </div>
-                    <div className="saved-user-count">
+                    <div className="ex-saved-user-count">
                       <img src={user} alt="user" />
                       <p>211,434</p>
                       <span>students</span>
@@ -185,21 +235,21 @@ const ExMain = () => {
                   </div>
                 </div>
 
-                <div className="saved-card">
-                  <img className="it-image" src={design3} alt="IT"></img>
-                  <div className="saved-title-text">
-                    <p className="saved-text-priceDE">DESIGN</p>
-                    <p className="saved-price">$16</p>
+                <div className="ex-saved-card">
+                  <img className="ex-it-image" src={design3} alt="IT"></img>
+                  <div className="ex-saved-title-text">
+                    <p className="ex-saved-text-priceDE">DESIGN</p>
+                    <p className="ex-saved-price">$16</p>
                   </div>
-                  <h6 className="general-course-title">
+                  <h6 className="ex-general-course-title">
                     Instagram Marketing 2021: Complete Guide To Instagram Gro...
                   </h6>
-                  <div className="saved-user">
-                    <div className="saved-star-left">
+                  <div className="ex-saved-user">
+                    <div className="ex-saved-star-left">
                       <img src={star} alt="star"></img>
                       <p>4.5</p>
                     </div>
-                    <div className="saved-user-count">
+                    <div className="ex-saved-user-count">
                       <img src={user} alt="user" />
                       <p>854</p>
                       <span>students</span>
@@ -207,21 +257,21 @@ const ExMain = () => {
                   </div>
                 </div>
 
-                <div className="saved-card">
-                  <img className="it-image" src={marketing6} alt="IT"></img>
-                  <div className="saved-title-text">
-                    <p className="saved-text-priceM">MARKETING</p>
-                    <p className="saved-price">$24</p>
+                <div className="ex-saved-card">
+                  <img className="ex-it-image" src={marketing6} alt="IT"></img>
+                  <div className="ex-saved-title-text">
+                    <p className="ex-saved-text-priceM">MARKETING</p>
+                    <p className="ex-saved-price">$24</p>
                   </div>
-                  <h6 className="general-course-title">
+                  <h6 className="ex-general-course-title">
                     Premiere Pro CC for Beginners: Video Editing in Premiere
                   </h6>
-                  <div className="saved-user">
-                    <div className="saved-star-left">
+                  <div className="ex-saved-user">
+                    <div className="ex-saved-star-left">
                       <img src={star} alt="star"></img>
                       <p>4.8</p>
                     </div>
-                    <div className="saved-user-count">
+                    <div className="ex-saved-user-count">
                       <img src={user} alt="user" />
                       <p>854</p>
                       <span>students</span>
@@ -232,6 +282,17 @@ const ExMain = () => {
             </div>
           </div>
         </div>
+        <div className="number-slider">
+          <img src={arrowleft} alt="left arrow"></img>
+          <p className="1">1</p>
+          <p className="2">2</p>
+          <p className="3">3</p>
+          <p className="4">4</p>
+          <p className="5">5</p>
+          <img src={arrowright} alt="right arrow"></img>
+        </div>
+
+        <Footer />
       </div>
     </div>
   );
