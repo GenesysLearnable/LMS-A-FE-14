@@ -24,16 +24,78 @@ body {
 
 /* EXPLORE ASIDE */
 
+
+
+/* .slider-container {
+  position: relative;
+  width: 300px;
+  margin: 100px auto;
+}
+
+.slider {
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+.slider::-webkit-slider-thumb {
+  pointer-events: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.slider::-moz-range-thumb {
+  pointer-events: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+  border: none;
+}
+
+.slider::-ms-thumb {
+  pointer-events: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+  border: none;
+}
+
+.slider-track {
+  position: absolute;
+  height: 4px;
+  background: #007bff;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+} */
+
+
 .aside-container{
-  border: 1px solid;
-  width: 20rem;
+  width: 18.84rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  
 }
 .aside-category-head, .aside-tech-check{
   display: flex;
   justify-content: space-between;
   padding: .4rem;
   width: 18rem;
-  
+}
+
+.aside-category-head{
+  border: 1px solid #e7e7e7;
 }
 
 .aside-tech-check{
@@ -47,7 +109,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: .2rem;
-  font-size: .7rem;
+  font-size: .6rem;
 }
 
 .aside-tech:active{
@@ -55,7 +117,7 @@ body {
 }
 
 .numbers-and-arrow{
-  font-size: .7rem;
+  font-size: .6rem;
 }
 
 .aside-tech img{
@@ -64,7 +126,7 @@ body {
 
 .aside-star{
   width: 12px;
-  height: 12px;
+  height: 15px;
 }
 
 
@@ -75,13 +137,20 @@ body {
 }
 
 .aside-price p{
-border: 1px solid;
-padding: .4rem 1.4rem;
+border: 1px solid rgb(241, 241, 241);
+padding: .4rem;
+width: 6.2rem;
 cursor: pointer;
+text-align: left;
+font-size: .6rem;
 }
 
 .aside-price p span{
   color: rgba(124, 132, 147, 1);
+}
+
+.aside-all-bg{
+  background-color: rgba(255, 255, 255, 1);
 }
 
 

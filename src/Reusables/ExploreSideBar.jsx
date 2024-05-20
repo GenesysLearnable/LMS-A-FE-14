@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import arrowup from "../images/ChevronDown.svg";
 import cpu from "../images/Cpu.svg";
 import handshake from "../images/Handshake.svg";
@@ -8,33 +8,23 @@ import star from "../images/Star .png";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faAngleUp } from "@fortawesome/free-solid-svg-icon";
 
-
-
-
-
-
 export default function ExploreSideBar() {
-  const [clicked, setClicked] = useState(false);
-  const handleColor = () => {
-    setClicked(!clicked);
-  }
 
   return (
     <div>
       <div>
         <div>
-          <aside className="aside-container">
+          <aside className="aside-container aside-all-bg">
             <div className="aside-category-head">
               <h3>CATEGORY</h3>
               <img src={arrowup} alt="arrow" />
             </div>
-            <div className="aside-tech-check" onClick={handleColor}>
+            <div className="aside-tech-check">
               <div className="aside-tech">
                 <img src={cpu} alt="cpu" />
                 <p>Technology</p>
               </div>
               <img src={arrowup} alt="arrow" />
-              {/* <FontAwesomeIcon icon={faAngleUp} /> */}
             </div>
 
             <div className="aside-tech-check">
@@ -118,7 +108,7 @@ export default function ExploreSideBar() {
             </div>
           </aside>
 
-          <aside className="aside-container">
+          <aside className="aside-container aside-all-bg">
             <div className="aside-category-head">
               <h3>RATING</h3>
               <img src={arrowup} alt="arrow" />
@@ -170,7 +160,7 @@ export default function ExploreSideBar() {
             </div>
           </aside>
 
-          <aside className="aside-container">
+          <aside className="aside-container aside-all-bg">
             <div className="aside-category-head">
               <h3>COURSE LEVEL</h3>
               <img src={arrowup} alt="arrow" />
@@ -209,12 +199,15 @@ export default function ExploreSideBar() {
             </div>
           </aside>
 
-          <aside className="aside-container">
+          <aside className="aside-container aside-all-bg">
             <div className="aside-category-head">
-              <h3>COURSE LEVEL</h3>
+              <h3>Price</h3>
               <img src={arrowup} alt="arrow" />
             </div>
-            <progress min={70} value={70} max={100}></progress>
+            <div className="slider-container">
+              <input type="range" min={0} max={100} value={25} className="slider1"></input>
+              <input type="range" min={0} max={100} value={75} className="slider2"></input>
+            </div>
 
             <div className="aside-price">
               <p>
@@ -228,7 +221,7 @@ export default function ExploreSideBar() {
             <div className="aside-tech-check">
               <div className="aside-tech">
                 <input type="checkbox" />
-                <p>Intermediate</p>
+                <p>Paid</p>
               </div>
               <p className="numbers-and-arrow">1345</p>
             </div>
@@ -236,7 +229,7 @@ export default function ExploreSideBar() {
             <div className="aside-tech-check">
               <div className="aside-tech">
                 <input type="checkbox" />
-                <p>Expert</p>
+                <p>Free</p>
               </div>
               <p className="numbers-and-arrow">1345</p>
             </div>
