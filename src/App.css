@@ -19,15 +19,20 @@ body {
 
 .Explorebody-side {
   display: flex;
+  justify-content: center;
+  align-items: center;
+border: 1px solid;
+height: auto;
 }
+
 
 .ex-cart-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 6rem 1rem 2rem 1rem;
-  padding: 0 2rem;
+  margin: 0 1rem 2rem 1rem;
+  padding: 0 1rem;
 }
 
 .ex-saved-card-row1 {
@@ -122,22 +127,57 @@ body {
 }
 
 .search-field {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem 1rem 1.7rem;
   width: 25rem;
   border-radius: 5px;
+  position: relative;
 }
 
-.explore-bar{
+.search-field input {
+  background: #fff;
+  outline: 0;
+  border: 1px solid #cecbcb;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 0.8rem;
+  width: 100%;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+.font-icon {
+  color: rgba(255, 255, 255, 1);
+  margin-left: 2rem;
+  height: 25px;
+}
+
+.search-field input::placeholder {
+  padding-left: 2.5rem;
+  color: #8f8f8f;
+}
+
+.search-field .search-icon {
+  position: absolute;
+  width: 20px;
+  cursor: pointer;
+  padding-left: 1rem;
+  pointer-events: none;
+}
+
+.explore-bar {
   display: flex;
   justify-content: space-between;
 }
 
-.left-align{
+.left-align {
   display: flex;
   justify-content: space-between;
   gap: 15rem;
 }
 
-.filter-box{
+.filter-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,24 +187,24 @@ body {
   padding: 0 1rem;
 }
 
-.filter-box:active{
+.filter-box:active {
   border: 1px solid rgba(255, 102, 54, 1);
 }
 
-.filter-box .filter-number:active{
+.filter-box .filter-number:active {
   background-color: rgba(10, 101, 204, 1);
   color: #fff;
 }
 
-.filter-box .filter:active{
+.filter-box .filter:active {
   color: rgba(10, 101, 204, 1);
 }
 
-.filter-box img{
+.filter-box img {
   width: 20px;
 }
 
-.trending{
+.trending {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,7 +212,7 @@ body {
   margin-right: 1rem;
 }
 
-.inner-trending{
+.inner-trending {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -182,38 +222,30 @@ body {
 
 }
 
-.inner-trending img{
+.inner-trending img {
   width: 15px;
 }
 
-.suggestion-box{
+.suggestion-box {
   display: flex;
   justify-content: space-between;
   margin: 0 1rem;
 }
 
-.suggestion{
+.suggestion {
   display: flex;
   align-items: center;
   gap: .6rem;
 }
 
-.suggestion-head{
+.suggestion-head {
   color: rgba(10, 101, 204, 1);
   font-size: .8rem;
 }
 
-.suggestion-number{
+.suggestion-number {
   font-size: .8rem;
 }
-
-
-
-
-
-
-
-
 
 
 /* ExMain Reusable starts here */
@@ -222,66 +254,11 @@ body {
 }
 
 /* EXPLORE ASIDE */
-
-/* .slider-container {
-  position: relative;
-  width: 300px;
-  margin: 100px auto;
-}
-
-.slider {
-  position: absolute;
-  pointer-events: none;
-  width: 100%;
-  -webkit-appearance: none;
-  background: transparent;
-}
-
-.slider::-webkit-slider-thumb {
-  pointer-events: auto;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #007bff;
-  cursor: pointer;
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-.slider::-moz-range-thumb {
-  pointer-events: auto;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #007bff;
-  cursor: pointer;
-  border: none;
-}
-
-.slider::-ms-thumb {
-  pointer-events: auto;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #007bff;
-  cursor: pointer;
-  border: none;
-}
-
-.slider-track {
-  position: absolute;
-  height: 4px;
-  background: #007bff;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: -1;
-} */
-
-
 .aside-container {
   width: 18.84rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
+  margin-top: 2rem;
 
 }
 

@@ -29,7 +29,35 @@ import chevron from "../images/donwarrow.svg";
 const ExMain = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
+      <div className="navbar-container">
+        <div className="navbar">
+          <img
+            className="navbar-logo"
+            src={process.env.PUBLIC_URL + "/images/golearn-logo.png"}
+            alt="Logo"
+          />
+          <span className="nav-text">Explore</span>
+          <div className="search-box">
+            <FontAwesomeIcon icon={faSearch} className="search-icon" />
+            <input type="text" placeholder="Search Course" />
+          </div>
+          <span className="nav-text-link">GoLearn Business</span>
+          <span className="nav-text-link">Admin</span>
+          <FontAwesomeIcon icon={faBell} className="notification-icon" />
+          <FontAwesomeIcon icon={faCircleUser} className=" font-icon" />
+        </div>
+        <div className="navbar-links">
+          <ul>
+            <li>Home</li>
+            <li>My Course</li>
+            <li>Saved</li>
+            <li>Reminder</li>
+            <li>Cart</li>
+          </ul>
+        </div>
+      </div>
+
       <div className="saved-general-container">
         <div className="explore-bar">
           <div className="left-align">
@@ -38,7 +66,7 @@ const ExMain = () => {
               <p className="filter">Filter</p>
               <p className="filter-number">3</p>
             </div>
-            <div className="search-box search-field">
+            <div className="search-field">
               <FontAwesomeIcon icon={faSearch} className="search-icon" />
               <input type="text" placeholder="UI/UX Design" />
             </div>
@@ -61,7 +89,9 @@ const ExMain = () => {
             <p className="suggestion-head">interface</p>
             <p className="suggestion-head">app</p>
           </div>
-          <p className="suggestion-number">3, 145,684 results found for "ui/ux design"</p>
+          <p className="suggestion-number">
+            3, 145,684 results found for "ui/ux design"
+          </p>
         </div>
 
         <div className="Explorebody-side">
@@ -284,11 +314,11 @@ const ExMain = () => {
         </div>
         <div className="number-slider">
           <img src={arrowleft} alt="left arrow"></img>
-          <p className="1">1</p>
-          <p className="2">2</p>
-          <p className="3">3</p>
-          <p className="4">4</p>
-          <p className="5">5</p>
+          <p className="1">01</p>
+          <p className="2">02</p>
+          <p className="3">03</p>
+          <p className="4">04</p>
+          <p className="5">05</p>
           <img src={arrowright} alt="right arrow"></img>
         </div>
 

@@ -7,7 +7,7 @@ export default function GoLearn() {
   return (
     <div className="App">
       <LoginForm />
-      {/* <ExpMain /> */}
+      <ExpMain />
     </div>
   );
 }
