@@ -19,10 +19,13 @@ body {
 
 .Explorebody-side {
   display: flex;
-  justify-content: center;
-  align-items: center;
-border: 1px solid;
-height: auto;
+  /* justify-content: center;
+  align-items: center; */
+  height: auto;
+}
+
+.sidebar-container{
+  margin-top: 0;
 }
 
 
@@ -37,7 +40,11 @@ height: auto;
 
 .ex-saved-card-row1 {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .ex-it-image {
@@ -92,7 +99,7 @@ height: auto;
   justify-content: space-between;
   width: 20rem;
   margin-bottom: 2rem;
-  margin-left: 46rem;
+  /* margin-left: rem; */
   padding-left: .4rem;
   padding-right: .4rem;
   cursor: pointer;
@@ -115,6 +122,12 @@ height: auto;
 .number-slider p:active {
   color: rgba(255, 255, 255, 1);
   background-color: rgba(10, 101, 204, 1);
+
+}
+
+.number-slider p:hover {
+  background-color: rgba(255, 102, 54, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .number-slider img:active {
@@ -174,7 +187,7 @@ height: auto;
 .left-align {
   display: flex;
   justify-content: space-between;
-  gap: 15rem;
+  gap: 4rem;
 }
 
 .filter-box {
@@ -182,13 +195,23 @@ height: auto;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-left: 1rem;
+  margin-left: rem;
   cursor: pointer;
   padding: 0 1rem;
 }
 
+.filter-number {
+  font-weight: 500;
+}
+
+.filter-number:active {
+  background-color: #0a65cc;
+  padding: .2rem;
+}
+
 .filter-box:active {
   border: 1px solid rgba(255, 102, 54, 1);
+  margin-left: .8rem;
 }
 
 .filter-box .filter-number:active {
@@ -258,8 +281,7 @@ height: auto;
   width: 18.84rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
-  margin-top: 2rem;
-
+  margin-top: 0;
 }
 
 .aside-category-head,
@@ -324,6 +346,21 @@ height: auto;
 .aside-price p span {
   color: rgba(124, 132, 147, 1);
 }
+
+/* .slider-container{
+  position: relative;
+}
+
+.slider-container .slider1{
+  margin-left: 1rem;
+  position: absolute;
+} */
+
+
+/* THIS NEEDS WORK!!! */
+/* .slider-container .slider1{
+  direction: rtl;
+} */
 
 .aside-all-bg {
   background-color: rgba(255, 255, 255, 1);
