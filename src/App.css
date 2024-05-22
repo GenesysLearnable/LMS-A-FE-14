@@ -17,6 +17,326 @@ body {
 }
 
 
+/* LANDING PAGE STARTS HERE!!! */
+.hero-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  margin: 5rem 0;
+}
+
+
+.left-hero p {
+  font-size: .6rem;
+  color: rgba(13, 31, 161, 1);
+  font-weight: 600;
+  margin-bottom: 5rem;
+}
+
+.hero-texts h3 {
+  font-size: 2.2rem;
+  color: rgba(10, 101, 204, 1);
+}
+
+.hero-texts p {
+  color: rgba(0, 3, 61, 1);
+  font-size: 1rem;
+  width: 26rem;
+  line-height: 1.6;
+}
+
+.hero-texts span {
+  color: rgba(0, 3, 61, 1);
+}
+
+.landing-hero-image {
+  width: 500px;
+  box-shadow: 0 2px 5px 5px rgb(197, 197, 197);
+}
+
+.hero-attachment {
+  border: 1px solid rgb(183, 187, 215);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 36rem;
+  border-radius: 3px;
+  padding: 0 .8rem;
+  margin-left: 30rem;
+
+}
+
+.arrow-down {
+  width: 10px;
+  height: 10px;
+}
+
+.hero-attachment p {
+  font-size: .6rem;
+}
+
+.hero-attachment img {
+  width: 40px;
+}
+
+.hero-attachment h4 {
+  font-size: .6rem;
+}
+
+.landing-btn {
+  width: 4rem;
+  font-size: .6rem;
+  background-color: rgba(10, 101, 204, 1);
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.8rem;
+  gap: .2rem;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 0 .2rem;
+  margin-left: .4rem;
+  font-weight: 600;
+}
+
+.landing-btn:hover{
+  background-color: rgba(248, 248, 253, 1);
+    border: 1px solid rgba(10, 101, 204, 1);
+    color: rgba(10, 101, 204, 1);
+}
+
+.white-btn{
+  background-color: rgba(248, 248, 253, 1);
+  border: 1px solid rgba(10, 101, 204, 1);
+  color: rgba(10, 101, 204, 1);
+}
+
+.white-btn:hover{
+  background-color: rgba(10, 101, 204, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.landing-section1 {
+  background-color: rgba(206, 224, 245, 1);
+  padding: 2rem 10rem;
+  margin-top: .2rem;
+}
+
+.landing-section1 h5,
+.landing-section2 h5,
+.landing-section3 h5,
+.landing-section4 h5,
+.landing-testimonials h5, .landing-socials h5 {
+  color: rgba(10, 101, 204, 1);
+  font-size: 1.4rem;
+}
+
+.landing-section1 h4,
+.landing-section2 h4,
+.landing-section3 h4,
+.landing-section4 h4,
+.landing-testimonials h4 {
+  font-size: 1.6rem;
+  width: 30rem;
+  line-height: 1.4;
+}
+
+.product-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+  width: 15rem;
+  padding: 2rem;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 2px rgb(179, 179, 179);
+  margin-top: 2rem;
+}
+
+.card:active {
+  box-shadow: 0 2px 8px 10px rgb(202, 202, 202);
+}
+
+.card p {
+  font-size: .8rem;
+}
+
+
+.arrow-btn {
+  display: flex;
+  gap: .2rem;
+  cursor: pointer;
+}
+
+.arrow-btn:active {
+  background-color: rgba(10, 101, 204, 1);
+  color: #fff;
+  padding: .2rem .6rem;
+}
+
+.arrow-btn img {
+  width: 15px;
+}
+
+
+.arrow-btn p {
+  color: rgba(7, 67, 136, 1);
+  font-weight: bold;
+}
+
+
+.landing-section2 {
+  background-color: rgba(206, 224, 245, 1);
+  padding: 2rem 10rem;
+  display: flex;
+  gap: 4rem;
+}
+
+.card-top {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0;
+}
+
+.mini-card {
+  margin-right: 2rem;
+}
+
+.mini-card p {
+  font-size: .8rem;
+  width: 12.5rem;
+  line-height: 1.4;
+}
+
+
+.landing-woman {
+  width: 500px;
+}
+
+
+.landing-section3 {
+  padding: 2rem 10rem;
+  gap: 4rem;
+}
+
+.tutor-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tutor-card p {
+  text-align: center;
+  font-size: .6rem;
+  color: rgba(170, 67, 53, 1);
+}
+
+.align-text {
+  text-align: center;
+}
+
+
+.landing-section4 {
+  background-color: rgba(206, 224, 245, 1);
+  padding: 2rem 10rem;
+}
+
+.reduce-size{
+font-size: .8rem;
+}
+
+.landing-testimonials{
+      padding: 2rem 10rem;
+}
+
+.testimonial-cards{
+  display: flex;
+}
+
+.tee-card{
+  background-color: rgba(255, 255, 255, 1);
+    padding: 1rem 1.8rem;
+    margin-left: 4rem;
+
+}
+
+.tee-card{
+  box-shadow: 5px 5px 10px rgb(158, 158, 158), -5px 5px 10px gray;
+margin-top: 2rem;
+}
+
+.tee-card h6 {
+font-size: 1.2rem;
+margin: 0;
+margin-top: .8rem;
+}
+
+.test-quote{
+  width: 17rem;
+  font-size: .8rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.mark-image{
+  width: 15px;
+}
+
+.landing-socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  margin: 4rem auto;
+}
+
+
+.landing-socials h4{
+  font-size: .7rem;
+    line-height: 1.4;
+    width: 16rem;
+}
+
+.landing-socials h5{
+  margin: 0;
+}
+
+.social-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.social-row img, .tee-card, .card{
+  transition: transform 0.3s ease;
+}
+
+.social-row img:hover, .tee-card:hover, .card:hover{
+transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
 .Explorebody-side {
   display: flex;
   /* justify-content: center;
@@ -24,7 +344,7 @@ body {
   height: auto;
 }
 
-.sidebar-container{
+.sidebar-container {
   margin-top: 0;
 }
 
