@@ -3,6 +3,20 @@ import "./App.css";
 import LoginForm from "./StudentLogin/StudentLogin";
 // import LandingPage from "./Components/LandingPage";
 // import ExpMain from "./Reusables/ExploreMain";
+
+export default function GoLearn() {
+  return (
+    <div className="App">
+      <LoginForm />
+      {/* <LandingPage /> */}
+      {/* <ExpMain /> */}
+    </div>
+  );
+}
+
+import React from "react";
+import "./App.css";
+import LoginForm from "./StudentLogin/StudentLogin";
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Courses from './Courses/selectcourse';
 import SignUpForm from "./studentsignup/studentsignup";
@@ -62,7 +76,6 @@ export default function GoLearn() {
   return (
     <div className="App">
       <LoginForm />
-      {/* <LandingPage /> */}
       {/* <ExpMain /> */}
     </div>
   );
