@@ -6,7 +6,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Welcome from './component/welcome';
 import LoginForm from './StudentLogin/StudentLogin';
 import Signup from './Components/AdminSignUp';
-import Courses from './Courses/selectcourse';
 import SignUpForm from './studentsignup/studentsignup';
 import ForgotPwd from './ForgotPassword/ForgotPwd';
 import VerifyPwd from './ForgotPassword/VerifyPwd';
@@ -19,10 +18,6 @@ const router = createBrowserRouter([
   { path: "welcome", element: <Welcome /> },
   { path: "login", element: <LoginForm /> },
   { path: "signup", element: <Signup /> },
-  { path: "technology", element: <Courses /> },
-  { path: "business", element: <Courses /> },
-  { path: "art", element: <Courses /> },
-  { path: "agriculture", element: <Courses /> },
   { path: "studentsignup", element: <SignUpForm /> },
   { path: "Forgotpassword", element: <ForgotPwd /> },
   { path: "Verifypassword", element: <VerifyPwd /> },

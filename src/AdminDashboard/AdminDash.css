@@ -1,0 +1,189 @@
+.admindash-container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #d4d4d4;
+}
+
+.admindash-sidenav{
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid #b1aeae;
+}
+
+.admindash-border{
+    border-bottom: 1px solid #b1aeae;
+}
+
+.admindash-logo{
+    width: 170px;
+    margin: 1rem 0 .6rem 2.3rem;
+}
+
+.admindash-sidenav ul{
+    list-style: none;
+}
+
+.admindash-sidenav ul li{
+    display: block;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    padding: .6rem;
+}
+
+.admindash-icons{
+    margin-right: 1rem;
+}
+
+.admin-active{
+    background: #fff;
+    color: #0a65cc;
+    border-left: 3px solid #0a65cc;
+}
+
+.admindash-sidenav ul li:hover{
+    background: #fff;
+    color: #0a65cc;
+    border-left: 3px solid #0a65cc;
+}
+
+.admin-user-profile{
+    display: flex;
+    justify-content: center;
+    margin: 9rem 0 0 3rem;
+}
+
+.admindash-search-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 1rem 1rem 1.7rem;
+}
+
+.admindash-search-box input {
+  background: #fff;
+  outline: 0;
+  border: 1px solid #cecbcb;
+  border-radius: 2rem;
+  font-size: 1rem;
+  padding: 0.8rem;
+  width: 900px;
+}
+
+.admindash-search-icon {
+  color: #818080;
+}
+
+.admindash-search-box input::placeholder {
+  padding-left: 2.5rem;
+  color: #8f8f8f;
+}
+
+.admindash-search-box .admindash-search-icon {
+  position: absolute;
+  width: 20px;
+  cursor: pointer;
+  padding-left: 1rem;
+}
+
+.admindash-notification-icon,
+.admindash-user-icon {
+  margin-left: 3.5rem;
+  color: #818080;
+  height: 25px;
+  cursor: pointer;
+}
+
+.Dashboard-container{
+    display: block;
+}
+
+.admin-dash-container{
+    margin-left: 2rem;
+}
+
+.admin-welcome-container{
+    display: flex;
+    margin-left: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.admin-dash-category-box ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.admin-dash-category-box ul li {
+  width: 16.9rem;
+  height: 13rem;
+  border: 1px solid #e4e1e1;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+
+.admin-dash-category-box ul li:nth-child(1){
+    background-color: lightblue;
+}
+
+.admin-dash-category-box ul li:nth-child(2){
+    background-color: lightgreen;
+}
+
+.admin-dash-category-box ul li:nth-child(3){
+    background-color: lightsalmon;
+}
+
+.admin-dash-category-box ul li:nth-child(4){
+    background-color: lightcoral;
+}
+
+.admin-dash-category-box ul li .admin-dash-category-icon {
+  display: block;
+  font-size: 1rem;
+  height: 2rem;
+  margin: 2rem 0 2rem 2rem;
+  cursor: pointer;
+}
+
+.admin-dash-category-box ul li span {
+  margin: 0 0 0 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.admin-dash-category-box ul li p {
+  margin: 1rem 0 0 2rem;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.admin-dash-btn{
+    width: 170px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-left: 5rem;
+    background-color: #0a65cc;
+    border-radius: .5rem;
+    color: #fff;
+}
+
+.admin-welcome-text{
+    margin-left: 2rem;
+}
+
+/*
+
+.Uxhero-free-text{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+*/
