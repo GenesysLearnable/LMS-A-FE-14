@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import "./StudentSavedCourse.css";
-import "./Studenthome.css";
+import "./StudentHome.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,
@@ -33,7 +33,7 @@ const Studenthome = () => {
       <div className="home-general-container">
         <Navbar />
 
-        <div className="second-course-main-container">
+        <div className="second-course-main-container1">
           <div className="second-card-row1">
             <div className="second-card">
               <img className="it-image" src={ITimage} alt="IT"></img>

@@ -48,170 +48,176 @@ const Studentschool = () => {
         </div>
 
         <div className="second-course-main-container">
-          <h5>Top Picks for you</h5>
-          <div className="second-card-row1">
-            <div className="second-card">
-              <img className="it-image" src={first} alt="IT"></img>
-              <div className="second-title-text">
-                <p className="second-text-price">IT & SOFTWARE</p>
-                <p className="second-price">$35</p>
-              </div>
-              <h6>Learn Python Programming Masterclass</h6>
-              <div className="second-user">
-                <div className="second-star-left">
-                  <img src={star} alt="star"></img>
-                  <p>4.0</p>
-                </div>
-                <div className="second-user-count">
-                  <img src={user} alt="user" />
-                  <p>211,434</p>
-                  <span>students</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="second-card">
-              <img className="it-image" src={second} alt="IT"></img>
-              <div className="second-title-text">
-                <p className="second-text-priceD">Design</p>
-                <p className="second-price">$49</p>
-              </div>
-              <h6>User Experience course for beginners</h6>
-              <div className="second-user">
-                <div className="second-star-left">
-                  <img src={star} alt="star"></img>
-                  <p>4.9</p>
-                </div>
-                <div className="second-user-count">
-                  <img src={user} alt="user" />
-                  <p>197,637</p>
-                  <span>students</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="second-card">
-              <img className="it-image" src={third} alt="IT"></img>
-              <div className="second-title-text">
-                <p className="second-text-priceDE">Developments</p>
-                <p className="second-price">$32</p>
-              </div>
-              <h6>Adobe Premiere Pro CC Advanced Training Course</h6>
-              <div className="second-user">
-                <div className="second-star-left">
-                  <img src={star} alt="star"></img>
-                  <p>4.6</p>
-                </div>
-                <div className="second-user-count">
-                  <img src={user} alt="user" />
-                  <p>236,568</p>
-                  <span>students</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="second-card">
-              <img className="it-image" src={fourth} alt="IT"></img>
-              <div className="second-title-text">
-                <p className="second-text-priceM">Marketing</p>
-                <p className="second-price">$13</p>
-              </div>
-              <h6>Ultimate AWS Certified Solutions Architect Associate 2021</h6>
-              <div className="second-user">
-                <div className="second-star-left">
-                  <img src={star} alt="star"></img>
-                  <p>4.1</p>
-                </div>
-                <div className="second-user-count">
-                  <img src={user} alt="user" />
-                  <p>511,123</p>
-                  <span>students</span>
-                </div>
-              </div>
-            </div>
+          <div>
+            <h4 className="home-head-text">Top Picks for you</h4>
           </div>
-
-          <div className="second-card-row1">
-            <div className="second-card">
-              <img className="it-image" src={fifth} alt="IT"></img>
-              <div className="second-title-text">
-                <p className="second-text-priceD">Design</p>
-                <p className="second-price">$9</p>
-              </div>
-              <h6>
-                Ultimate Google Ads Training 2020: Profit with Pay Per Click
-              </h6>
-              <div className="second-user">
-                <div className="second-star-left">
-                  <img src={star} alt="star"></img>
-                  <p>4.1</p>
+          <div className="home-rows">
+            <div className="second-card-row1">
+              <div className="second-card">
+                <img className="it-image" src={first} alt="IT"></img>
+                <div className="second-title-text">
+                  <p className="second-text-price">IT & SOFTWARE</p>
+                  <p className="second-price">$35</p>
                 </div>
-                <div className="second-user-count">
-                  <img src={user} alt="user" />
-                  <p>154,817</p>
-                  <span>students</span>
+                <h6>Learn Python Programming Masterclass</h6>
+                <div className="second-user">
+                  <div className="second-star-left">
+                    <img src={star} alt="star"></img>
+                    <p>4.0</p>
+                  </div>
+                  <div className="second-user-count">
+                    <img src={user} alt="user" />
+                    <p>211,434</p>
+                    <span>students</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="second-card">
+                <img className="it-image" src={second} alt="IT"></img>
+                <div className="second-title-text">
+                  <p className="second-text-priceD">Design</p>
+                  <p className="second-price">$49</p>
+                </div>
+                <h6>User Experience course for beginners</h6>
+                <div className="second-user">
+                  <div className="second-star-left">
+                    <img src={star} alt="star"></img>
+                    <p>4.9</p>
+                  </div>
+                  <div className="second-user-count">
+                    <img src={user} alt="user" />
+                    <p>197,637</p>
+                    <span>students</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="second-card">
+                <img className="it-image" src={third} alt="IT"></img>
+                <div className="second-title-text">
+                  <p className="second-text-priceDE">Developments</p>
+                  <p className="second-price">$32</p>
+                </div>
+                <h6>Adobe Premiere Pro CC Advanced Training Course</h6>
+                <div className="second-user">
+                  <div className="second-star-left">
+                    <img src={star} alt="star"></img>
+                    <p>4.6</p>
+                  </div>
+                  <div className="second-user-count">
+                    <img src={user} alt="user" />
+                    <p>236,568</p>
+                    <span>students</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="second-card">
+                <img className="it-image" src={fourth} alt="IT"></img>
+                <div className="second-title-text">
+                  <p className="second-text-priceM">Marketing</p>
+                  <p className="second-price">$13</p>
+                </div>
+                <h6>
+                  Ultimate AWS Certified Solutions Architect Associate 2021
+                </h6>
+                <div className="second-user">
+                  <div className="second-star-left">
+                    <img src={star} alt="star"></img>
+                    <p>4.1</p>
+                  </div>
+                  <div className="second-user-count">
+                    <img src={user} alt="user" />
+                    <p>511,123</p>
+                    <span>students</span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="second-card">
-              <img className="it-image" src={sixth} alt="IT"></img>
-              <div className="second-title-text">
-                <p className="second-text-price">IT & SOFTWARE</p>
-                <p className="second-price">$35</p>
-              </div>
-              <h6>Learn Ethical Hacking From Scratch 2021</h6>
-              <div className="second-user">
-                <div className="second-star-left">
-                  <img src={star} alt="star"></img>
-                  <p>4.8</p>
+            <div className="second-card-row1">
+              <div className="second-card">
+                <img className="it-image" src={fifth} alt="IT"></img>
+                <div className="second-title-text">
+                  <p className="second-text-priceD">Design</p>
+                  <p className="second-price">$9</p>
                 </div>
-                <div className="second-user-count">
-                  <img src={user} alt="user" />
-                  <p>451,444</p>
-                  <span>students</span>
+                <h6>
+                  Ultimate Google Ads Training 2020: Profit with Pay Per Click
+                </h6>
+                <div className="second-user">
+                  <div className="second-star-left">
+                    <img src={star} alt="star"></img>
+                    <p>4.1</p>
+                  </div>
+                  <div className="second-user-count">
+                    <img src={user} alt="user" />
+                    <p>154,817</p>
+                    <span>students</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="second-card">
-              <img className="it-image" src={seventh} alt="IT"></img>
-              <div className="second-title-text">
-                <p className="second-text-priceDE">Development</p>
-                <p className="second-price">$16</p>
-              </div>
-              <h6>Angular - The Complete Guide (2021 Edition)</h6>
-              <div className="second-user">
-                <div className="second-star-left">
-                  <img src={star} alt="star"></img>
-                  <p>4.3</p>
+              <div className="second-card">
+                <img className="it-image" src={sixth} alt="IT"></img>
+                <div className="second-title-text">
+                  <p className="second-text-price">IT & SOFTWARE</p>
+                  <p className="second-price">$35</p>
                 </div>
-                <div className="second-user-count">
-                  <img src={user} alt="user" />
-                  <p>197,637</p>
-                  <span>students</span>
+                <h6>Learn Ethical Hacking From Scratch 2021</h6>
+                <div className="second-user">
+                  <div className="second-star-left">
+                    <img src={star} alt="star"></img>
+                    <p>4.8</p>
+                  </div>
+                  <div className="second-user-count">
+                    <img src={user} alt="user" />
+                    <p>451,444</p>
+                    <span>students</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="second-card">
-              <img className="it-image" src={eight} alt="IT"></img>
-              <div className="second-title-text">
-                <p className="second-text-priceM">Marketing</p>
-                <p className="second-price">$23</p>
-              </div>
-              <h6>
-                How to get Diamond in soloQ | League of Legends | Season 11
-              </h6>
-              <div className="second-user">
-                <div className="second-star-left">
-                  <img src={star} alt="star"></img>
-                  <p>4.7</p>
+              <div className="second-card">
+                <img className="it-image" src={seventh} alt="IT"></img>
+                <div className="second-title-text">
+                  <p className="second-text-priceDE">Development</p>
+                  <p className="second-price">$16</p>
                 </div>
-                <div className="second-user-count">
-                  <img src={user} alt="user" />
-                  <p>435,671</p>
-                  <span>students</span>
+                <h6>Angular - The Complete Guide (2021 Edition)</h6>
+                <div className="second-user">
+                  <div className="second-star-left">
+                    <img src={star} alt="star"></img>
+                    <p>4.3</p>
+                  </div>
+                  <div className="second-user-count">
+                    <img src={user} alt="user" />
+                    <p>197,637</p>
+                    <span>students</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="second-card">
+                <img className="it-image" src={eight} alt="IT"></img>
+                <div className="second-title-text">
+                  <p className="second-text-priceM">Marketing</p>
+                  <p className="second-price">$23</p>
+                </div>
+                <h6>
+                  How to get Diamond in soloQ | League of Legends | Season 11
+                </h6>
+                <div className="second-user">
+                  <div className="second-star-left">
+                    <img src={star} alt="star"></img>
+                    <p>4.7</p>
+                  </div>
+                  <div className="second-user-count">
+                    <img src={user} alt="user" />
+                    <p>435,671</p>
+                    <span>students</span>
+                  </div>
                 </div>
               </div>
             </div>

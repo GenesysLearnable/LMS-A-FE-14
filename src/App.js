@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import LoginForm from "./StudentLogin/StudentLogin";
 import Studentschool from "./StudentScreens/Studentschool";
-import Studenthome from "./StudentScreens/Studenthome"
+import Studenthome from "./StudentScreens/StudentHome";
 // import LandingPage from "./Components/LandingPage";
 // import ExpMain from "./Reusables/ExploreMain";
 
