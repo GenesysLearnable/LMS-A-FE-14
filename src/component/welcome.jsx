@@ -5,8 +5,7 @@ import {
   faTractor,
   faBriefcase,
   faDesktop,
-  faPen,
-  faArrowRight
+  faPen
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import Header from "./welcomeheader";
@@ -16,7 +15,6 @@ function Welcome() {
   return (
     <div>
       <Header />
-      <p className="header-text">1/2</p>
       <div className="welcome-title">
         <h1>Welcome Chidera,</h1>
         <span>Get GoLearn up and running personalised to your needs</span>
@@ -26,55 +24,25 @@ function Welcome() {
           <ul>
             <li>
               <FontAwesomeIcon icon={faTractor} className="category-icon" />
-              <span>
-                <Link to="/agriculture">Agriculture</Link>
-              </span>
-              <p>
-                500 Courses available
-                <FontAwesomeIcon
-                  icon={faArrowRight}
-                  className="category-arrow"
-                />
-              </p>
+              <span>Agriculture</span>
+              <p>0 Courses available</p>
             </li>
-            <li>
+            <li className="available-courses">
               <FontAwesomeIcon icon={faPen} className="category-icon" />
               <span>
                 <Link to="/art">Art</Link>
               </span>
-              <p>
-                700 Courses available
-                <FontAwesomeIcon
-                  icon={faArrowRight}
-                  className="category-arrow"
-                />
-              </p>
+              <p>700 Courses available</p>
             </li>
             <li>
               <FontAwesomeIcon icon={faBriefcase} className="category-icon" />
-              <span>
-                <Link to="/business">Business</Link>
-              </span>
-              <p>
-                743 Courses available
-                <FontAwesomeIcon
-                  icon={faArrowRight}
-                  className="category-arrow"
-                />
-              </p>
+              <span>Business</span>
+              <p>0 Courses available</p>
             </li>
             <li>
               <FontAwesomeIcon icon={faDesktop} className="category-icon" />
-              <span>
-                <Link to="/technology">Technology</Link>
-              </span>
-              <p>
-                480 Courses available
-                <FontAwesomeIcon
-                  icon={faArrowRight}
-                  className="category-arrow"
-                />
-              </p>
+              <span>Technology</span>
+              <p>0 Courses available</p>
             </li>
           </ul>
         </div>

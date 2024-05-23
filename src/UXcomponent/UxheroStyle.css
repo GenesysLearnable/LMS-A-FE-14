@@ -94,6 +94,132 @@
     color: #fff;
 }
 
+/*link1,link2,link3 section*/
+.links-container ul {
+  list-style: none;
+  border-bottom: 1px solid #cecbcb;
+}
+
+.links-container ul li {
+  display: inline-block;
+  margin: .6rem 1rem 0 0.5rem;
+  color: #818080;
+  font-size: 1rem;
+  border: 3px solid transparent;
+  cursor: pointer;
+  padding-bottom: 0.6rem;
+}
+
+.links-container ul .active {
+  color: #000;
+  border-bottom: 3px solid #0a65cc;
+}
+
+.links-container ul li:hover {
+  border-bottom: 3px solid #0a65cc;
+}
+
+.link-1-content p{
+    margin: 1rem 0 2rem 3rem ;
+}
+
+.link-1-content .link-1-content-top{
+    margin-top: 2.5rem;
+}
+
+.link-2-content{
+    margin: 0 0 0 3rem;
+}
+
+.link-2-content .link-2-content-top{
+    margin-top: 2.5rem;
+}
+
+.link-2-content p{
+    margin-left: 1.5rem;
+}
+
+.link-2-content .last,
+.link-1-content .last{
+    margin-bottom: 3rem;
+}
+
+/*Rating*/
+.feedback-title{
+    color: #000;
+    font-size: 1.5rem;
+    margin: 2.5rem 0 1rem 3rem;
+}
+.user-rating{
+    color: gold;
+}
+
+.feedback-container{
+    display: flex;
+    margin: 2rem 0 0 3rem;
+}
+
+.student-feedback{
+    margin: 0 4rem 0 0;
+}
+
+.feedback-rate{ 
+    font-size: 3rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.feedback-subtitle{
+    color: #000;
+}
+
+.student-rating-container{
+    display: flex;
+}
+
+.student-rating-bar{
+    width: 350px;
+    height: .5rem;
+    background-color: #000;
+    overflow: hidden;
+    margin-bottom: 1.4rem;
+}
+
+.blank-rate{
+    background-color: #818080;
+}
+
+.five,
+.four,
+.three,
+.two,
+.one{
+    margin-bottom: .7rem;
+}
+
+/*Review Section*/
+.Review-title{
+    color: #000;
+    font-size: 1.5rem;
+    margin: 5rem 0 1rem 3rem;
+}
+
+.Review-container{
+    display: flex;
+    margin: 0 0 0 3rem;
+}
+
+.Review-date{
+    margin: 2rem 0 0 2rem;
+}
+
+.Review-content{
+    margin-left: 3rem;
+    width: 550px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+
 /*Paid frame*/
 .payframe-container{
     display: flex;
@@ -157,4 +283,98 @@
     padding-right: 1rem;
 }
 
+/*Course Card*/
+.card-container{
+    margin-left: 3rem;
+}
 
+.herobase-head{
+    margin-top: 3rem;
+}
+
+.hero-card-container{
+    display: flex;
+}
+
+.card-1{
+    width: 300px;
+    margin-right: 2rem;
+}
+
+.card-1 img{
+    width: 100%;
+    height: 50%;
+}
+
+.title-pay{
+    display: flex;
+}
+
+.card-title{
+    margin: 1rem 3rem 0 2rem;
+    color: #d30303;
+    font-size: .8rem;
+}
+
+.card-title-others{
+    margin: 1rem 3rem 0 2rem;
+    color: #0a65cc;
+    font-size: .8rem;
+}
+
+.card-title-tab{
+    margin: 1rem 1.5rem 0 2rem;
+    color: red;
+    background-color: #dd8080;
+    font-size: .8rem;
+    padding: .3rem;
+}
+
+.card-pay{
+    margin: 1rem 0 0 6rem;
+    font-size: 1.2rem;
+    color: #0a65cc;
+}
+
+.card-course-title{
+        margin-left: 2rem;
+        font-size: 1rem;
+}
+
+.rate-user{
+    display: flex;
+}
+
+.user-rate{
+    margin: 0 0 1rem 2rem
+}
+
+.rate-user-star{
+    color: gold;
+    margin-right: .7rem;
+}
+
+.avail-user{
+    margin: 0 0 1rem 3rem
+}
+
+.herobase-btn{
+    border: 1px solid #0a65cc;
+    color: #0a65cc;
+    outline: none;
+    padding: 1rem;
+    float: right;
+    margin-right: 12rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.herobase-btn-container{
+    width: 100%;
+    height: 80px;
+}
+
+.fade-little{
+    color: #818080;
+    margin-left: .3rem;
+}
