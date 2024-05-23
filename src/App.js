@@ -1,9 +1,6 @@
 import React from "react";
 import "./App.css";
 import LoginForm from "./StudentLogin/StudentLogin"
-import LoginForm from "./StudentLogin/StudentLogin";
-import LandingPage from "./Components/LandingPage";
-import SetPwd from "./ForgotPassword/SetPwd";
 
 export default function GoLearn() {
 
@@ -12,6 +9,14 @@ export default function GoLearn() {
       <LoginForm />
       </div>
     );
+}
+import React from "react";
+import "./App.css";
+import LoginForm from "./StudentLogin/StudentLogin";
+import LandingPage from "./Components/LandingPage";
+import SetPwd from "./ForgotPassword/SetPwd";
+
+export default function GoLearn() {
   return (
     <div className="App">
 
