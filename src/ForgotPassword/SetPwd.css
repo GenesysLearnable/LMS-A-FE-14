@@ -52,6 +52,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-bottom: 1.2rem;
 }
 
 .set-input-field {
@@ -69,13 +70,14 @@
     width: 20px;
     position: absolute;
     top: 30%;
-    right: -1%;
+    right: 1%;
     transform: translate(-50%);
     pointer-events: none;
 }
 
 .set-resend-code {
     font-size: .6rem;
+    margin-bottom: 1.2rem;
 }
 
 .set-resend-code a {

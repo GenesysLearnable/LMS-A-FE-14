@@ -23,20 +23,24 @@ body {
   justify-content: center;
   align-items: center;
   gap: 8rem;
-  margin: 5rem 0;
+  margin: 2rem 0;
 }
 
+.left-hero{
+  margin-left: 16rem;
+}
 
 .left-hero p {
-  font-size: .6rem;
-  color: rgba(13, 31, 161, 1);
+  font-size: 2rem;
+  color: #0d1fa1;
   font-weight: 600;
   margin-bottom: 5rem;
 }
 
 .hero-texts h3 {
-  font-size: 2.2rem;
-  color: rgba(10, 101, 204, 1);
+  font-size: 3.5rem;
+  color: #0a65cc;
+  width: 35rem;
 }
 
 .hero-texts p {
@@ -51,8 +55,12 @@ body {
 }
 
 .landing-hero-image {
-  width: 500px;
-  box-shadow: 0 2px 5px 5px rgb(197, 197, 197);
+  width: 600px;
+  margin-top: -6rem;
+  margin-bottom: 3rem;
+  margin-left: 8rem;
+  
+  /* box-shadow: 0 2px 5px 5px rgb(197, 197, 197); */
 }
 
 .hero-attachment {
@@ -64,6 +72,7 @@ body {
   border-radius: 3px;
   padding: 0 .8rem;
   margin-left: 30rem;
+  margin-bottom: 2rem;
 
 }
 
@@ -105,13 +114,21 @@ body {
   background-color: rgba(248, 248, 253, 1);
     border: 1px solid rgba(10, 101, 204, 1);
     color: rgba(10, 101, 204, 1);
+    transition: all 0.3s ease-in-out;
 }
 
 .white-btn{
   background-color: rgba(248, 248, 253, 1);
   border: 1px solid rgba(10, 101, 204, 1);
   color: rgba(10, 101, 204, 1);
+  cursor: pointer;
 }
+
+.show-more{
+  border: 1px solid;
+  padding: .2rem;
+}
+
 
 .white-btn:hover{
   background-color: rgba(10, 101, 204, 1);
@@ -221,19 +238,19 @@ body {
 
 .landing-woman {
   width: 500px;
+ margin:2rem 0;
 }
 
 
 .landing-section3 {
   padding: 2rem 10rem;
-  gap: 4rem;
 }
 
 .tutor-row {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  gap: 2.5rem;
+  margin-bottom: 1rem;
+
 }
 
 .tutor-card p {

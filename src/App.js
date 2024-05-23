@@ -1,12 +1,15 @@
+
 import React from "react";
 import "./App.css";
-import LoginForm from "./StudentLogin/StudentLogin"
+import LandingPage from "./Components/LandingPage";
+
 
 export default function GoLearn() {
+  return (
+    <div className="App">
 
-    return (
-      <div className="App">
-      <LoginForm />
-      </div>
-    );
+      <LandingPage />
+  
+    </div>
+  );
 }
