@@ -710,9 +710,10 @@ transform: scale(1.2);
   display: flex;
   justify-content: center;
   padding: 3rem 0;
-  gap: 5rem;
+  gap: 10rem;
   border-radius: 0 0 10px 15px;
   height: 23rem;
+  width: 100%;
 }
 
 .saved-footer-first,
@@ -865,6 +866,7 @@ h3 {
   margin-left: 2rem;
   color: #818080;
   height: 25px;
+  cursor: pointer;
 }
 
 /*Welcome*/
@@ -964,7 +966,7 @@ Link {
   cursor: pointer;
 }
 
-.category-box ul li:hover {
+.category-box .available-courses:hover {
   background-color: var(--primary);
   color: #fff;
   transform: scale(1.067);
@@ -972,7 +974,7 @@ Link {
   cursor: pointer;
 }
 
-.category-box ul li:hover p {
+.category-box .available-courses:hover p {
   color: #fff;
   transition: all 0.6s ease-in-out;
 }
