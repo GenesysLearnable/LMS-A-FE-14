@@ -622,12 +622,8 @@ Link {
   transition: all 0.6s ease-in-out;
   cursor: pointer;
 }
-<<<<<<< HEAD
 
-.category-box ul li:hover p {
-=======
 .category-box .available-courses:hover p {
->>>>>>> correction
   color: #fff;
   transition: all 0.6s ease-in-out;
 }
