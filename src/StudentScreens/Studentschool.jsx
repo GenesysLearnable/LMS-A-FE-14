@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import "./StudentSavedCourse.css";
-import "./StudentSecond.css";
+import "./Studentschool.css";
 import firstimage from "../images/firstimage.png.png";
 import business from "../images/business.png";
 import Agriculture from "../images/Agriculture (2).png";
@@ -19,36 +19,36 @@ import user from "../images/User.svg";
 import Navbar from "../component/navbar";
 import Footer from "./Footer";
 
-
-const StudentSecond = () => {
+const Studentschool = () => {
   return (
     <div>
       <div className="second-general-container">
         <Navbar />
 
-        <div className="second-first-header">Categories</div>
-        <div className="second-first-r0w1">
-          <div className="second-first">
-            <img className="first-image" src={firstimage} alt="Technology"></img>
+        <div className="home-top-text">
+          <div className="second-first-header">
+            <h5>Categories</h5>
           </div>
-        </div>
-        <div className="second-first-r0w1">
-          <div className="second-first">
+          <div className="second-first-row1">
+            <img
+              className="first-image"
+              src={firstimage}
+              alt="Technology"
+            ></img>
             <img className="first-image" src={business} alt="Business"></img>
+            <div className="first-image-box">
+              <img
+                className="first-image"
+                src={Agriculture}
+                alt="Agriculture"
+              ></img>
+              <img className="first-image" src={art} alt="Art"></img>
+            </div>
           </div>
         </div>
-        <div className="second-first-r0w1">
-          <div className="second-first">
-            <img className="first-image" src={Agriculture} alt="Agriculture"></img>
-          </div>
-        </div>
-        <div className="second-first-r0w1">
-          <div className="second-first">
-            <img className="first-image" src={art} alt="Art"></img>
-          </div>
-        </div>
+
         <div className="second-course-main-container">
-        <div className="second-first-header">Top Picks for you</div>
+          <h5>Top Picks for you</h5>
           <div className="second-card-row1">
             <div className="second-card">
               <img className="it-image" src={first} alt="IT"></img>
@@ -56,7 +56,7 @@ const StudentSecond = () => {
                 <p className="second-text-price">IT & SOFTWARE</p>
                 <p className="second-price">$35</p>
               </div>
-              <h6>Learn Python Programming Matsreclass</h6>
+              <h6>Learn Python Programming Masterclass</h6>
               <div className="second-user">
                 <div className="second-star-left">
                   <img src={star} alt="star"></img>
@@ -218,11 +218,8 @@ const StudentSecond = () => {
           </div>
         </div>
         <Footer />
-        
       </div>
     </div>
   );
 };
-
-
-export default StudentSecond;
+export default Studentschool;

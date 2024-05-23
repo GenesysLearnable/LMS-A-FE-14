@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import "./StudentSavedCourse.css";
-import "./StudentHome.css";
+import "./Studenthome.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,
@@ -27,7 +27,7 @@ import microsoft from "../images/Microsoft.svg";
 import Navbar from "../component/navbar";
 import Footer from "./Footer";
 
-const StudentHome = () => {
+const Studenthome = () => {
   return (
     <div>
       <div className="home-general-container">
@@ -210,4 +210,5 @@ const StudentHome = () => {
 };
 
 
-export default StudentHome;
+export default Studenthome;
+
