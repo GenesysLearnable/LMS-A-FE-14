@@ -16,7 +16,7 @@ export default function SetPwd() {
             <button className="set-nav-head">
               <img className="set-arrow" src={backarrow} alt="arrow" />
               <p className="set-text-arrow">
-                Back to{" "}
+                Back to
                 <span>
                   <Link to="/login">Login</Link>
                 </span>
@@ -33,15 +33,26 @@ export default function SetPwd() {
                 className="set-input-field"
                 name="email"
                 type="email"
-                placeholder="Enter verification code"
+                placeholder="Enter password"
               ></input>
               <img className="seteye" src={verifyeye} alt="eye icon" />
             </div>
+
+            <div className="set-form">
+              <input
+                className="set-input-field"
+                name="email"
+                type="email"
+                placeholder="Re-nter password"
+              ></input>
+              <img className="seteye" src={verifyeye} alt="eye icon" />
+            </div>
+
             <p className="set-resend-code">
               Didn't receive a code? <a href="#">Resend</a>{" "}
             </p>
             <Link to="/login" className="set-btn1">
-              Verify
+              Submit
             </Link>
           </div>
         </div>

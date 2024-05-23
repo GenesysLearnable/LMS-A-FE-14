@@ -354,7 +354,7 @@ const ExMain = () => {
                   <p className="ex-saved-price">$49</p>
                 </div>
                 <h6 className="ex-general-course-title">
-                  Complete Blender Creator: Learn 3D Modelling for Beginners
+                  User Experience course for beginners.
                 </h6>
                 <div className="ex-saved-user">
                   <div className="ex-saved-star-left">

@@ -31,7 +31,35 @@ const Studenthome = () => {
   return (
     <div>
       <div className="home-general-container">
-        <Navbar />
+        {/* <Navbar /> */}
+
+        <div className="navbar-container">
+          <div className="navbar">
+            <img
+              className="navbar-logo"
+              src={process.env.PUBLIC_URL + "/images/golearn-logo.png"}
+              alt="Logo"
+            />
+            <span className="nav-text">Explore</span>
+            <div className="search-box">
+              <FontAwesomeIcon icon={faSearch} className="search-icon" />
+              <input type="text" placeholder="Search Course" />
+            </div>
+            <span className="nav-text-link">GoLearn Business</span>
+            <span className="nav-text-link">Admin</span>
+            <FontAwesomeIcon icon={faBell} className="notification-icon" />
+            <FontAwesomeIcon icon={faCircleUser} className=" font-icon" />
+          </div>
+          <div className="navbar-links">
+            <ul>
+              <li>Home</li>
+              <li>My Course</li>
+              <li>Saved</li>
+              <li>Reminder</li>
+              <li>Cart</li>
+            </ul>
+          </div>
+        </div>
 
         <div className="second-course-main-container1">
           <div className="second-card-row1">
@@ -203,7 +231,6 @@ const Studenthome = () => {
           </div>
         </div>
         <Footer />
-        
       </div>
     </div>
   );

@@ -7,10 +7,11 @@ import {
   faSearch,
   faCircleUser,
   faArrowRight,
+  faArrowDown,
+  faAngleDown,
 } from "@fortawesome/free-solid-svg-icons";
-import heroimage from "../images/hero-image.svg";
+import heroimage from "../images/man2.png";
 import frame from "../images/Frame.svg";
-import downarrow from "../images/keyboard_arrow_down.svg";
 import webdev from "../images/webdev.svg";
 import arrowright from "../images/ArrowRight.svg";
 import productdesign from "../images/productdesign.svg";
@@ -19,7 +20,7 @@ import create from "../images/createaccount.svg";
 import select from "../images/course.svg";
 import trackprogress from "../images/trackprogress.svg";
 import enjoy from "../images/enjoy.svg";
-import woman from "../images/womanuser.svg";
+import woman from "../images/mama.png";
 import tutor1 from "../images/tutor1.svg";
 import tutor2 from "../images/tutor2.svg";
 import tutor3 from "../images/tutor3.svg";
@@ -104,9 +105,10 @@ export default function LandingPage() {
               started. How do you learn best?
             </p>
           </div>
-          <div className="landing-btn">
+          <div className="landing-btn show-more">
             <p>Show</p>
-            <img className="arrow-down" src={downarrow} alt="down arrow"></img>
+            {/* <img className="arrow-down" src={downarrow} alt="down arrow"></img> */}
+            <FontAwesomeIcon icon={faAngleDown} />
           </div>
         </div>
       </div>
