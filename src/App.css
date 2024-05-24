@@ -18,16 +18,25 @@ body {
 
 
 /* LANDING PAGE STARTS HERE!!! */
+.landing-hero-section{
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 100%;
+}
+
+
 .hero-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8rem;
-  margin: 2rem 0;
+  gap: 6rem;
+  margin:2rem 0 2rem 0;
 }
 
-.left-hero{
-  margin-left: 16rem;
+.left-hero {
+  margin-left: 10rem;
+  margin-top: 0;
 }
 
 .left-hero p {
@@ -56,10 +65,9 @@ body {
 
 .landing-hero-image {
   width: 600px;
-  margin-top: -6rem;
+  margin-top: 0rem;
   margin-bottom: 3rem;
-  margin-left: 8rem;
-  
+  margin-left: 6rem;
   /* box-shadow: 0 2px 5px 5px rgb(197, 197, 197); */
 }
 
@@ -71,8 +79,8 @@ body {
   width: 36rem;
   border-radius: 3px;
   padding: 0 .8rem;
-  margin-left: 30rem;
-  margin-bottom: 2rem;
+  margin-left: 15rem;
+  margin-bottom: 1rem;
 
 }
 
@@ -110,43 +118,44 @@ body {
   font-weight: 600;
 }
 
-.landing-btn:hover{
+.landing-btn:hover {
   background-color: rgba(248, 248, 253, 1);
-    border: 1px solid rgba(10, 101, 204, 1);
-    color: rgba(10, 101, 204, 1);
-    transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(10, 101, 204, 1);
+  color: rgba(10, 101, 204, 1);
+  transition: all 0.3s ease-in-out;
 }
 
-.white-btn{
+.white-btn {
   background-color: rgba(248, 248, 253, 1);
   border: 1px solid rgba(10, 101, 204, 1);
   color: rgba(10, 101, 204, 1);
   cursor: pointer;
 }
 
-.show-more{
+.show-more {
   border: 1px solid;
   padding: .2rem;
 }
 
 
-.white-btn:hover{
+.white-btn:hover {
   background-color: rgba(10, 101, 204, 1);
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 
 .landing-section1 {
   background-color: rgba(206, 224, 245, 1);
   padding: 2rem 10rem;
-  margin-top: .2rem;
+  margin-top: 1rem;
 }
 
 .landing-section1 h5,
 .landing-section2 h5,
 .landing-section3 h5,
 .landing-section4 h5,
-.landing-testimonials h5, .landing-socials h5 {
+.landing-testimonials h5,
+.landing-socials h5 {
   color: rgba(10, 101, 204, 1);
   font-size: 1.4rem;
 }
@@ -238,7 +247,7 @@ body {
 
 .landing-woman {
   width: 500px;
- margin:2rem 0;
+  margin: 2rem 0;
 }
 
 
@@ -269,48 +278,48 @@ body {
   padding: 2rem 10rem;
 }
 
-.reduce-size{
-font-size: .8rem;
+.reduce-size {
+  font-size: .8rem;
 }
 
-.landing-testimonials{
-      padding: 2rem 10rem;
+.landing-testimonials {
+  padding: 2rem 10rem;
 }
 
-.testimonial-cards{
+.testimonial-cards {
   display: flex;
 }
 
-.tee-card{
+.tee-card {
   background-color: rgba(255, 255, 255, 1);
-    padding: 1rem 1.8rem;
-    margin-left: 4rem;
+  padding: 1rem 1.8rem;
+  margin-left: 4rem;
 
 }
 
-.tee-card{
+.tee-card {
   box-shadow: 5px 5px 10px rgb(158, 158, 158), -5px 5px 10px gray;
-margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .tee-card h6 {
-font-size: 1.2rem;
-margin: 0;
-margin-top: .8rem;
+  font-size: 1.2rem;
+  margin: 0;
+  margin-top: .8rem;
 }
 
-.test-quote{
+.test-quote {
   width: 17rem;
   font-size: .8rem;
   font-weight: 500;
   line-height: 1.4;
 }
 
-.mark-image{
+.mark-image {
   width: 15px;
 }
 
-.landing-socials{
+.landing-socials {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -319,17 +328,17 @@ margin-top: .8rem;
 }
 
 
-.landing-socials h4{
+.landing-socials h4 {
   font-size: .7rem;
-    line-height: 1.4;
-    width: 16rem;
+  line-height: 1.4;
+  width: 16rem;
 }
 
-.landing-socials h5{
+.landing-socials h5 {
   margin: 0;
 }
 
-.social-row{
+.social-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -338,22 +347,20 @@ margin-top: .8rem;
   cursor: pointer;
 }
 
-.social-row img, .tee-card, .card{
+.social-row img,
+.tee-card,
+.card {
   transition: transform 0.3s ease;
 }
 
-.social-row img:hover, .tee-card:hover, .card:hover{
-transform: scale(1.2);
+.social-row img:hover,
+.tee-card:hover,
+.card:hover {
+  transform: scale(1.2);
 }
 
 
-
-
-
-
-
-
-
+/* EXPLORE STARTS HERE!!! */
 .Explorebody-side {
   display: flex;
   /* justify-content: center;
