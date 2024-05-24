@@ -10,6 +10,10 @@ import SignUpForm from './studentsignup/studentsignup';
 import ForgotPwd from './ForgotPassword/ForgotPwd';
 import VerifyPwd from './ForgotPassword/VerifyPwd';
 import SetPwd from './ForgotPassword/SetPwd';
+import ExMain from './Reusables/ExploreMain';
+import ErrorPage from "./StudentScreens/ErrorPage";
+import link1 from './UXcomponent/link1'
+import Link1 from './UXcomponent/link1';
 
 
 
@@ -22,6 +26,8 @@ const router = createBrowserRouter([
   { path: "Forgotpassword", element: <ForgotPwd /> },
   { path: "Verifypassword", element: <VerifyPwd /> },
   { path: "setpassword", element: <SetPwd /> },
+  { path: "error", element: <ErrorPage /> },
+  { path: "course-open", element: <Link1 /> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -1,8 +1,7 @@
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
+import { Link, BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../App.css";
-import ExploreSideBar from "./ExploreSideBar";
 import Footer from "../StudentScreens/Footer";
-import Navbar from "../component/navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,
@@ -33,6 +32,24 @@ import pack from "../images/Package.svg";
 // import star from "../images/Star .png";
 
 const ExMain = () => {
+  const [inputValue, setInputValue] = useState("");
+  const [showSearchIcon, setShowSearchIcon] = useState(true);
+  const [suggestion, setSuggestion] = useState("");
+
+  useEffect(() => {
+    if (inputValue.length > 0) {
+      setShowSearchIcon(false);
+      setSuggestion("ui/ux design");
+    } else {
+      setShowSearchIcon(true);
+      setSuggestion("");
+    }
+  }, [inputValue]);
+
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  };
+
   return (
     <div>
       {/* <Navbar /> */}
@@ -45,8 +62,15 @@ const ExMain = () => {
           />
           <span className="nav-text">Explore</span>
           <div className="search-box">
-            <FontAwesomeIcon icon={faSearch} className="search-icon" />
-            <input type="text" placeholder="Search Course" />
+            {showSearchIcon && (
+              <FontAwesomeIcon icon={faSearch} className="search-icon" />
+            )}
+            <input
+              type="text"
+              placeholder="Search Course"
+              value={inputValue}
+              onChange={handleInputChange}
+            />
           </div>
           <span className="nav-text-link">GoLearn Business</span>
           <span className="nav-text-link">Admin</span>
@@ -70,11 +94,7 @@ const ExMain = () => {
             <div className="filter-box">
               <img src={fader} alt="filter: "></img>
               <p className="filter">Filter</p>
-              <p className="filter-number">3</p>
-            </div>
-            <div className="search-field">
-              <FontAwesomeIcon icon={faSearch} className="search-icon" />
-              <input type="text" placeholder="UI/UX Design" />
+              <p className="filter-number">1</p>
             </div>
           </div>
           <div className="trending">
@@ -87,17 +107,15 @@ const ExMain = () => {
         </div>
 
         <div className="suggestion-box">
-          <div className="suggestion">
-            <p>Suggestion: </p>
-            <p className="suggestion-head">user interface</p>
-            <p className="suggestion-head">user experience</p>
-            <p className="suggestion-head">web design</p>
-            <p className="suggestion-head">interface</p>
-            <p className="suggestion-head">app</p>
-          </div>
-          <p className="suggestion-number">
-            3, 145,684 results found for "ui/ux design"
-          </p>
+          <p>Suggestion: </p>
+          {suggestion && (
+            <Link
+              to="/error"
+              className="suggestion-head explore-suggested-link"
+            >
+              {suggestion}
+            </Link>
+          )}
         </div>
 
         <div className="Explorebody-side">
@@ -348,7 +366,13 @@ const ExMain = () => {
             {/* <div className="ex-cart-saved-courses"> */}
             <div className="ex-saved-card-row1">
               <div className="ex-saved-card">
-                <img className="ex-it-image" src={design} alt="IT"></img>
+                <Link to="/course-open">
+                  <img
+                    className="ex-it-image ex-click-image"
+                    src={design}
+                    alt="IT"
+                  ></img>
+                </Link>
                 <div className="ex-saved-title-text">
                   <p className="ex-saved-text-priceD">DESIGN</p>
                   <p className="ex-saved-price">$49</p>
