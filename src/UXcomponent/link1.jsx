@@ -3,7 +3,8 @@ import './UxheroStyle.css'
 import Navbar from '../component/navbar'
 import Uxhero from './Uxhero'
 import HeroBottom from './HeroBottom'
-import Herobase from "./Herobase";
+import Herobase from "./Herobase"
+import Footer from "../StudentScreens/Footer"
 
 const Link1 = () => {
   return (
@@ -39,6 +40,7 @@ const Link1 = () => {
       </div>
       <HeroBottom />
       <Herobase />
+      <Footer />
     </div>
   );
 }
