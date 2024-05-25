@@ -39,7 +39,7 @@ const ExMain = () => {
   useEffect(() => {
     if (inputValue.length > 0) {
       setShowSearchIcon(false);
-      setSuggestion("ui/ux design");
+      setSuggestion ("ui/ux design", "web development");
     } else {
       setShowSearchIcon(true);
       setSuggestion("");
@@ -49,6 +49,39 @@ const ExMain = () => {
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };
+
+    // const [inputValue, setInputValue] = useState("");
+    // const [showSearchIcon, setShowSearchIcon] = useState(true);
+    // const [suggestion, setSuggestion] = useState("");
+    // const suggestions = [
+    //   "ui/ux design",
+    //   "web development",
+    //   "cyber security",
+    //   "video editing",
+    //   "photography",
+    // ];
+
+    // useEffect(() => {
+    //   let suggestionInterval;
+    //   if (inputValue.length > 0) {
+    //     setShowSearchIcon(false);
+    //     let index = 0;
+    //     setSuggestion(suggestions[index]);
+    //     suggestionInterval = setInterval(() => {
+    //       index = (index + 1) % suggestions.length;
+    //       setSuggestion(suggestions[index]);
+    //     }, 2000); // Change suggestion every 2 seconds
+    //   } else {
+    //     setShowSearchIcon(true);
+    //     setSuggestion("");
+    //     clearInterval(suggestionInterval);
+    //   }
+    //   return () => clearInterval(suggestionInterval); // Cleanup interval on component unmount or input change
+    // }, [inputValue]);
+
+    // const handleInputChange = (e) => {
+    //   setInputValue(e.target.value);
+    // };
 
   return (
     <div>
@@ -107,6 +140,16 @@ const ExMain = () => {
         </div>
 
         <div className="suggestion-box">
+          {/* <p>Suggestion: </p>
+          {suggestion && (
+            <Link
+              to="/error"
+              className="suggestion-head explore-suggested-link"
+            >
+              {suggestion}
+            </Link>
+          )} */}
+
           <p>Suggestion: </p>
           {suggestion && (
             <Link
