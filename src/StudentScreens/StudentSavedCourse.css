@@ -270,10 +270,6 @@ width: 300px;
     gap: 2rem;
 }
 
-.error-text li{
-
-}
-
 .error-btn{
     display: flex;
     justify-content: center;

@@ -11,6 +11,10 @@
     padding: 0 0 0 1rem;
 }
 
+.Uxhero-endown{
+    display: flex;
+}
+
 .Uxhero-current{
     color: #0a65cc;
     padding-top: 1rem;
@@ -88,10 +92,34 @@
     height: 40px;
     border: none;
     border-radius: .5rem;
+    margin-right: 4rem;
+    outline: none;
+    font-size: 1rem;
+    background-color: #0a65cc;
+    border: 1px solid #0a65cc;
+    color: #fff;
+    cursor: pointer;
+}
+
+.Uxhero-enroll:hover,
+.Uxhero-download:hover{
+    background-color: #fff;
+    color: #0a65cc;
+    border: 1px solid #0a65cc;
+    transition: all 0.3s ease-in-out;
+}
+
+.Uxhero-download{
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: .5rem;
     outline: none;
     font-size: 1rem;
     background-color: #0a65cc;
     color: #fff;
+    border: 1px solid #0a65cc;
+    cursor: pointer;
 }
 
 /*link1,link2,link3 section*/
@@ -110,7 +138,9 @@
   padding-bottom: 0.6rem;
 }
 
-.links-container ul .active {
+.links-container ul .active1,
+.links-container ul .active2,
+.links-container ul .active3 {
   color: #000;
   border-bottom: 3px solid #0a65cc;
 }

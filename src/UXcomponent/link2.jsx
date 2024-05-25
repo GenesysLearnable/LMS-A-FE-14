@@ -4,6 +4,7 @@ import Navbar from "../component/navbar";
 import Uxhero from "./Uxhero";
 import HeroBottom from "./HeroBottom";
 import Herobase from "./Herobase";
+import { Link } from 'react-router-dom';
 
 const Link2 = () => {
   return (
@@ -12,9 +13,15 @@ const Link2 = () => {
       <Uxhero />
       <div className="links-container">
         <ul>
-          <li>What you'll learn</li>
-          <li className="active">Course content</li>
-          <li>Reviews</li>
+          <Link to="/active1">
+            <li>What you'll learn</li>
+          </Link>
+          <Link to="/active2">
+            <li className="active2">Course content</li>
+          </Link>
+          <Link to="/active3">
+            <li>Reviews</li>
+          </Link>
         </ul>
       </div>
 

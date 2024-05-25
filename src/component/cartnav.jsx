@@ -1,10 +1,14 @@
-import React from 'react'
-import "../App.css"
+import React from "react";
+import "../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBell, faSearch, faCircleUser } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import {
+  faBell,
+  faSearch,
+  faCircleUser,
+} from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Cartnav = () => {
   return (
     <div className="navbar-container">
       <div className="navbar">
@@ -25,20 +29,18 @@ const Navbar = () => {
       </div>
       <div className="navbar-links">
         <ul>
-          <li className="active">Home</li>
+          <li>Home</li>
           <Link to="/mycourse">
             <li>My Course</li>
           </Link>
 
           <li>Saved</li>
           <li>Reminder</li>
-          <Link to="/cart">
-            <li>Cart</li>
-          </Link>
+          <li className="active">Cart</li>
         </ul>
       </div>
     </div>
   );
-}
+};
 
-export default Navbar;
+export default Cartnav;

@@ -1,8 +1,7 @@
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
+import { Link, BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../App.css";
-import ExploreSideBar from "./ExploreSideBar";
 import Footer from "../StudentScreens/Footer";
-import Navbar from "../component/navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBell,
@@ -33,6 +32,58 @@ import pack from "../images/Package.svg";
 // import star from "../images/Star .png";
 
 const ExMain = () => {
+  const [inputValue, setInputValue] = useState("");
+  const [showSearchIcon, setShowSearchIcon] = useState(true);
+  const [suggestion, setSuggestion] = useState("");
+
+  useEffect(() => {
+    if (inputValue.length > 0) {
+      setShowSearchIcon(false);
+      setSuggestion ("ui/ux design", "web development");
+    } else {
+      setShowSearchIcon(true);
+      setSuggestion("");
+    }
+  }, [inputValue]);
+
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  };
+
+  // I WAS HOPING TO ADD AN ARRAY OF SEARCH OPTIONS HERE!
+  // const [inputValue, setInputValue] = useState("");
+    // const [showSearchIcon, setShowSearchIcon] = useState(true);
+    // const [suggestion, setSuggestion] = useState("");
+    // const suggestions = [
+    //   "ui/ux design",
+    //   "web development",
+    //   "cyber security",
+    //   "video editing",
+    //   "photography",
+    // ];
+
+    // useEffect(() => {
+    //   let suggestionInterval;
+    //   if (inputValue.length > 0) {
+    //     setShowSearchIcon(false);
+    //     let index = 0;
+    //     setSuggestion(suggestions[index]);
+    //     suggestionInterval = setInterval(() => {
+    //       index = (index + 1) % suggestions.length;
+    //       setSuggestion(suggestions[index]);
+    //     }, 2000); // Change suggestion every 2 seconds
+    //   } else {
+    //     setShowSearchIcon(true);
+    //     setSuggestion("");
+    //     clearInterval(suggestionInterval);
+    //   }
+    //   return () => clearInterval(suggestionInterval); 
+    // }, [inputValue]);
+
+    // const handleInputChange = (e) => {
+    //   setInputValue(e.target.value);
+    // };
+
   return (
     <div>
       {/* <Navbar /> */}
@@ -43,10 +94,19 @@ const ExMain = () => {
             src={process.env.PUBLIC_URL + "/images/golearn-logo.png"}
             alt="Logo"
           />
-          <span className="nav-text">Explore</span>
+          <Link className="landing-link-explore-text" to="/explore">
+            Explore
+          </Link>
           <div className="search-box">
-            <FontAwesomeIcon icon={faSearch} className="search-icon" />
-            <input type="text" placeholder="Search Course" />
+            {showSearchIcon && (
+              <FontAwesomeIcon icon={faSearch} className="search-icon" />
+            )}
+            <input
+              type="text"
+              placeholder="Search Course"
+              value={inputValue}
+              onChange={handleInputChange}
+            />
           </div>
           <span className="nav-text-link">GoLearn Business</span>
           <span className="nav-text-link">Admin</span>
@@ -70,11 +130,7 @@ const ExMain = () => {
             <div className="filter-box">
               <img src={fader} alt="filter: "></img>
               <p className="filter">Filter</p>
-              <p className="filter-number">3</p>
-            </div>
-            <div className="search-field">
-              <FontAwesomeIcon icon={faSearch} className="search-icon" />
-              <input type="text" placeholder="UI/UX Design" />
+              <p className="filter-number">1</p>
             </div>
           </div>
           <div className="trending">
@@ -87,17 +143,25 @@ const ExMain = () => {
         </div>
 
         <div className="suggestion-box">
-          <div className="suggestion">
-            <p>Suggestion: </p>
-            <p className="suggestion-head">user interface</p>
-            <p className="suggestion-head">user experience</p>
-            <p className="suggestion-head">web design</p>
-            <p className="suggestion-head">interface</p>
-            <p className="suggestion-head">app</p>
-          </div>
-          <p className="suggestion-number">
-            3, 145,684 results found for "ui/ux design"
-          </p>
+          {/* <p>Suggestion: </p>
+          {suggestion && (
+            <Link
+              to="/error"
+              className="suggestion-head explore-suggested-link"
+            >
+              {suggestion}
+            </Link>
+          )} */}
+
+          <p>Suggestion: </p>
+          {suggestion && (
+            <Link
+              to="/error"
+              className="suggestion-head explore-suggested-link"
+            >
+              {suggestion}
+            </Link>
+          )}
         </div>
 
         <div className="Explorebody-side">
@@ -348,10 +412,16 @@ const ExMain = () => {
             {/* <div className="ex-cart-saved-courses"> */}
             <div className="ex-saved-card-row1">
               <div className="ex-saved-card">
-                <img className="ex-it-image" src={design} alt="IT"></img>
+                <Link to="/course-open">
+                  <img
+                    className="ex-it-image ex-click-image"
+                    src={design}
+                    alt="IT"
+                  ></img>
+                </Link>
                 <div className="ex-saved-title-text">
-                  <p className="ex-saved-text-priceD">DESIGN</p>
-                  <p className="ex-saved-price">$49</p>
+                  <p className="ex-saved-text-priceD ex-price-text">DESIGN</p>
+                  <p className="ex-saved-price ex-price-naira">Free</p>
                 </div>
                 <h6 className="ex-general-course-title">
                   User Experience course for beginners.
@@ -372,8 +442,12 @@ const ExMain = () => {
               <div className="ex-saved-card">
                 <img className="ex-it-image" src={development4} alt="IT"></img>
                 <div className="ex-saved-title-text">
-                  <p className="ex-saved-text-priceDE">DEVELOPMENTS</p>
-                  <p className="ex-saved-price">$9</p>
+                  <p className="ex-saved-text-priceDE ex-price-text2">
+                    DEVELOPMENTS
+                  </p>
+                  <p className="ex-saved-price ex-price-naira">
+                    &#8358;<span>3,500</span>
+                  </p>
                 </div>
                 <h6 className="ex-general-course-title">
                   Selenium WebDriver with Java -Basics to Advanced+Frameworks
@@ -394,8 +468,12 @@ const ExMain = () => {
               <div className="ex-saved-card">
                 <img className="ex-it-image" src={marketing} alt="IT"></img>
                 <div className="ex-saved-title-text">
-                  <p className="ex-saved-text-priceM">MARKETING</p>
-                  <p className="ex-saved-price">$49</p>
+                  <p className="ex-saved-text-priceM ex-price-text2">
+                    MARKETING
+                  </p>
+                  <p className="ex-saved-price ex-price-naira">
+                    &#8358;<span>4,900</span>
+                  </p>
                 </div>
                 <h6 className="ex-general-course-title">
                   The Ultimate Drawing Course - Beginner to Advanced
@@ -418,8 +496,12 @@ const ExMain = () => {
               <div className="ex-saved-card">
                 <img className="ex-it-image" src={ITgirl} alt="IT"></img>
                 <div className="ex-saved-title-text">
-                  <p className="ex-saved-text-priceD">IT & SOFTWARE</p>
-                  <p className="ex-saved-price">$24</p>
+                  <p className="ex-saved-text-priceD ex-price-text">
+                    IT & SOFTWARE
+                  </p>
+                  <p className="ex-saved-price ex-price-naira">
+                    &#8358;<span>2,400</span>
+                  </p>
                 </div>
                 <h6 className="ex-general-course-title">
                   Complete Website Responsive Design
@@ -440,8 +522,12 @@ const ExMain = () => {
               <div className="ex-saved-card">
                 <img className="ex-it-image" src={development3} alt="IT"></img>
                 <div className="ex-saved-title-text">
-                  <p className="ex-saved-text-priceDE">DEVELOPMENTS</p>
-                  <p className="ex-saved-price">$35</p>
+                  <p className="ex-saved-text-priceDE ex-price-text2">
+                    DEVELOPMENTS
+                  </p>
+                  <p className="ex-saved-price ex-price-naira">
+                    &#8358;<span>3,500</span>
+                  </p>
                 </div>
                 <h6 className="ex-general-course-title">
                   2021 Complete Python Bootcamp From Zero to Hero in Python
@@ -462,8 +548,12 @@ const ExMain = () => {
               <div className="ex-saved-card">
                 <img className="ex-it-image" src={marketing5} alt="IT"></img>
                 <div className="ex-saved-title-text">
-                  <p className="ex-saved-text-priceM">MARKETING</p>
-                  <p className="ex-saved-price">$24</p>
+                  <p className="ex-saved-text-priceM ex-price-text2">
+                    MARKETING
+                  </p>
+                  <p className="ex-saved-price ex-price-naira">
+                    &#8358;<span>2,400</span>
+                  </p>
                 </div>
                 <h6 className="ex-general-course-title">
                   iPhone Photography | Take Professional Photos On Your iPhone
@@ -486,8 +576,12 @@ const ExMain = () => {
               <div className="ex-saved-card">
                 <img className="ex-it-image" src={IT2} alt="IT"></img>
                 <div className="ex-saved-title-text">
-                  <p className="ex-saved-text-priceD">IT & SOFTWARE</p>
-                  <p className="ex-saved-price">$35</p>
+                  <p className="ex-saved-text-priceD ex-price-text">
+                    IT & SOFTWARE
+                  </p>
+                  <p className="ex-saved-price ex-price-naira">
+                    &#8358;<span>3,500</span>
+                  </p>
                 </div>
                 <h6 className="ex-general-course-title">
                   Learn Python Programming Masterclass
@@ -509,7 +603,9 @@ const ExMain = () => {
                 <img className="ex-it-image" src={design3} alt="IT"></img>
                 <div className="ex-saved-title-text">
                   <p className="ex-saved-text-priceDE">DESIGN</p>
-                  <p className="ex-saved-price">$16</p>
+                  <p className="ex-saved-price ex-price-naira">
+                    &#8358;<span>1,600</span>
+                  </p>
                 </div>
                 <h6 className="ex-general-course-title">
                   Instagram Marketing 2021: Complete Guide To Instagram Gro...
@@ -530,8 +626,12 @@ const ExMain = () => {
               <div className="ex-saved-card">
                 <img className="ex-it-image" src={marketing6} alt="IT"></img>
                 <div className="ex-saved-title-text">
-                  <p className="ex-saved-text-priceM">MARKETING</p>
-                  <p className="ex-saved-price">$24</p>
+                  <p className="ex-saved-text-priceM ex-price-text3">
+                    MARKETING
+                  </p>
+                  <p className="ex-saved-price ex-price-naira">
+                    &#8358;<span>2,400</span>
+                  </p>
                 </div>
                 <h6 className="ex-general-course-title">
                   Premiere Pro CC for Beginners: Video Editing in Premiere

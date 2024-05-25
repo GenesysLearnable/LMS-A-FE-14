@@ -23,7 +23,7 @@ const Herobase = () => {
             />
             <div className="title-pay">
               <p className="card-title">DESIGN</p>
-              <p className="card-pay">$49</p>
+              <p className="card-pay">&#8358;3,500</p>
             </div>
             <h5 className="card-course-title">
               Complete Website Responsive Design
@@ -50,7 +50,7 @@ const Herobase = () => {
               />
               <div className="title-pay">
                 <p className="card-title-tab">IT & SOFTWARE</p>
-                <p className="card-pay">$35</p>
+                <p className="card-pay">&#8358;3,500</p>
               </div>
               <h5 className="card-course-title">
                 Learn Python Programming Masterclass
@@ -77,7 +77,7 @@ const Herobase = () => {
                 />
                 <div className="title-pay">
                   <p className="card-title-others">DEVELOPMENT</p>
-                  <p className="card-pay">$32</p>
+                  <p className="card-pay">&#8358;3,500</p>
                 </div>
                 <h5 className="card-course-title">
                   Adobe Premiere Pro CC - Advanced Training Course
@@ -105,7 +105,7 @@ const Herobase = () => {
                 />
                 <div className="title-pay">
                   <p className="card-title-others">MARKETING</p>
-                  <p className="card-pay">$13</p>
+                  <p className="card-pay">&#8358;3,500</p>
                 </div>
                 <h5 className="card-course-title">
                   Ultimate AWS Certified Solutions Architect Associate 2021

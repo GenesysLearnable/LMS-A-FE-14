@@ -3,7 +3,9 @@ import './UxheroStyle.css'
 import Navbar from '../component/navbar'
 import Uxhero from './Uxhero'
 import HeroBottom from './HeroBottom'
-import Herobase from "./Herobase";
+import Herobase from "./Herobase"
+import Footer from "../StudentScreens/Footer"
+import { Link } from "react-router-dom";
 
 const Link1 = () => {
   return (
@@ -12,9 +14,15 @@ const Link1 = () => {
       <Uxhero />
       <div className="links-container">
         <ul>
-          <li className="active">What you'll learn</li>
-          <li>Course content</li>
-          <li>Reviews</li>
+          <Link to="/active1">
+            <li className="active1">What you'll learn</li>
+          </Link>
+          <Link to="/active2">
+            <li>Course content</li>
+          </Link>
+          <Link to="/active3">
+            <li>Reviews</li>
+          </Link>
         </ul>
       </div>
 
@@ -39,6 +47,7 @@ const Link1 = () => {
       </div>
       <HeroBottom />
       <Herobase />
+      <Footer />
     </div>
   );
 }
