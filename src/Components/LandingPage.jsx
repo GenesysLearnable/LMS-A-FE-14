@@ -47,6 +47,7 @@ import upwork from "../images/upwork.svg";
 import fiverr from "../images/fiverr.svg";
 import behance from "../images/behance.svg";
 import mark from "../images/mark.svg";
+import { Link } from "react-router-dom";
 
 
 
@@ -62,7 +63,9 @@ export default function LandingPage() {
             src={process.env.PUBLIC_URL + "/images/golearn-logo.png"}
             alt="Logo"
           />
-          <span className="nav-text">Explore</span>
+          <Link to="/studenthome">
+            <span className="nav-text">Explore</span>
+          </Link>
           <div className="search-box">
             <FontAwesomeIcon icon={faSearch} className="search-icon" />
             <input type="text" placeholder="Search Course" />
@@ -70,10 +73,15 @@ export default function LandingPage() {
           <span className="nav-text-link">GoLearn Business</span>
           <span className="nav-text-link">Admin</span>
           <div className="landing-btn white-btn">
-            <p>Login</p>
+            <Link to="/login">
+              <p>Login</p>
+            </Link>
           </div>
           <div className="landing-btn">
+            <Link to="/signin">
             <p>Sign Up</p>
+            </Link>
+            
           </div>
           {/* <FontAwesomeIcon icon={faBell} className="notification-icon" />
           <FontAwesomeIcon icon={faCircleUser} className="user-icon" /> */}

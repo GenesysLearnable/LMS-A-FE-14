@@ -69,7 +69,7 @@ const Studenthome = () => {
                 <p className="second-text-price">IT & SOFTWARE</p>
                 <p className="second-price">$35</p>
               </div>
-              <h6>Learn Python Programming Matsreclass</h6>
+              <h6>Learn Python Programming Masterclass</h6>
               <div className="second-user">
                 <div className="second-star-left">
                   <img src={star} alt="star"></img>

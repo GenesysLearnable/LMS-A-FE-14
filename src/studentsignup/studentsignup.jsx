@@ -5,10 +5,6 @@ import { Link } from "react-router-dom";
 import googleicon from "../images/googleicon.svg";
 import axios from "axios";
 import "../App.css";
-// import googleImage from './images/plus.svg';
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { f1a0 } from "@fortawesome/free-solid-svg-icons";
-// import { faEye } from "@fortawesome/free-solid-svg-icons";
 
 export default function SignUpForm() {
   const [name, setName] = useState("");
@@ -127,14 +123,15 @@ export default function SignUpForm() {
                 <input className="checked" type="checkbox"></input>
                 <p>Keep me logged in</p>
               </div>
+
               <button
                 type="submit"
                 className="student-signup-btn"
                 onClick={handleSubmit}
               >
-                {/* <a href="#">Join for Free</a> */}
-                <Link to="/welcome">Join for Free</Link>
+                <Link to="/welcome" className="">Join for Free</Link>
               </button>
+
               <p className="dash">------------------ or ------------------</p>
               <div className="std-signup-google">
                 <p>Continue with Google</p>
