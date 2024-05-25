@@ -16,6 +16,7 @@ import ErrorPage from "./StudentScreens/ErrorPage";
 import Link1 from "./UXcomponent/link1";
 import MyCourseNav from "./component/MyCourseNav";
 import StudentCart from "./StudentScreens/StudentCart";
+import StudentHome from "./StudentScreens/StudentHome";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
   { path: "setpassword", element: <SetPwd /> },
   { path: "error", element: <ErrorPage /> },
   { path: "course-open", element: <Link1 /> },
-  { path: "explore", element: <ExMain /> },
+  { path: "explore", element: <StudentHome /> },
   { path: "adminlogin", element: <AdminLogin /> },
   { path: "mycourse", element: <MyCourseNav /> },
   { path: "cart", element: <StudentCart /> },
