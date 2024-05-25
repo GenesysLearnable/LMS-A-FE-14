@@ -417,8 +417,8 @@ const ExMain = () => {
                   ></img>
                 </Link>
                 <div className="ex-saved-title-text">
-                  <p className="ex-saved-text-priceD">DESIGN</p>
-                  <p className="ex-saved-price">$49</p>
+                  <p className="ex-saved-text-priceD ex-price-text">DESIGN</p>
+                  <p className="ex-saved-price ex-price-naira">Free</p>
                 </div>
                 <h6 className="ex-general-course-title">
                   User Experience course for beginners.
@@ -440,7 +440,9 @@ const ExMain = () => {
                 <img className="ex-it-image" src={development4} alt="IT"></img>
                 <div className="ex-saved-title-text">
                   <p className="ex-saved-text-priceDE">DEVELOPMENTS</p>
-                  <p className="ex-saved-price">$9</p>
+                  <p className="ex-saved-price">
+                    &#8358;<span>3,500</span>
+                  </p>
                 </div>
                 <h6 className="ex-general-course-title">
                   Selenium WebDriver with Java -Basics to Advanced+Frameworks
@@ -462,7 +464,9 @@ const ExMain = () => {
                 <img className="ex-it-image" src={marketing} alt="IT"></img>
                 <div className="ex-saved-title-text">
                   <p className="ex-saved-text-priceM">MARKETING</p>
-                  <p className="ex-saved-price">$49</p>
+                  <p className="ex-saved-price">
+                    &#8358;<span>4,900</span>
+                  </p>
                 </div>
                 <h6 className="ex-general-course-title">
                   The Ultimate Drawing Course - Beginner to Advanced
@@ -486,7 +490,9 @@ const ExMain = () => {
                 <img className="ex-it-image" src={ITgirl} alt="IT"></img>
                 <div className="ex-saved-title-text">
                   <p className="ex-saved-text-priceD">IT & SOFTWARE</p>
-                  <p className="ex-saved-price">$24</p>
+                  <p className="ex-saved-price">
+                    &#8358;<span>2,400</span>
+                  </p>
                 </div>
                 <h6 className="ex-general-course-title">
                   Complete Website Responsive Design
@@ -508,7 +514,9 @@ const ExMain = () => {
                 <img className="ex-it-image" src={development3} alt="IT"></img>
                 <div className="ex-saved-title-text">
                   <p className="ex-saved-text-priceDE">DEVELOPMENTS</p>
-                  <p className="ex-saved-price">$35</p>
+                  <p className="ex-saved-price">
+                    &#8358;<span>3,500</span>
+                  </p>
                 </div>
                 <h6 className="ex-general-course-title">
                   2021 Complete Python Bootcamp From Zero to Hero in Python
@@ -530,7 +538,9 @@ const ExMain = () => {
                 <img className="ex-it-image" src={marketing5} alt="IT"></img>
                 <div className="ex-saved-title-text">
                   <p className="ex-saved-text-priceM">MARKETING</p>
-                  <p className="ex-saved-price">$24</p>
+                  <p className="ex-saved-price">
+                    &#8358;<span>2,400</span>
+                  </p>
                 </div>
                 <h6 className="ex-general-course-title">
                   iPhone Photography | Take Professional Photos On Your iPhone
@@ -554,7 +564,9 @@ const ExMain = () => {
                 <img className="ex-it-image" src={IT2} alt="IT"></img>
                 <div className="ex-saved-title-text">
                   <p className="ex-saved-text-priceD">IT & SOFTWARE</p>
-                  <p className="ex-saved-price">$35</p>
+                  <p className="ex-saved-price">
+                    &#8358;<span>3,500</span>
+                  </p>
                 </div>
                 <h6 className="ex-general-course-title">
                   Learn Python Programming Masterclass
@@ -576,7 +588,9 @@ const ExMain = () => {
                 <img className="ex-it-image" src={design3} alt="IT"></img>
                 <div className="ex-saved-title-text">
                   <p className="ex-saved-text-priceDE">DESIGN</p>
-                  <p className="ex-saved-price">$16</p>
+                  <p className="ex-saved-price">
+                    &#8358;<span>1,600</span>
+                  </p>
                 </div>
                 <h6 className="ex-general-course-title">
                   Instagram Marketing 2021: Complete Guide To Instagram Gro...
@@ -598,7 +612,9 @@ const ExMain = () => {
                 <img className="ex-it-image" src={marketing6} alt="IT"></img>
                 <div className="ex-saved-title-text">
                   <p className="ex-saved-text-priceM">MARKETING</p>
-                  <p className="ex-saved-price">$24</p>
+                  <p className="ex-saved-price">
+                    &#8358;<span>2,400</span>
+                  </p>
                 </div>
                 <h6 className="ex-general-course-title">
                   Premiere Pro CC for Beginners: Video Editing in Premiere

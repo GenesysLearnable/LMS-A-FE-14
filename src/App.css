@@ -428,6 +428,20 @@ height: 100%;
   margin: 0 1rem;
 }
 
+.ex-price-text{
+color: rgba(170, 67, 53, 1);
+font-size: .8rem;
+}
+
+.ex-price-naira{
+  color: rgba(10, 101, 204, 1);
+  font-size: .8rem;
+}
+
+.course-title-general{
+  font-size: .8rem;
+}
+
 .ex-general-course-title {
   width: 18rem;
   line-height: 1.4;
