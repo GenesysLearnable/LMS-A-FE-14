@@ -10,6 +10,7 @@ import Uxhero from "./Uxhero";
 import HeroBottom from "./HeroBottom";
 import Herobase from "./Herobase";
 import Footer from '../StudentScreens/Footer';
+import { Link } from 'react-router-dom';
 
 const Link3 = () => {
   return (
@@ -19,9 +20,15 @@ const Link3 = () => {
       <div>
         <div className="links-container">
           <ul>
-            <li>What you'll learn</li>
-            <li>Course content</li>
-            <li className="active">Reviews</li>
+            <Link to="/active1">
+              <li>What you'll learn</li>
+            </Link>
+            <Link to="/active2">
+              <li>Course content</li>
+            </Link>
+            <Link to="/active3">
+              <li className="active3">Reviews</li>
+            </Link>
           </ul>
         </div>
 
