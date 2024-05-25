@@ -50,7 +50,8 @@ const ExMain = () => {
     setInputValue(e.target.value);
   };
 
-    // const [inputValue, setInputValue] = useState("");
+  // I WAS HOPING TO ADD AN ARRAY OF SEARCH OPTIONS HERE!
+  // const [inputValue, setInputValue] = useState("");
     // const [showSearchIcon, setShowSearchIcon] = useState(true);
     // const [suggestion, setSuggestion] = useState("");
     // const suggestions = [
@@ -76,7 +77,7 @@ const ExMain = () => {
     //     setSuggestion("");
     //     clearInterval(suggestionInterval);
     //   }
-    //   return () => clearInterval(suggestionInterval); // Cleanup interval on component unmount or input change
+    //   return () => clearInterval(suggestionInterval); 
     // }, [inputValue]);
 
     // const handleInputChange = (e) => {
@@ -93,7 +94,9 @@ const ExMain = () => {
             src={process.env.PUBLIC_URL + "/images/golearn-logo.png"}
             alt="Logo"
           />
-          <span className="nav-text">Explore</span>
+          <Link className="landing-link-explore-text" to="/explore">
+            Explore
+          </Link>
           <div className="search-box">
             {showSearchIcon && (
               <FontAwesomeIcon icon={faSearch} className="search-icon" />
@@ -439,8 +442,10 @@ const ExMain = () => {
               <div className="ex-saved-card">
                 <img className="ex-it-image" src={development4} alt="IT"></img>
                 <div className="ex-saved-title-text">
-                  <p className="ex-saved-text-priceDE">DEVELOPMENTS</p>
-                  <p className="ex-saved-price">
+                  <p className="ex-saved-text-priceDE ex-price-text2">
+                    DEVELOPMENTS
+                  </p>
+                  <p className="ex-saved-price ex-price-naira">
                     &#8358;<span>3,500</span>
                   </p>
                 </div>
@@ -463,8 +468,10 @@ const ExMain = () => {
               <div className="ex-saved-card">
                 <img className="ex-it-image" src={marketing} alt="IT"></img>
                 <div className="ex-saved-title-text">
-                  <p className="ex-saved-text-priceM">MARKETING</p>
-                  <p className="ex-saved-price">
+                  <p className="ex-saved-text-priceM ex-price-text2">
+                    MARKETING
+                  </p>
+                  <p className="ex-saved-price ex-price-naira">
                     &#8358;<span>4,900</span>
                   </p>
                 </div>
@@ -489,8 +496,10 @@ const ExMain = () => {
               <div className="ex-saved-card">
                 <img className="ex-it-image" src={ITgirl} alt="IT"></img>
                 <div className="ex-saved-title-text">
-                  <p className="ex-saved-text-priceD">IT & SOFTWARE</p>
-                  <p className="ex-saved-price">
+                  <p className="ex-saved-text-priceD ex-price-text">
+                    IT & SOFTWARE
+                  </p>
+                  <p className="ex-saved-price ex-price-naira">
                     &#8358;<span>2,400</span>
                   </p>
                 </div>
@@ -513,8 +522,10 @@ const ExMain = () => {
               <div className="ex-saved-card">
                 <img className="ex-it-image" src={development3} alt="IT"></img>
                 <div className="ex-saved-title-text">
-                  <p className="ex-saved-text-priceDE">DEVELOPMENTS</p>
-                  <p className="ex-saved-price">
+                  <p className="ex-saved-text-priceDE ex-price-text2">
+                    DEVELOPMENTS
+                  </p>
+                  <p className="ex-saved-price ex-price-naira">
                     &#8358;<span>3,500</span>
                   </p>
                 </div>
@@ -537,8 +548,10 @@ const ExMain = () => {
               <div className="ex-saved-card">
                 <img className="ex-it-image" src={marketing5} alt="IT"></img>
                 <div className="ex-saved-title-text">
-                  <p className="ex-saved-text-priceM">MARKETING</p>
-                  <p className="ex-saved-price">
+                  <p className="ex-saved-text-priceM ex-price-text2">
+                    MARKETING
+                  </p>
+                  <p className="ex-saved-price ex-price-naira">
                     &#8358;<span>2,400</span>
                   </p>
                 </div>
@@ -563,8 +576,10 @@ const ExMain = () => {
               <div className="ex-saved-card">
                 <img className="ex-it-image" src={IT2} alt="IT"></img>
                 <div className="ex-saved-title-text">
-                  <p className="ex-saved-text-priceD">IT & SOFTWARE</p>
-                  <p className="ex-saved-price">
+                  <p className="ex-saved-text-priceD ex-price-text">
+                    IT & SOFTWARE
+                  </p>
+                  <p className="ex-saved-price ex-price-naira">
                     &#8358;<span>3,500</span>
                   </p>
                 </div>
@@ -588,7 +603,7 @@ const ExMain = () => {
                 <img className="ex-it-image" src={design3} alt="IT"></img>
                 <div className="ex-saved-title-text">
                   <p className="ex-saved-text-priceDE">DESIGN</p>
-                  <p className="ex-saved-price">
+                  <p className="ex-saved-price ex-price-naira">
                     &#8358;<span>1,600</span>
                   </p>
                 </div>
@@ -611,8 +626,10 @@ const ExMain = () => {
               <div className="ex-saved-card">
                 <img className="ex-it-image" src={marketing6} alt="IT"></img>
                 <div className="ex-saved-title-text">
-                  <p className="ex-saved-text-priceM">MARKETING</p>
-                  <p className="ex-saved-price">
+                  <p className="ex-saved-text-priceM ex-price-text3">
+                    MARKETING
+                  </p>
+                  <p className="ex-saved-price ex-price-naira">
                     &#8358;<span>2,400</span>
                   </p>
                 </div>

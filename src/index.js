@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Welcome from './component/welcome';
 import LoginForm from './StudentLogin/StudentLogin';
 import Signup from './Components/AdminSignUp';
+import AdminLogin from "./Components/AdminLogin";
 import SignUpForm from './studentsignup/studentsignup';
 import ForgotPwd from './ForgotPassword/ForgotPwd';
 import VerifyPwd from './ForgotPassword/VerifyPwd';
@@ -28,6 +29,8 @@ const router = createBrowserRouter([
   { path: "setpassword", element: <SetPwd /> },
   { path: "error", element: <ErrorPage /> },
   { path: "course-open", element: <Link1 /> },
+  { path: "explore", element: <ExMain /> },
+  { path: "adminlogin", element: <AdminLogin /> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

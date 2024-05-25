@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "../component/navbar";
 import Footer from "../StudentScreens/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,6 +10,7 @@ import {
   faArrowRight,
   faArrowDown,
   faAngleDown,
+  faAngleRight,
 } from "@fortawesome/free-solid-svg-icons";
 import heroimage from "../images/man2.png";
 import frame from "../images/Frame.svg";
@@ -62,18 +64,27 @@ export default function LandingPage() {
             src={process.env.PUBLIC_URL + "/images/golearn-logo.png"}
             alt="Logo"
           />
-          <span className="nav-text">Explore</span>
+          <Link className="landing-link-explore-text" to="/explore">
+            Explore
+          </Link>
           <div className="search-box">
             <FontAwesomeIcon icon={faSearch} className="search-icon" />
             <input type="text" placeholder="Search Course" />
           </div>
           <span className="nav-text-link">GoLearn Business</span>
-          <span className="nav-text-link">Admin</span>
+          <Link className="landing-link-btn" to="/adminlogin">
+            <span className="nav-text-link">Admin</span>
+          </Link>
           <div className="landing-btn white-btn">
-            <p>Login</p>
+            <Link className="landing-link-white-btn" to="/login">
+              <p>Login</p>
+            </Link>
+            {/* <p>Login</p> */}
           </div>
           <div className="landing-btn">
-            <p>Sign Up</p>
+            <Link className="landing-link-btn" to="/signup">
+              <p>Sign Up</p>
+            </Link>
           </div>
           {/* <FontAwesomeIcon icon={faBell} className="notification-icon" />
           <FontAwesomeIcon icon={faCircleUser} className="user-icon" /> */}
@@ -105,10 +116,13 @@ export default function LandingPage() {
               started. How do you learn best?
             </p>
           </div>
-          <div className="landing-btn show-more">
-            <p>Show</p>
-            {/* <img className="arrow-down" src={downarrow} alt="down arrow"></img> */}
-            <FontAwesomeIcon icon={faAngleDown} />
+          <div className="landing-btn  arrow-btn-text show-link">
+            <Link className="arrow-btn-text show-link" to="/error">
+              <p>Show</p>
+              <FontAwesomeIcon icon={faAngleDown} />
+            </Link>
+            {/* <p>Show</p>
+            <FontAwesomeIcon icon={faAngleDown} /> */}
           </div>
         </div>
       </div>
@@ -125,34 +139,49 @@ export default function LandingPage() {
               React and all about : OOP, RegExp, design patterns, and APIs.
             </p>
             <div className="arrow-btn">
-              <p>Learn More</p>
-              <img src={arrowright} alt="right arrow"></img>
+              <Link className="arrow-btn-text" to="/explore">
+                <p>Learn More</p>
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  style={{ color: "#74C0FC" }}
+                />
+              </Link>
             </div>
           </div>
 
           <div className="card">
             <img src={productdesign} alt="wed dev"></img>
-            <h6>Web Development</h6>
+            <h6>UI/UX Design</h6>
             <p>
               Learn JavaScript design patterns and how to develop web apps using
               React and all about : OOP, RegExp, design patterns, and APIs.
             </p>
             <div className="arrow-btn">
-              <p>Learn More</p>
-              <img src={arrowright} alt="right arrow"></img>
+              <Link className="arrow-btn-text" to="/explore">
+                <p>Learn More</p>
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  style={{ color: "#74C0FC" }}
+                />
+              </Link>
             </div>
           </div>
 
           <div className="card">
             <img src={web3} alt="wed dev"></img>
-            <h6>Web Development</h6>
+            <h6>Web 3</h6>
             <p>
               Learn JavaScript design patterns and how to develop web apps using
               React and all about : OOP, RegExp, design patterns, and APIs.
             </p>
             <div className="arrow-btn">
-              <p>Learn More</p>
-              <img src={arrowright} alt="right arrow"></img>
+              <Link className="arrow-btn-text" to="/explore">
+                <p>Learn More</p>
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  style={{ color: "#74C0FC" }}
+                />
+              </Link>
             </div>
           </div>
         </div>
