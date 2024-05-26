@@ -29,7 +29,7 @@ import cpu from "../images/Cpu.svg";
 import handshake from "../images/Handshake.svg";
 import megaphone from "../images/MegaphoneSimple.svg";
 import pack from "../images/Package.svg";
-// import star from "../images/Star .png";
+
 
 const ExMain = () => {
   const [inputValue, setInputValue] = useState("");
