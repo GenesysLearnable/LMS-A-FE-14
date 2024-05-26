@@ -49,7 +49,6 @@
 .std-signup-input {
     position: relative;
     padding: .8rem 4rem;
-    /* width: 15rem; */
     border: 1px solid gray;
     border-radius: 5px;
 }
@@ -88,13 +87,9 @@
     font-size: .8rem;
 }
 
-/* .checked{
-    border: 4px solid gray;
-} */
 
 .student-signup-btn {
     padding: .8rem 4.85rem;
-    /* width: 18rem; */
     border: none;
     background-color: #0a65cc;
     border: 1px solid;
@@ -102,6 +97,7 @@
     border-radius: 5px;
     color: #fff;
     transition: transform 0.3s ease;
+    width: 330px;
 }
 
 .student-signup-btn a{

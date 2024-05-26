@@ -9,6 +9,11 @@ body {
   font-family: "Epilogue", sans-serif;
 }
 
+.welcome-link{
+    text-decoration: none;
+    color: #000;
+}
+
 :root {
   --primary: #0a65cc;
   --bg: #f3f3f3;
