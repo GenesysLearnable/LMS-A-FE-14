@@ -1,7 +1,8 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "../App.css";
 import "./StudentSavedCourse.css";
-import Navbar from "../component/navbar.jsx";
+// import WarningPage from "./StudentScreens/StudentWarning.jsx";
+// import StudentExit from "./StudentScreens/StudentExit.jsx";
 import Footer from "./Footer.jsx";
 import profile from "../images/profile.png";
 import camera from "../images/camera.svg";
@@ -14,9 +15,17 @@ import {
   faBell,
   faSearch,
   faCircleUser,
+  faRightFromBracket,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
-const StudentProfile = () => {
+const StudentProfileLogOut = () => {
+  const [view, setView] = useState("profile"); // 'profile', 'warning', 'exit'
+
+  const showWarning = () => setView("warning");
+  const showProfile = () => setView("profile");
+  const showExitPage = () => setView("exit");
+
   return (
     <div>
       <div className="saved-general-container">
@@ -34,8 +43,12 @@ const StudentProfile = () => {
                 <input type="text" placeholder="Search Course" />
               </div>
               <span className="nav-text-link">GoLearn Business</span>
-              <span className="nav-text-link">Instructor</span>
+              <span className="nav-text-link">Admin</span>
               <FontAwesomeIcon icon={faBell} className="notification-icon" />
+              <div className="logout-btn-box">
+                              <FontAwesomeIcon icon={faRightFromBracket} className="logout-icon"/>
+                              <p>Logout</p>
+              </div>
               <FontAwesomeIcon
                 icon={faCircleUser}
                 className="user-icon active-profile-user"
@@ -98,4 +111,38 @@ const StudentProfile = () => {
   );
 };
 
-export default StudentProfile;
+export default StudentProfileLogOut;
+
+// StudentProfile.js
+// import React, { useState } from 'react';
+// import WarningModal from './WarningModal';
+// import ExitPage from './ExitPage';
+// import './StudentProfile.css';
+
+// const StudentProfile = () => {
+//   const [view, setView] = useState('profile'); // 'profile', 'warning', 'exit'
+
+//   const showWarning = () => setView('warning');
+//   const showProfile = () => setView('profile');
+//   const showExitPage = () => setView('exit');
+
+//   return (
+//     <div>
+//       {view === 'profile' && (
+//         <div className="student-profile">
+//           <h1>Student Profile</h1>
+//           <p>Details about the student...</p>
+//           <button onClick={showWarning}>Show Warning</button>
+//         </div>
+//       )}
+
+//       {view === 'warning' && (
+//         <WarningModal onCancel={showProfile} onExit={showExitPage} />
+//       )}
+
+//       {view === 'exit' && <ExitPage />}
+//     </div>
+//   );
+// };
+
+// export default StudentProfile;
