@@ -1,5 +1,6 @@
 import React from "react";
-import "./StudentWarning.Exit.css";
+import './WarningModal.css';
+// import "./StudentWarning.Exit.css";
 
 export default function StudentExit() {
   return (

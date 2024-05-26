@@ -7,9 +7,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 
-
-
-
 const StudentWarning = ({ onCancel, onExit }) => {
   return (
     <div>
