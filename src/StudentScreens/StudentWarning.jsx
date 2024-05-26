@@ -1,19 +1,26 @@
 import React from 'react';
-import './StudentWarning.Exit.css';
-import cancelicon from '..images/cancel.svg';
-import warnicon from '..images/warning.svg';
+import './WarningModal.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faXmark,
+  faCircleExclamation,
+} from "@fortawesome/free-solid-svg-icons";
 
-const WarningPage = ({ onCancel, onExit }) => {
+
+
+
+
+const StudentWarning = ({ onCancel, onExit }) => {
   return (
     <div>
       <div className="logout-general-box">
-        <img src={cancelicon} alt="cancel" className="cancel-icon" />
+        <FontAwesomeIcon icon={faXmark} className="cancel-icon" />
         <div>
-          <img
-            src={warnicon}
-            alt="warning"
+          <FontAwesomeIcon
+            icon={faCircleExclamation}
             className="warning-icon"
-           />
+            size="2xl"
+          />
           <div>
             <div className="warning-card">
               <div className="warning-content">
@@ -22,9 +29,13 @@ const WarningPage = ({ onCancel, onExit }) => {
                   Are you sure you want to exit this page? This action cannot be
                   undone!
                 </p>
-                <div>
-                  <button onClick={onCancel}>Cancel</button>
-                  <button onClick={onExit}>Exit</button>
+                <div className="logout-btns">
+                  <button className="logout-cancel-btn" onClick={onCancel}>
+                    Cancel
+                  </button>
+                  <button className="logout-exit-btn" onClick={onExit}>
+                    Exit
+                  </button>
                 </div>
               </div>
             </div>
@@ -35,7 +46,7 @@ const WarningPage = ({ onCancel, onExit }) => {
   );
 };
 
-export default WarningPage;
+export default StudentWarning;
 
 
 

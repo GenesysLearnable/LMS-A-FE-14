@@ -21,6 +21,7 @@ body {
 /* LOGOUT STARTS HERE! */
 .logout-btn-box {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: .4rem;
   margin-left: .8rem;
@@ -31,6 +32,7 @@ body {
   width: 5rem;
   height: 1.8rem;
 }
+
 
 .logout-btn-box:hover {
   background-color: rgba(10, 101, 204, 1);
@@ -690,7 +692,7 @@ p:hover {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-left: rem;
+  /* margin-left: rem; */
   cursor: pointer;
   padding: 0 1rem;
   border: 1px solid rgb(253, 193, 174);
@@ -947,6 +949,7 @@ h3 {
 
 .navbar {
   display: flex;
+  gap: .6rem;
   width: 100%;
   align-items: center;
   padding-top: 1rem;
@@ -1030,22 +1033,9 @@ h3 {
 
 .notification-icon,
 .user-icon {
-<<<<<<< HEAD
   margin-left: 2rem;
-  color: #b6b4b4;
-=======
-  margin-left: .8rem;
   color: #818080;
->>>>>>> corrections
   height: 25px;
-  cursor: pointer;
-}
-
-.logout-icon {
-  margin-left: 2rem;
-  color: #b6b4b4;
-  height: 20px;
-  margin-top: 1rem;
   cursor: pointer;
 }
 
