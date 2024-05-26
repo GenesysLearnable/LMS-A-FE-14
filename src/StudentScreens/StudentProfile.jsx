@@ -1,48 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import "../App.css";
 import "./StudentSavedCourse.css";
-import Navbar from "../component/navbar.jsx";
 import Footer from "./Footer.jsx";
-import profile from "../images/profile.png";
-import camera from "../images/camera.svg";
-import link from "../images/link-2.svg";
 import joel from "../images/joel.png";
 import email from "../images/email.svg";
 import naija from "../images/naija.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBell,
-  faSearch,
-  faCircleUser,
-} from "@fortawesome/free-solid-svg-icons";
+import ProfileNav from "../component/profilenav.jsx";
 
 const StudentProfile = () => {
   return (
     <div>
+      <ProfileNav />
       <div className="saved-general-container">
         <div className="std-profile-container">
-          <div className="navbar-container">
-            <div className="navbar">
-              <img
-                className="navbar-logo"
-                src={process.env.PUBLIC_URL + "/images/golearn-logo.png"}
-                alt="Logo"
-              />
-              <span className="nav-text">Explore</span>
-              <div className="search-box">
-                <FontAwesomeIcon icon={faSearch} className="search-icon" />
-                <input type="text" placeholder="Search Course" />
-              </div>
-              <span className="nav-text-link">GoLearn Business</span>
-              <span className="nav-text-link">Instructor</span>
-              <FontAwesomeIcon icon={faBell} className="notification-icon" />
-              <FontAwesomeIcon
-                icon={faCircleUser}
-                className="user-icon active-profile-user"
-              />
-            </div>
-          </div>
-
           <div className="std-main-profile">
             <h3>Profile</h3>
             <div className="std-profile-details">

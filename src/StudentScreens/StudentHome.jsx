@@ -2,13 +2,6 @@ import React from "react";
 import "../App.css";
 import "./StudentSavedCourse.css";
 import "./StudentHome.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBell,
-  faSearch,
-  faCircleUser,
-} from "@fortawesome/free-solid-svg-icons";
-import logo from "../images/golearn-logo.png";
 import ITimage from "../images/IT&Software.png";
 import star from "../images/Star .png";
 import user from "../images/User.svg";
@@ -19,28 +12,22 @@ import design2 from "../images/design2.png";
 import ITSoftware2 from "../images/ITSoftware2.png";
 import Development2 from "../images/Development2.png";
 import marketing2 from "../images/marketing2.png";
-import facebook from "../images/Facebook.svg";
-import github from "../images/Github.svg";
-import google from "../images/googleicon.svg";
-import twitter from "../images/Twitter.svg";
-import microsoft from "../images/Microsoft.svg";
 import Navbar from "../component/navbar";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 const Studenthome = () => {
   return (
     <div>
       <Navbar />
       <div className="home-general-container">
-       
-
         <div className="second-course-main-container1">
           <div className="second-card-row1">
             <div className="second-card">
               <img className="it-image" src={ITimage} alt="IT"></img>
               <div className="second-title-text">
                 <p className="second-text-price">IT & SOFTWARE</p>
-                <p className="second-price">$35</p>
+                <p className="second-price">&#8358;3,500</p>
               </div>
               <h6>Learn Python Programming Matsreclass</h6>
               <div className="second-user">
@@ -56,31 +43,33 @@ const Studenthome = () => {
               </div>
             </div>
 
-            <div className="second-card">
-              <img className="it-image" src={design} alt="IT"></img>
-              <div className="second-title-text">
-                <p className="second-text-priceD">Design</p>
-                <p className="second-price">$49</p>
-              </div>
-              <h6>User Experience course for beginners</h6>
-              <div className="second-user">
-                <div className="second-star-left">
-                  <img src={star} alt="star"></img>
-                  <p>4.9</p>
+            <div className="second-card only-card">
+              <Link to="/course-open">
+                <img className="it-image" src={design} alt="IT"></img>
+                <div className="second-title-text">
+                  <p className="second-text-priceD">Design</p>
+                  <p className="second-price">Free</p>
                 </div>
-                <div className="second-user-count">
-                  <img src={user} alt="user" />
-                  <p>197,637</p>
-                  <span>students</span>
+                <h6>User Experience course for beginners</h6>
+                <div className="second-user">
+                  <div className="second-star-left">
+                    <img src={star} alt="star"></img>
+                    <p>4.9</p>
+                  </div>
+                  <div className="second-user-count">
+                    <img src={user} alt="user" />
+                    <p>197,637</p>
+                    <span>students</span>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
 
             <div className="second-card">
               <img className="it-image" src={development} alt="IT"></img>
               <div className="second-title-text">
                 <p className="second-text-priceDE">Developments</p>
-                <p className="second-price">$32</p>
+                <p className="second-price">&#8358;3,200</p>
               </div>
               <h6>Adobe Premiere Pro CC Advanced Training Course</h6>
               <div className="second-user">
@@ -100,7 +89,7 @@ const Studenthome = () => {
               <img className="it-image" src={marketing} alt="IT"></img>
               <div className="second-title-text">
                 <p className="second-text-priceM">Marketing</p>
-                <p className="second-price">$13</p>
+                <p className="second-price">&#8358;3,500</p>
               </div>
               <h6>Ultimate AWS Certified Solutions Architect Associate 2021</h6>
               <div className="second-user">
@@ -122,7 +111,7 @@ const Studenthome = () => {
               <img className="it-image" src={ITSoftware2} alt="IT"></img>
               <div className="second-title-text">
                 <p className="second-text-priceD">Design</p>
-                <p className="second-price">$9</p>
+                <p className="second-price">&#8358;3,500</p>
               </div>
               <h6>
                 Ultimate Google Ads Training 2020: Profit with Pay Per Click
@@ -144,7 +133,7 @@ const Studenthome = () => {
               <img className="it-image" src={design2} alt="IT"></img>
               <div className="second-title-text">
                 <p className="second-text-price">IT & SOFTWARE</p>
-                <p className="second-price">$35</p>
+                <p className="second-price">&#8358;3,500</p>
               </div>
               <h6>Learn Ethical Hacking From Scratch 2021</h6>
               <div className="second-user">
@@ -164,7 +153,7 @@ const Studenthome = () => {
               <img className="it-image" src={Development2} alt="IT"></img>
               <div className="second-title-text">
                 <p className="second-text-priceDE">Development</p>
-                <p className="second-price">$16</p>
+                <p className="second-price">&#8358;3,500</p>
               </div>
               <h6>Angular - The Complete Guide (2021 Edition)</h6>
               <div className="second-user">
@@ -184,7 +173,7 @@ const Studenthome = () => {
               <img className="it-image" src={marketing2} alt="IT"></img>
               <div className="second-title-text">
                 <p className="second-text-priceM">Marketing</p>
-                <p className="second-price">$23</p>
+                <p className="second-price">&#8358;3,500</p>
               </div>
               <h6>
                 How to get Diamond in soloQ | League of Legends | Season 11

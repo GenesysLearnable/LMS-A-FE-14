@@ -11,12 +11,14 @@ import SignUpForm from "./studentsignup/studentsignup";
 import ForgotPwd from "./ForgotPassword/ForgotPwd";
 import VerifyPwd from "./ForgotPassword/VerifyPwd";
 import SetPwd from "./ForgotPassword/SetPwd";
-import ExMain from "./Reusables/ExploreMain";
 import ErrorPage from "./StudentScreens/ErrorPage";
 import Link1 from "./UXcomponent/link1";
-import MyCourseNav from "./component/MyCourseNav";
 import StudentCart from "./StudentScreens/StudentCart";
 import StudentHome from "./StudentScreens/StudentHome";
+import Course from "./MyCourse/MyCourse";
+import StudentSavedCourse from "./StudentScreens/StudentSavedCourse";
+import StudentReminder from "./StudentScreens/StudentReminder";
+import StudentProfile from "./StudentScreens/StudentProfile";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
@@ -31,8 +33,11 @@ const router = createBrowserRouter([
   { path: "course-open", element: <Link1 /> },
   { path: "explore", element: <StudentHome /> },
   { path: "adminlogin", element: <AdminLogin /> },
-  { path: "mycourse", element: <MyCourseNav /> },
+  { path: "mycourse", element: <Course /> },
   { path: "cart", element: <StudentCart /> },
+  { path: "savedcourse", element: <StudentSavedCourse /> },
+  { path: "remind", element: <StudentReminder /> },
+  { path: "profile", element: <StudentProfile /> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

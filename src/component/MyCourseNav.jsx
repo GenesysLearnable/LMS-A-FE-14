@@ -5,6 +5,7 @@ import {
   faBell,
   faSearch,
   faCircleUser,
+  faDoorOpen
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
@@ -25,16 +26,27 @@ const MyCourseNav = () => {
         <span className="nav-text-link">GoLearn Business</span>
         <span className="nav-text-link">Admin</span>
         <FontAwesomeIcon icon={faBell} className="notification-icon" />
-        <FontAwesomeIcon icon={faCircleUser} className="user-icon" />
+        <p className="logout-icon">
+          <FontAwesomeIcon icon={faDoorOpen} /> Logout
+        </p>
+        <Link to="/profile">
+          <FontAwesomeIcon icon={faCircleUser} className="user-icon" />
+        </Link>
       </div>
       <div className="navbar-links">
         <ul>
-          <li>Home</li>
+          <Link to="/explore">
+            <li>Home</li>
+          </Link>
           <Link to="/mycourse">
             <li className="active">My Course</li>
           </Link>
-          <li>Saved</li>
-          <li>Reminder</li>
+          <Link to="/savedcourse">
+            <li>Saved</li>
+          </Link>
+          <Link to="/remind">
+            <li>Reminder</li>
+          </Link>
           <Link to="/cart">
             <li>Cart</li>
           </Link>

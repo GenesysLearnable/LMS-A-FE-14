@@ -30,6 +30,11 @@
     margin: 0 0 0 2rem;
 }
 
+.video-frame{
+    width: 670px;
+    height: 450px;
+    border-radius: 1rem;
+}
 
 .Uxhero-right-container h2{
     font-size: 2.5rem;
@@ -362,13 +367,13 @@
 
 .card-pay{
     margin: 1rem 0 0 6rem;
-    font-size: 1.2rem;
+    font-size: .7rem;
     color: #0a65cc;
 }
 
 .card-course-title{
         margin-left: 2rem;
-        font-size: 1rem;
+        font-size: .6rem;
 }
 
 .rate-user{

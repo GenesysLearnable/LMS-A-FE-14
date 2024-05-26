@@ -1,13 +1,6 @@
 import React, {useState} from "react";
 import "../App.css";
 import "./StudentSavedCourse.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBell,
-  faSearch,
-  faCircleUser,
-} from "@fortawesome/free-solid-svg-icons";
-import logo from "../images/golearn-logo.png";
 import ITimage from "../images/IT&Software.png";
 import star from "../images/Star .png";
 import user from "../images/User.svg";
@@ -18,11 +11,8 @@ import design2 from "../images/design2.png";
 import ITSoftware2 from "../images/ITSoftware2.png";
 import Development2 from "../images/Development2.png";
 import marketing2 from "../images/marketing2.png";
-import facebook from "../images/Facebook.svg";
-import github from "../images/Github.svg";
-import google from "../images/googleicon.svg";
-import twitter from "../images/Twitter.svg";
-import microsoft from "../images/Microsoft.svg";
+import SavedNav from "../component/Savednav";
+import Footer from "./Footer";
 
 const StudentSavedCourse = () => {
   const [courses, setCourses] = useState([
@@ -122,35 +112,7 @@ const StudentSavedCourse = () => {
 
   return (
     <div>
-      <div className="saved-general-container">
-        <div className="navbar-container">
-          <div className="navbar">
-            <img
-              className="navbar-logo"
-              src={process.env.PUBLIC_URL + "/images/golearn-logo.png"}
-              alt="Logo"
-            />
-            <span className="nav-text">Explore</span>
-            <div className="search-box">
-              <FontAwesomeIcon icon={faSearch} className="search-icon" />
-              <input type="text" placeholder="Search Course" />
-            </div>
-            <span className="nav-text-link">GoLearn Business</span>
-            <span className="nav-text-link">Admin</span>
-            <FontAwesomeIcon icon={faBell} className="notification-icon" />
-            <FontAwesomeIcon icon={faCircleUser} className="user-icon" />
-          </div>
-          <div className="navbar-links">
-            <ul>
-              <li>Home</li>
-              <li>My Course</li>
-              <li className="active">Saved</li>
-              <li>Reminder</li>
-              <li>Cart</li>
-            </ul>
-          </div>
-        </div>
-
+      <SavedNav />
         <div className="saved-course-main-container">
           <div className="saved-card-row1">
             <div className="saved-card">
@@ -319,66 +281,9 @@ const StudentSavedCourse = () => {
               </div>
             </div>
           </div>
-        </div>
-
-        <footer className="saved-footer">
-          <div className="saved-footer-first">
-            <img src={logo} alt="logo" />
-            <p>
-              Empowering learners through accessible and engaging online
-              education. <br /> GoLearn is a leading online learning platform
-              dedicated to providing high-quality, flexible, and affordable
-              educational experiences.{" "}
-            </p>
-          </div>
-
-          <div className="saved-footer-second">
-            <h3>Get Help</h3>
-            <div className="saved-footer-help">
-              <p>Contact Us</p>
-              <p>Latest Articles</p>
-              <p>FAQ</p>
-            </div>
-          </div>
-
-          <div className="saved-footer-third">
-            <h3>Careers</h3>
-            <div className="saved-footer-help">
-              <p>Arts & Design</p>
-              <p>Business</p>
-              <p>IT & Software</p>
-              <p>Language</p>
-              <p>Programming</p>
-            </div>
-          </div>
-
-          <div className="saved-footer-fourth">
-            <h3>Contact Us</h3>
-            <div className="saved-footer-help">
-              <p>Press</p>
-              <p>Investors</p>
-              <p>Terms</p>
-              <p>Privacy</p>
-              <p>Help</p>
-              <p>Accessibility</p>
-              <p>Contact</p>
-              <p>Articles</p>
-              <p>Directory</p>
-              <p>Affiliates</p>
-              <p>Modern Slavery Statement</p>
-              <p>Manage Cookie Preferences</p>
-            </div>
-            <div className="saved-socials">
-              <img src={facebook} alt="facebook"></img>
-              <img src={github} alt="facebook"></img>
-              <img src={google} alt="facebook"></img>
-              <img src={twitter} alt="facebook"></img>
-              <img src={microsoft} alt="facebook"></img>
-            </div>
-          </div>
-        </footer>
       </div>
-    </div>
+      <Footer />
+      </div>
   );
 };
 
