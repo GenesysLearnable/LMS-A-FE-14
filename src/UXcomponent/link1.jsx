@@ -14,8 +14,8 @@ const Link1 = () => {
       <Uxhero />
       <div className="links-container">
         <ul>
-          <Link to="/active1">
-            <li className="active1">What you'll learn</li>
+          <Link to="#active1">
+            <li id='active'>What you'll learn</li>
           </Link>
           <Link to="/active2">
             <li>Course content</li>
