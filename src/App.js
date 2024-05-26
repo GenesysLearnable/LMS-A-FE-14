@@ -1,13 +1,12 @@
 import React from "react";
 import "./App.css";
+// import ExMain from "./Reusables/ExploreMain";
 import LandingPage from "./Components/LandingPage";
 // import Link1 from "./UXcomponent/link1";
 // import MyCourse from "./MyCourse/MyCourse";
 import WarningPage from "./StudentScreens/StudentWarning.jsx";
 import StudentExit from "./StudentScreens/StudentExit.jsx";
 import StudentProfileLogOut from "./StudentScreens/StudentProfileLogOut.jsx";
-import CourseCompleted from "./MyCourseCompleted/CourseCompleted"
-
 
 export default function GoLearn() {
     return (
@@ -19,6 +18,18 @@ export default function GoLearn() {
         <WarningPage />
         {/* <StudentExit /> */}
         <StudentProfileLogOut />
+      </div>
+    );
+}
+import React from "react";
+import "./App.css";
+import LandingPage from "./Components/LandingPage";
+import CourseCompleted from "./MyCourseCompleted/CourseCompleted"
+
+
+export default function GoLearn() {
+    return (
+      <div className="App">
         <CourseCompleted />
       </div>
     );
