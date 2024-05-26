@@ -8,8 +8,9 @@ import Link1 from "./UXcomponent/link1";
 export default function GoLearn() {
     return (
       <div className="App">
+        <LandingPage />
         {/* <ExMain /> */}
-        <Link1 />
+        {/* <Link1 /> */}
         {/* <MyCourse /> */}
       </div>
     );
