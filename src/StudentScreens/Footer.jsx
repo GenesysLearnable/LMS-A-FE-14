@@ -1,5 +1,6 @@
-import React from 'react';
+import React from "react";
 import "../App.css";
+import { Link, BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import logo from "../images/golearn-logo.png";
 import facebook from "../images/Facebook.svg";
 import github from "../images/Github.svg";
@@ -55,11 +56,21 @@ export default function Footer() {
             <p>Manage Cookie Preferences</p>
           </div>
           <div className="saved-socials">
-            <img src={facebook} alt="facebook"></img>
-            <img src={github} alt="facebook"></img>
-            <img src={google} alt="facebook"></img>
-            <img src={twitter} alt="facebook"></img>
-            <img src={microsoft} alt="facebook"></img>
+            <Link className="landing-link-explore-text" to="/www.facebook.com/">
+              <img src={facebook} alt="facebook"></img>
+            </Link>
+            <Link className="landing-link-explore-text" to="/www.github.com/">
+              <img src={github} alt="github"></img>
+            </Link>
+            <Link className="landing-link-explore-text" to="/www.mail.google.com/">
+              <img src={google} alt="google"></img>
+            </Link>
+            <Link className="landing-link-explore-text" to="/www.twitter.com/">
+              <img src={twitter} alt="twitter"></img>
+            </Link>
+            <Link className="landing-link-explore-text" to="/www.microsoft.com/">
+              <img src={microsoft} alt="microsoft"></img>
+            </Link>
           </div>
         </div>
       </footer>

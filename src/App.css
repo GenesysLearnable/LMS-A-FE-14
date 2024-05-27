@@ -168,6 +168,41 @@ body {
 
 
 
+
+/* LOGOUT STARTS HERE! */
+.logout-btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .4rem;
+  margin-left: .8rem;
+  color: rgba(124, 132, 147, 1);
+  cursor: pointer;
+  padding: .2rem .6rem;
+  border-radius: 3px;
+  width: 5rem;
+  height: 1.8rem;
+}
+
+
+.logout-btn-box:hover {
+  background-color: rgba(10, 101, 204, 1);
+  color: #fff;
+}
+
+.logout-btn-box .logout-icon,
+p {
+  transition: color 0.3s ease;
+}
+
+.logout-btn-box .logout-icon:hover,
+p:hover {
+  color: #fff;
+}
+
+
+
+
 /* LANDING PAGE STARTS HERE!!! */
 .landing-hero-section {
   display: flex;
@@ -212,6 +247,24 @@ body {
 
 .hero-texts span {
   color: rgba(0, 3, 61, 1);
+}
+
+.landing-user-profile-link {
+  margin-right: .6rem;
+}
+
+.search-result-box {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  margin: 20px;
+  text-align: center;
+}
+
+.search-result-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
 }
 
 .landing-hero-image {
@@ -790,7 +843,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-left: rem;
+  /* margin-left: rem; */
   cursor: pointer;
   padding: 0 1rem;
   border: 1px solid rgb(253, 193, 174);
@@ -1047,6 +1100,7 @@ h3 {
 
 .navbar {
   display: flex;
+  gap: .6rem;
   width: 100%;
   align-items: center;
   padding-top: 1rem;
@@ -1122,23 +1176,17 @@ h3 {
 .nav-text-link {
   font-size: 1.2rem;
   color: #818080;
-  padding-left: 1.5rem;
+  /* padding-left: 1.5rem; */
+  margin-right: .6rem;
+  cursor: pointer;
   /* margin-left: 2.5rem; */
 }
 
 .notification-icon,
 .user-icon {
   margin-left: 2rem;
-  color: #b6b4b4;
+  color: #818080;
   height: 25px;
-  cursor: pointer;
-}
-
-.logout-icon {
-  margin-left: 2rem;
-  color: #b6b4b4;
-  height: 20px;
-  margin-top: 1rem;
   cursor: pointer;
 }
 
