@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,6 +10,22 @@ import {
 import { Link } from "react-router-dom";
 
 const Cartnav = () => {
+  const [showWarning, setShowWarning] = useState(false);
+  const [showExit, setShowExit] = useState(false);
+  const handleLogoutClick = () => {
+    setShowWarning(true);
+  };
+  const handleCancel = () => {
+    setShowWarning(false);
+  };
+  const handleExit = () => {
+    setShowWarning(false);
+    setShowExit(true);
+  };
+  const handleExitPageClose = () => {
+    setShowExit(false);
+  };
+
   return (
     <div className="navbar-container">
       <div className="navbar">
@@ -26,8 +42,9 @@ const Cartnav = () => {
         <span className="nav-text-link">GoLearn Business</span>
         <span className="nav-text-link">Admin</span>
         <FontAwesomeIcon icon={faBell} className="notification-icon" />
-        <p className="logout-icon">
-          <FontAwesomeIcon icon={faDoorOpen} /> Logout
+        <p className="logout-icon logout-profile" onClick={handleLogoutClick}>
+          <FontAwesomeIcon icon={faDoorOpen} className="logout-profile-icon" />{" "}
+          Logout
         </p>
         <Link to="/profile">
           <FontAwesomeIcon icon={faCircleUser} className="user-icon" />

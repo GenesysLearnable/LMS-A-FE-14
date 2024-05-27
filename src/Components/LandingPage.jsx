@@ -1,7 +1,4 @@
 
-
-
-
 import React, { useState, useEffect } from "react";
 import { Link, BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "../component/navbar";
@@ -54,6 +51,7 @@ import upwork from "../images/upwork.svg";
 import fiverr from "../images/fiverr.svg";
 import behance from "../images/behance.svg";
 import mark from "../images/mark.svg";
+import { Link } from "react-router-dom";
 
 export default function LandingPage() {
   const [searchText, setSearchText] = useState("");
@@ -84,8 +82,8 @@ export default function LandingPage() {
             src={process.env.PUBLIC_URL + "/images/golearn-logo.png"}
             alt="Logo"
           />
-          <Link className="landing-link-explore-text" to="/explore">
-            Explore
+          <Link to="/studenthome">
+            <span className="nav-text">Explore</span>
           </Link>
           <div className="search-box">
             {showSearchIcon && (
@@ -106,14 +104,15 @@ export default function LandingPage() {
           </Link>
           <span className="nav-text-link">GoLearn Business</span>
           <div className="landing-btn white-btn">
-            <Link className="landing-link-white-btn" to="/login">
+            <Link to="/login">
               <p>Login</p>
             </Link>
           </div>
           <div className="landing-btn">
-            <Link className="landing-link-btn" to="/signup">
-              <p>Sign Up</p>
+            <Link to="/signin">
+            <p>Sign Up</p>
             </Link>
+            
           </div>
         </div>
       </div>

@@ -19,6 +19,8 @@ import Course from "./MyCourse/MyCourse";
 import StudentSavedCourse from "./StudentScreens/StudentSavedCourse";
 import StudentReminder from "./StudentScreens/StudentReminder";
 import StudentProfile from "./StudentScreens/StudentProfile";
+import Notification from "./StudentScreens/Notification";
+import Notify from "./StudentScreens/Notify";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
@@ -38,6 +40,8 @@ const router = createBrowserRouter([
   { path: "savedcourse", element: <StudentSavedCourse /> },
   { path: "remind", element: <StudentReminder /> },
   { path: "profile", element: <StudentProfile /> },
+  { path: "notification", element: <Notification /> },
+  { path: "notify", element: <Notify /> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
