@@ -17,6 +17,15 @@
     padding: 1rem;
 }
 
+.only-card{
+    cursor: pointer;
+}
+
+.only-card:hover{
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+}
+
 .it-image {
     width: 240px;
 }

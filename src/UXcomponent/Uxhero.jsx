@@ -3,6 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import StarRating from '../component/StarRating';
 import './UxheroStyle.css'
+import { DefaultPlayer as Video } from 'react-html5video';
+import 'react-html5video/dist/styles.css';
+import thum from '../images/videoframe.png';
+import introVideo from "../images/UI-UX.mp4";
 
 const Uxhero = () => {
   return (
@@ -30,11 +34,11 @@ const Uxhero = () => {
 
         <div className="Uxhero-container">
           <div>
-            <img
-              className="video-frame"
-              src={process.env.PUBLIC_URL + "/images/videoframe.png"}
-              alt="video"
-            />
+            <Video className="video-frame" loop
+              poster={thum}
+            >
+              <source src={ introVideo } type="video/webm" />
+            </Video>
           </div>
           <div className="Uxhero-right-container">
             <h2>User Experience course for beginners</h2>

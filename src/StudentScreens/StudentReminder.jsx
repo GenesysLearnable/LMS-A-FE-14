@@ -1,51 +1,16 @@
 import React from "react";
 import "../App.css";
 import "./StudentSavedCourse.css";
-// import Navbar from "../component/navbar.jsx";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBell,
-  faSearch,
-  faCircleUser,
-} from "@fortawesome/free-solid-svg-icons";
 import apple from "../images/appleicon.png";
 import playstore from "../images/playstoreicon.png";
 import Footer from "./Footer.jsx";
+import ReminderNav from "../component/Remindernav.jsx";
 
 const StudentReminder = () => {
   return (
     <div>
+      <ReminderNav />
       <div className="saved-general-container">
-        <div>
-          {/* <Navbar /> */}
-          <div className="navbar-container">
-            <div className="navbar">
-              <img
-                className="navbar-logo"
-                src={process.env.PUBLIC_URL + "/images/golearn-logo.png"}
-                alt="Logo"
-              />
-              <span className="nav-text">Explore</span>
-              <div className="search-box">
-                <FontAwesomeIcon icon={faSearch} className="search-icon" />
-                <input type="text" placeholder="Search Course" />
-              </div>
-              <span className="nav-text-link">GoLearn Business</span>
-              <span className="nav-text-link">Admin</span>
-              <FontAwesomeIcon icon={faBell} className="notification-icon" />
-              <FontAwesomeIcon icon={faCircleUser} className="user-icon" />
-            </div>
-            <div className="navbar-links">
-              <ul>
-                <li>Home</li>
-                <li>My Course</li>
-                <li>Saved</li>
-                <li className="active">Reminder</li>
-                <li>Cart</li>
-              </ul>
-            </div>
-          </div>
-
           <div className="reminder-container">
             <h3>Set a Reminder to Study!</h3>
             <p>
@@ -88,7 +53,6 @@ const StudentReminder = () => {
           <Footer />
         </div>
       </div>
-    </div>
   );
 };
 
