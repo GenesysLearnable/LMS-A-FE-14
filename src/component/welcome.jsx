@@ -27,13 +27,14 @@ function Welcome() {
               <span>Agriculture</span>
               <p>0 Courses available</p>
             </li>
-            <li className="available-courses">
-              <FontAwesomeIcon icon={faPen} className="category-icon" />
-              <span>
-                <Link to="/art">Art</Link>
-              </span>
-              <p>700 Courses available</p>
-            </li>
+            <Link to="/explore" className="welcome-link">
+              <li className="available-courses">
+                <FontAwesomeIcon icon={faPen} className="category-icon" />
+                <span>Art</span>
+                <p>700 Courses available</p>
+              </li>
+            </Link>
+
             <li>
               <FontAwesomeIcon icon={faBriefcase} className="category-icon" />
               <span>Business</span>

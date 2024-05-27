@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 import LandingPage from "./Components/LandingPage";
+
+
 import CourseCompleted from "./MyCourseCompleted/CourseCompleted";
 import Course from "./MyCourse/MyCourse.jsx";
 import Logout from "./StudentScreens/StudentLogoutPage.jsx";
@@ -9,6 +11,11 @@ import ExitPage from "./StudentScreens/ExitPage.jsx";
 import Studentschool from "./StudentScreens/Studentschool.jsx";
 
 export default function GoLearn() {
+    return (
+      <div className="App">
+        <LandingPage />
+      </div>
+    );
   return (
     <div className="App">
       {/* <LandingPage /> */}

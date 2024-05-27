@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "../component/navbar";
 import Footer from "../StudentScreens/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -49,6 +49,7 @@ import upwork from "../images/upwork.svg";
 import fiverr from "../images/fiverr.svg";
 import behance from "../images/behance.svg";
 import mark from "../images/mark.svg";
+import { Link } from "react-router-dom";
 
 
 
@@ -64,8 +65,8 @@ export default function LandingPage() {
             src={process.env.PUBLIC_URL + "/images/golearn-logo.png"}
             alt="Logo"
           />
-          <Link className="landing-link-explore-text" to="/explore">
-            Explore
+          <Link to="/studenthome">
+            <span className="nav-text">Explore</span>
           </Link>
           <div className="search-box">
             <FontAwesomeIcon icon={faSearch} className="search-icon" />
@@ -76,15 +77,15 @@ export default function LandingPage() {
             <span className="nav-text-link">Admin</span>
           </Link>
           <div className="landing-btn white-btn">
-            <Link className="landing-link-white-btn" to="/login">
+            <Link to="/login">
               <p>Login</p>
             </Link>
-            {/* <p>Login</p> */}
           </div>
           <div className="landing-btn">
-            <Link className="landing-link-btn" to="/signup">
-              <p>Sign Up</p>
+            <Link to="/signin">
+            <p>Sign Up</p>
             </Link>
+            
           </div>
           {/* <FontAwesomeIcon icon={faBell} className="notification-icon" />
           <FontAwesomeIcon icon={faCircleUser} className="user-icon" /> */}
