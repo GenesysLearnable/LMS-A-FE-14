@@ -1,5 +1,6 @@
 import React from "react";
 import "./MyCourse.css";
+import "../App.css";
 import Footer from "../StudentScreens/Footer";
 import MyCourseNav from "../component/MyCourseNav";
 
@@ -18,7 +19,7 @@ const Course = () => {
         </div>
 
         <div className="course-list">
-          <div className="courses">
+          <div className="courses course-with">
             <div className="course-ttl">
               <img
                 src={process.env.PUBLIC_URL + "/images/Course-Image-3.png"}
@@ -43,8 +44,8 @@ const Course = () => {
             </div>
           </div>
 
-          <div className="courses">
-            <div className="course-ttl">
+          <div className="courses course-with">
+            <div className="course-ttl course-head">
               <img
                 src={process.env.PUBLIC_URL + "/images/Course-Image-1.png"}
                 alt="course-1"

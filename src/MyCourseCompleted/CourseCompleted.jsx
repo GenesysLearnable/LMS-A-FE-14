@@ -1,4 +1,5 @@
 import React from 'react'
+import "../App.css";
 import './CourseCompleted.css'
 import Navbar from '../component/navbar';
 import Footer from '../StudentScreens/Footer';
@@ -33,7 +34,7 @@ import edwardshare from "../images/edwardshare.svg";
               </div>
               <div className="button2">
                 <a href="#" className="btn2">
-                  <p class="txt">View Course</p>{" "}
+                  <p className="txt">View Course</p>
                 </a>
               </div>
             </div>
@@ -49,8 +50,7 @@ import edwardshare from "../images/edwardshare.svg";
               </div>
               <div className="button2">
                 <a href="#" className="btn2">
-                  {" "}
-                  <p class="txt">View Course</p>{" "}
+                  <p class="txt">View Course</p>
                 </a>
               </div>
             </div>

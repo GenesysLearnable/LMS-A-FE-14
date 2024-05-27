@@ -7,7 +7,7 @@ a {
     padding: 20px;
     margin: 20px;
 }
-.main > .button {
+.main  .button {
     margin-left: 60px;
 }
 
@@ -16,7 +16,7 @@ a {
     flex-wrap: nowrap;
 }
 
-.main >.button >.btn {
+.main .button .btn {
     margin: 10px;
 }
 
@@ -51,12 +51,25 @@ a {
     border: 1px solid #0A65CC;
     border-radius: 8px;
     background-color: #0A65CC;
+    /* color: #fff; */
 }
-.btn2{
+
+.button2:hover{
+color: #0A65CC;
+background-color: #fff;
+border: 1px solid #0A65CC;
+}
+
+/* .button2 p{
     color: #fff;
-}
+} */
+
+/* .btn2{
+    color: #fff;
+} */
 .txt{
     text-align: center;
+    color: #fff;
 }
 .course-list {
 
@@ -70,27 +83,27 @@ a {
     background-color: #fff;
     border-radius: 15px;
     padding: 8px;
-
+    display: flex;
 }
-.courses > .course-ttl {
+/* .courses  .course-ttl {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
-.course-ttl > .imageo > img {
+.course-ttl  .imageo  img {
     margin: 5px 10px;
     width:40px;
     height:40px;
     border-radius: 5%;
 }
-.course-ttl > .imageo{
+.course-ttl  .imageo{
     display: flex;
 }
 .ttx{
     color: #515B6F;
 }
-.text > h3 {
+.text  h3 {
     color: #082133;
 }
 
