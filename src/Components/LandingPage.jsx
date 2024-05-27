@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import { Link, BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "../component/navbar";
 import Footer from "../StudentScreens/Footer";
 import '../App.css';
